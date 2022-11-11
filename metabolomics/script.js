@@ -148,7 +148,7 @@ let visualizeNetwork = (networkName) => {
 		let defaultZoomLevelBigNetworks = 0.35;
 
 		// Zoom level for centered nodes
-		let minCenteredNodeZoomLevel = 4.0;
+		let minCenteredNodeZoomLevel = 2.0;
 		
 		// Default node size and Edge Ooacity
 		let currentGlobalNodeSizeScale = 1.0;
