@@ -1,18 +1,18 @@
 // import { Helios, xnet } from "../../src/helios.js";
 
 import {Helios,xnet} from "https://cdn.skypack.dev/helios-web?min";
-import * as d3Chromatic from "d3-scale-chromatic"
-import { scaleOrdinal as d3ScaleOrdinal, scaleSequential as d3ScaleSequential } from "d3-scale"
-import { select as d3Select } from "d3-selection"
-import { rgb as d3rgb } from "d3-color"
-import * as extraColors from "./extraColors"
+import * as d3Chromatic from "https://cdn.skypack.dev/d3-scale-chromatic?min";
+import { scaleOrdinal as d3ScaleOrdinal, scaleSequential as d3ScaleSequential } from "https://cdn.skypack.dev/d3-scale?min";
+import { select as d3Select } from "https://cdn.skypack.dev/d3-selection?min";
+import { rgb as d3rgb } from "https://cdn.skypack.dev/d3-color?min";
+import * as extraColors from "./extraColors.js";
 
 
 let allColors = {}
 Object.assign(allColors, d3Chromatic);
 Object.assign(allColors, extraColors);
 
-let ignoredProperties = new Set(["ID","edges","neighbors"]);
+let ignoredProperties = new Set(["ID","edges","neighbors","index","label"]);
 
 /*
  * Some auxiliary functions
@@ -66,7 +66,7 @@ if (urlParams.has("network")) {
 	networkName = urlParams.get("network");
 }
 
-let use2D = false;
+let use2D = true;
 if (urlParams.has("use2d")) {
 	use2D = true;
 }
@@ -76,19 +76,19 @@ if (urlParams.has("shaded")) {
 	shaded = true;
 }
 
-let advancedEdges = false;
+let advancedEdges = true;
 if (urlParams.has("advanced")) {
 	advancedEdges = true;
 }
 
 
-let definedSize = null;
+let definedSize = 2.5;
 if (urlParams.has("size")) {
 	definedSize = +urlParams.get("size");
 }
 
 
-let definedOpacity = null;
+let definedOpacity = 0.2;
 if (urlParams.has("opacity")) {
 	definedOpacity = +urlParams.get("opacity");
 }
@@ -100,7 +100,7 @@ if (urlParams.has("zoom")) {
 	startZoomLevel = +urlParams.get("zoom");
 }
 
-let autoStartLayout = null;
+let autoStartLayout = 0;
 if (urlParams.has("layout")) {
 	autoStartLayout = ((+urlParams.get("layout")) != 0) ? true : false;
 }
@@ -134,7 +134,7 @@ let visualizeNetwork = (networkName) => {
 		let defaultNodeScale = 1.0;
 		let defaultNodeOpacity = 1.0;
 		let defaultOutlineColor = backgroundColor;
-		let defaultOutlineWidthFactor = 0.25;
+		let defaultOutlineWidthFactor = 0.5;
 
 		let updateNodeSize = node=>node._originalSize;
 
@@ -183,7 +183,7 @@ let visualizeNetwork = (networkName) => {
 
 		// Initializing other properties
 		let sequencialColormap = "interpolateInferno";
-		let categoricalColormap = "schemeCategory10";
+		let categoricalColormap = "schemeCategory18";
 		let useCategoricalColormap = false;
 
 		let tooltipElement = document.getElementById("tooltip");
@@ -257,7 +257,7 @@ let visualizeNetwork = (networkName) => {
 
 		for (let [key, node] of Object.entries(helios.network.nodes)) {
 			let nodeDegree = node.edges.length;
-			node._originalSize = defaultNodeScale*(Math.log10(nodeDegree+1.0));
+			node._originalSize = defaultNodeScale; //(Math.log10(nodeDegree+1.0));
 		}
 
 		let updateNodeSelectionStyle = (node) => {
@@ -581,13 +581,13 @@ let visualizeNetwork = (networkName) => {
 		helios.onLayoutStart(() => {
 			console.log("Layout start");
 			d3Select("#loading").style("display", "block");
-			d3Select("#message").style("display", "none");
+			// d3Select("#message").style("display", "none");
 		});
 
 		helios.onLayoutStop(() => {
 			console.log("Layout end");
 			d3Select("#loading").style("display", "none");
-			d3Select("#message").style("display", "block");
+			// d3Select("#message").style("display", "block");
 		});
 
 		helios.backgroundColor(backgroundColor) // set background color
@@ -912,13 +912,13 @@ let visualizeNetwork = (networkName) => {
 
 
 		document.addEventListener('keyup', event => {
-			if (event.code === 'Space') {
-				if (helios.layoutWorker.isRunning()) {
-					helios.pauseLayout();
-				} else {
-					helios.resumeLayout();
-				}
-			}
+			// if (event.code === 'Space') {
+			// 	if (helios.layoutWorker.isRunning()) {
+			// 		helios.pauseLayout();
+			// 	} else {
+			// 		helios.resumeLayout();
+			// 	}
+			// }
 		});
 
 		if (startZoomLevel) {

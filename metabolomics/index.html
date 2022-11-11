@@ -58,6 +58,15 @@
         color: rgba(125,125,125,.75);
       }
 
+      #message2{
+        position:absolute;
+        bottom:5px;
+        right:5px;
+        text-align: right;
+        font-size:small;
+        color: rgba(125,125,125,.75);
+      }
+
       #netviz {
           position: absolute;
           top:0;
@@ -278,7 +287,8 @@
     <script type="module" src="script.js" defer></script>
     <div id="netviz"></div>
     <div id="loading"></div>
-    <div id="message">press space to start the layout</div>
+    <div id="message">Double click in a node to select it <br /> Use the mouse wheel or pinch gesture to zoom in/out</div>
+    <div id="message2"><b>Control vs EKB 081922</b> <br />Nodes are metabolites connected by correlation.</div>
     <div id="tooltip">Tooltip</div>
     <div id="selectionmenu"></div>
 
