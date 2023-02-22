@@ -4,20 +4,20 @@
 async function startVisualization() {
 	var canvas = d3.select("#networkView").append("canvas");
 	var svg = d3.select("#networkView").append("svg").attr("class", "plot");
-	
+
 	let extraDataset = await d3.json("Data/data.json");
 
 	let width = 100;
 	let height = 100;
 
-	let startIndex = 3;
+	let startIndex = 5;
 	let currentNetwork;
 	let currentIndex = startIndex;
 	let color = d3.scaleOrdinal(d3.schemeCategory10);
-	
-	
+
+
 	let displayProperties = ["Label"];
-	
+
 	let sizeProperty = "degree";
 	let IDProperty = "Label";
 	let colorProperty = "Louvain Layered";
@@ -32,10 +32,10 @@ async function startVisualization() {
 	let renderLinksSVG = false;
 	let renderLinksCanvas = true;
 	let renderLinksGL = false;
-	let renderGradientLinks = false;
+	let renderGradientLinks = true;
 
 	let dpr = 1.0;
-	let zoomScale = 0.95;
+	let zoomScale = 0.9;
 	let scaleFactor = 0.0;
 	let targetScaleFactor = 1.0;
 	let linesIntensity = 0.1;
@@ -49,7 +49,7 @@ async function startVisualization() {
 	let widthPowerCoeff = 2.0;
 
 	let maxLineOpacity = 0.5;
-	let minLineOpacity= 0.05;
+	let minLineOpacity = 0.05;
 
 	let maxStrength = 8;
 	let minStrength = 2;
@@ -93,7 +93,7 @@ async function startVisualization() {
 
 	let gl;
 	if (renderLinksGL) {
-		gl = createWebGLContext(canvas.node(), { antialias: true, powerPreference :"high-performance",desynchronized:true});
+		gl = createWebGLContext(canvas.node(), { antialias: true, powerPreference: "high-performance", desynchronized: true });
 		let edgesShaderVertex = await getShader(gl, "edges-vertex");
 		let edgesShaderFragment = await getShader(gl, "edges-fragment");
 
@@ -143,20 +143,20 @@ async function startVisualization() {
 	let links = [];
 
 
-	let forceLinks = 
-			d3.forceLink(links)
-				.id(d => d.id);
-	forceLinks.strength(d=>forceStrength*d.weight/Math.min(d.target.neigh.length, d.source.neigh.length))
+	let forceLinks =
+		d3.forceLink(links)
+			.id(d => d.id);
+	forceLinks.strength(d => forceStrength * d.weight / Math.min(d.target.neigh.length, d.source.neigh.length))
 	forceLinks.distance(1);
-							
+
 	var simulation = d3.forceSimulation(nodes)
 		.force("charge", d3.forceManyBody()
-		.strength(d=> -((1-d.sizeFactor)*minStrength+(d.sizeFactor)*maxStrength))
-		// .strength(-20)
-		// 	// .distanceMin(0.1)
-		// 	// .theta(0.5)
+			.strength(d => -((1 - d.sizeFactor) * minStrength + (d.sizeFactor) * maxStrength))
+			// .strength(-20)
+			// 	// .distanceMin(0.1)
+			// 	// .theta(0.5)
 		)
-		.force("link",forceLinks)
+		.force("link", forceLinks)
 		.force("center", d3.forceCenter(0, 0))
 		.force("x", d3.forceX().strength(0.10))
 		.force("y", d3.forceY().strength(0.10))
@@ -164,7 +164,7 @@ async function startVisualization() {
 		// .alphaTarget(10)
 		.alphaDecay(0.002)
 		.velocityDecay(0.6)
-		.on("tick", ()=>{needsUpdate=true;});
+		.on("tick", () => { needsUpdate = true; });
 
 
 	var g = svg.append("g");
@@ -179,7 +179,7 @@ async function startVisualization() {
 
 
 	let legendView = svg.append("g")
-		.classed("legend",true)
+		.classed("legend", true)
 		.attr("transform", "translate(10," + "10" + ")");
 
 	let nodeByID = {};
@@ -187,9 +187,9 @@ async function startVisualization() {
 
 	let hoverText = hoverTextBox
 		.append("text")
-		.attr("text-anchor","end");
+		.attr("text-anchor", "end");
 
-	function setDrawNetwork(network,networkIndex) {
+	function setDrawNetwork(network, networkIndex) {
 		currentIndex = networkIndex;
 		currentNetwork = network;
 		let newNodes = [];
@@ -212,16 +212,16 @@ async function startVisualization() {
 
 			if (inMajorComponent) {
 				let node = {
-					"id": IDProperty?network.verticesProperties[IDProperty][index]:(network.names ? network.names[index] : index),
+					"id": IDProperty ? network.verticesProperties[IDProperty][index] : (network.names ? network.names[index] : index),
 				}
-				nodeByID[node["id"]] = node; 
+				nodeByID[node["id"]] = node;
 				for (let attribute in network.verticesProperties) {
 					if (network.verticesProperties.hasOwnProperty(attribute)) {
 						let element = network.verticesProperties[attribute];
 						node[attribute] = element[index];
 					}
 				}
-				if(network.names){
+				if (network.names) {
 					node["name"] = network.names[index]
 				}
 				node.index = newNodes.length;
@@ -242,12 +242,12 @@ async function startVisualization() {
 				let edgeObject = {
 					source: fromNode,
 					target: toNode,
-					weight: network.weights?network.weights[index]:1.0,
+					weight: network.weights ? network.weights[index] : 1.0,
 				}
 				fromNode.neigh.push(toNode);
 				toNode.neigh.push(fromNode);
-				fromNode.strength=edgeObject.weight;
-				toNode.strength=edgeObject.weight;
+				fromNode.strength = edgeObject.weight;
+				toNode.strength = edgeObject.weight;
 				links.push(edgeObject);
 			}
 		}
@@ -306,11 +306,12 @@ async function startVisualization() {
 
 
 	function restart() {
-		if(timelines){
+		if (timelines) {
 			nodes.forEach(d => {
-				let communityInTime = d[colorProperty]+"_"+currentIndex;
+				let communityInTime = d[colorProperty] + "_" + currentIndex;
 				d.color = color(timelines[communityInTime]);
 				d.timeline = timelines[communityInTime];
+				d.orderIndex = timeline;
 				// if (propertyToColor.hasOwnProperty(d[colorProperty])) {
 				// 	d.color = propertyToColor[d[colorProperty]];
 				// } else {
@@ -321,66 +322,139 @@ async function startVisualization() {
 				// 	}
 				// }
 			});
-		}else{
+		} else {
 			color = d3.scaleOrdinal(d3.schemeCategory10);
-			let topColorProperties = sortByFrequency(nodes.map(d=>d[colorProperty])).slice(0, 10);
+			let topColorProperties = sortByFrequency(nodes.map(d => d[colorProperty])).slice(0, 10);
 			let propertyToColor = {};
-			topColorProperties.forEach(d=> propertyToColor[d] = color(d));
+			let propertyToIndex = {};
+			
+			topColorProperties.forEach((d,i) => {
+				propertyToColor[d] = color(d);
+				propertyToIndex[d] = i;
+			});
 			nodes.forEach(d => {
 				if (propertyToColor.hasOwnProperty(d[colorProperty])) {
 					d.color = propertyToColor[d[colorProperty]];
+					d.orderIndex = propertyToIndex[d[colorProperty]];
 				} else {
 					if (useDarkBackground) {
 						d.color = "#333333";
 					} else {
 						d.color = "#cccccc";
 					}
+					d.orderIndex = Infinity;
 				}
 			});
 		}
+		//sortNodes by orderIndex (descending)
+		let sortedNodes = nodes.sort((a, b) => a.orderIndex - b.orderIndex);
 
+		// console.log(sortedNodes);
+		d3.select("#labelsPanel")
+			.selectAll(".labelItem")
+			.data(sortedNodes)
+			.join(
+				enter => {
+					return enter.append("div")
+						.classed("labelItem", true);
+					// .style("opacity", 0)
+					// .style("max-height", 0);;
+				},
+				update => {
+					return update
+						.style("color", d => d.color);
+						// .style("opacity", 1)
+						// .style("max-height", null)
+
+				},
+				exit => {
+					//disappear and remove
+					return exit.remove();
+				}
+			)
+			.style("color", d => d.color)
+			// .attr("id", d => "label_" + d.id)
+			.text(d => `${displayProperties[0] == "name" ? d.name : d[displayProperties[0]]}`)
+				.on("mouseover", function (d) {
+					hoverNode = d;
+					hoverText.attr("fill", d.color)
+					displayProperties.forEach((displayProperty, i) => {
+						// .text(`${displayProperty=="name"?d.name:d[displayProperty]}\n${d[displayProperty]}`);
+
+					hoverText.append("tspan")
+						.attr("dy", "1.2em")
+						.attr("x", "0")
+						.style("font-size", i == 0 ? "15px" : "13px")
+						.text(`${displayProperty == "name" ? d.name : d[displayProperty]}`);
+					});
+					updateSelectedNodes();
+					d3.event.stopPropagation();
+				})
+				.on("mouseout", function (d) {
+					hoverText.text(null).select("tspan").remove();
+					hoverNode = null;
+					updateSelectedNodes();
+					d3.event.stopPropagation();
+				})
+				.on("click", function (d) {
+					if (!d3.event.shiftKey) {
+						selectedNodes.clear();
+					}
+					if (selectedNodes.has(d.id)) {
+						console.log("unselecting " + d.id);
+						selectedNodes.delete(d.id);
+					} else {
+						console.log("selecting " + d.id);
+						selectedNodes.add(d.id);
+					}
+					updateSelectedNodes();
+					d3.event.stopPropagation();
+				});
+
+				
 		let nodesSizes = [];
 		nodes.forEach(d => {
 			d.size = maxNodeSize;
 			d.degrees = 0;
-			if(sizeProperty=="degree"){
+			if (sizeProperty == "degree") {
 				d.sizeRaw = 0
-			}else{
+			} else {
 				d.sizeRaw = +d[sizeProperty];
 			}
 		});
+
 		//Degrees as color:
 		links.forEach(d => {
-			d.source.degrees+=d.weight;
-			d.target.degrees+=d.weight;
-			if(sizeProperty=="degree"){
+			d.source.degrees += d.weight;
+			d.target.degrees += d.weight;
+			if (sizeProperty == "degree") {
 				d.source.sizeRaw = d.source.degrees;
 				d.target.sizeRaw = d.target.degrees;
 			}
 		});
-		
-		let maxSizeProperty = d3.max(nodes,d=>d.sizeRaw);
-		let minSizeProperty = d3.min(nodes,d=>d.sizeRaw);
+
+		let maxSizeProperty = d3.max(nodes, d => d.sizeRaw);
+		let minSizeProperty = d3.min(nodes, d => d.sizeRaw);
 		nodes.forEach(d => {
-			
-			let s = (d.sizeRaw-minSizeProperty)/(maxSizeProperty-minSizeProperty);
-			s = Math.pow(s,sizePowerCoeff);
+
+			let s = (d.sizeRaw - minSizeProperty) / (maxSizeProperty - minSizeProperty);
+			s = Math.pow(s, sizePowerCoeff);
 			d.sizeFactor = s;
-			d.size = (1-s)*minNodeSize+s*maxNodeSize;
+			d.size = (1 - s) * minNodeSize + s * maxNodeSize;
 		});
 
-		let maxWeight = d3.max(links,d=>d.weight);
-		let minWeight= d3.min(links,d=>d.weight);
+		let maxWeight = d3.max(links, d => d.weight);
+		let minWeight = d3.min(links, d => d.weight);
 
 		links.forEach(d => {
 			d.color = gradient(d.source.color, d.target.color);
-			let s = (d.weight-minWeight)/(maxWeight-minWeight);
-			s = Math.pow(s,widthPowerCoeff);
+			let s = d.weight * 0.5;//(d.weight-minWeight)/(maxWeight-minWeight);
+			s = Math.pow(s, widthPowerCoeff);
 			d.widthFactor = s;
-			d.width = (1-s)*minWidthSize+s*maxWidthSize;
-			let minimumSize = Math.min(d.target.size,d.source.size);
-			if(minimumSize<d.width){
-				d.width=minimumSize;
+			d.width = (1 - s) * minWidthSize + s * maxWidthSize;
+			let minimumSize = Math.min(d.target.size, d.source.size);
+			if (minimumSize < d.width) {
+				d.width = minimumSize;
 			}
 		});
 
@@ -394,54 +468,54 @@ async function startVisualization() {
 			.attr("stroke-width", 1.5)
 			.attr("fill", d => d.color)
 			.attr("r", d => d.size)
-			.on("mouseover", function(d){
-				hoverNode=d;
+			.on("mouseover", function (d) {
+				hoverNode = d;
 
-				d3.select(this).attr("r",d.size*1.25)
-				.attr("stroke", d3.rgb(d.color).darker(1))
-				.attr("stroke-width", 3);
+				d3.select(this).attr("r", d.size * 1.25)
+					.attr("stroke", d3.rgb(d.color).darker(1))
+					.attr("stroke-width", 3);
 				hoverText.attr("fill", d.color)
-				displayProperties.forEach((displayProperty,i)=>{
-				// .text(`${displayProperty=="name"?d.name:d[displayProperty]}\n${d[displayProperty]}`);
+				displayProperties.forEach((displayProperty, i) => {
+					// .text(`${displayProperty=="name"?d.name:d[displayProperty]}\n${d[displayProperty]}`);
 
-				hoverText.append("tspan")
-				.attr("dy","1.2em")
-				.attr("x","0")
-				.style("font-size",i==0?"15px":"13px")
-					.text(`${displayProperty=="name"?d.name:d[displayProperty]}`);
+					hoverText.append("tspan")
+						.attr("dy", "1.2em")
+						.attr("x", "0")
+						.style("font-size", i == 0 ? "15px" : "13px")
+						.text(`${displayProperty == "name" ? d.name : d[displayProperty]}`);
 				});
 				updateSelectedNodes();
 				d3.event.stopPropagation();
 			})
-			.on("mouseout", function(d){
-				d3.select(this).attr("r",d=>d.size)
-				.attr("stroke", d => d3.rgb(d.color).darker(0.5))
-				.attr("stroke-width", 1.0);
+			.on("mouseout", function (d) {
+				d3.select(this).attr("r", d => d.size)
+					.attr("stroke", d => d3.rgb(d.color).darker(0.5))
+					.attr("stroke-width", 1.0);
 				hoverText.text(null).select("tspan").remove();
-				hoverNode=null;
+				hoverNode = null;
 				updateSelectedNodes();
 				d3.event.stopPropagation();
 			})
-			.on("click", function(d){
-				if(!d3.event.shiftKey){
+			.on("click", function (d) {
+				if (!d3.event.shiftKey) {
 					selectedNodes.clear();
 				}
-				if(selectedNodes.has(d.id)){
-					console.log("unselecting "+d.id);
+				if (selectedNodes.has(d.id)) {
+					console.log("unselecting " + d.id);
 					selectedNodes.delete(d.id);
-				}else{
-					console.log("selecting "+d.id);
+				} else {
+					console.log("selecting " + d.id);
 					selectedNodes.add(d.id);
 				}
 				updateSelectedNodes();
 				d3.event.stopPropagation();
 			})
-			d3.select("#networkView").on("click",d=>{
-				if(!d3.event.shiftKey){
-					selectedNodes.clear();
-					updateSelectedNodes();
-				}
-			});
+		d3.select("#networkView").on("click", d => {
+			if (!d3.event.shiftKey) {
+				selectedNodes.clear();
+				updateSelectedNodes();
+			}
+		});
 
 
 		if (renderLinksSVG) {
@@ -479,7 +553,7 @@ async function startVisualization() {
 				.attr("y1", 0)
 				.attr("x2", 1.0 / Math.sqrt(2))
 				.attr("y2", 1.0 / Math.sqrt(2))//Hack
-				.attr("vector-effect","non-scaling-stroke");
+				.attr("vector-effect", "non-scaling-stroke");
 
 			linksView = linkNew.merge(linksView);
 		} else {
@@ -490,50 +564,53 @@ async function startVisualization() {
 	}
 
 
-	function updateSelectedNodes(justUpdate=false) {
+	function updateSelectedNodes(justUpdate = false) {
 		let verticalOffset = -10;
-		if(!justUpdate){
+		if (!justUpdate) {
 			// console.log("updating...");
 			// console.log(Array.from(selectedNodes).map(d=>nodeByID[d]))
-			let selectedNodesArray = Array.from(selectedNodes).map(d=>nodeByID[d]).filter(d=>d)
-			
-			if(hoverNode && !selectedNodes.has(hoverNode.id)){
+			let selectedNodesArray = Array.from(selectedNodes).map(d => nodeByID[d]).filter(d => d)
+
+			if (hoverNode && !selectedNodes.has(hoverNode.id)) {
 				selectedNodesArray.push(hoverNode);
 			}
 			selectedView = selectedView.data(selectedNodesArray);
 			selectedView.exit().remove();
 			let selectedViewNew = selectedView.enter()
-					.append("g")
-					.classed("nodesSelected",true)
-					.classed("nointeraction",true);
+				.append("g")
+				.classed("nodesSelected", true)
+				.classed("nointeraction", true);
 
 			selectedViewNew.append("path").attr("d",
-				`M ${-verticalOffset*1},${verticalOffset+3} L ${0},${0} L ${+verticalOffset*1},${verticalOffset+3} z`)
+				`M ${-verticalOffset * 1},${verticalOffset + 3} L ${0},${0} L ${+verticalOffset * 1},${verticalOffset + 3} z`)
 			let textView = selectedViewNew.append("g")
-				.attr("transform", (d, i) => ("translate("+0+","+verticalOffset+")"))
-				.classed("textbox",true);
-			textView.append("text").classed("outline",true);
-			textView.append("text").classed("name",true);
+				.attr("transform", (d, i) => ("translate(" + 0 + "," + verticalOffset + ")"))
+				.classed("textbox", true);
+			textView.append("text").classed("outline", true);
+			textView.append("text").classed("name", true);
 			selectedView = selectedViewNew.merge(selectedView);
-			
+			d3.selectAll(".labelItem").classed("selected", node=>{
+				return selectedNodes.has(node.id);
+			});
+
 		}
 		selectedView
-				.attr("transform", (d, i) => ("translate("+xscale(d.x)+","+yscale(d.y)+")"));
+			.attr("transform", (d, i) => ("translate(" + xscale(d.x) + "," + yscale(d.y) + ")"));
 
 		selectedView.select(".name")
 			.attr("fill", d => d3.rgb(d.color).darker(1))
-			.attr("font-size","19px")
-			.attr("text-anchor","middle")
-			.text(d => `${displayProperties[0]=="name"?d.name:d[displayProperties[0]]}`);
+			.attr("font-size", "19px")
+			.attr("text-anchor", "middle")
+			.text(d => `${displayProperties[0] == "name" ? d.name : d[displayProperties[0]]}`);
 
 		selectedView.select(".outline")
-		.attr("fill", "white")
-		.attr("stroke", "white")
-		.attr("stroke-width", 6)
-		.attr("font-size","19px")
-		.attr("text-anchor","middle")
-		.style('opacity', 0.9)
-		.text(d => `${displayProperties[0]=="name"?d.name:d[displayProperties[0]]}`);
+			.attr("fill", "white")
+			.attr("stroke", "white")
+			.attr("stroke-width", 6)
+			.attr("font-size", "19px")
+			.attr("text-anchor", "middle")
+			.style('opacity', 0.9)
+			.text(d => `${displayProperties[0] == "name" ? d.name : d[displayProperties[0]]}`);
 
 		selectedView.select("path")
 			.attr("fill", d => d3.rgb(d.color).darker(1))
@@ -547,7 +624,7 @@ async function startVisualization() {
 		linksView = linksView.data([]);
 		linksView.exit().remove();
 	}
-	
+
 	function updateSVGLinks(strokeFactor = 2.0) {
 		if (renderGradientLinks) {
 			linksView.attr("transform", d => {
@@ -667,7 +744,7 @@ async function startVisualization() {
 
 		gl.clear(gl.COLOR_BUFFER_BIT);
 
-		gl.lineWidth(linesWidth*dpr);
+		gl.lineWidth(linesWidth * dpr);
 		gl.enable(gl.BLEND);
 		if (useDarkBackground) {
 			gl.blendFunc(gl.SRC_ALPHA, gl.ONE);
@@ -696,8 +773,8 @@ async function startVisualization() {
 
 		let maxLineIntensity = gl.getParameter(gl.ALIASED_LINE_WIDTH_RANGE)[1];
 		let currentLineIntensity = linesIntensity;
-		if(maxLineIntensity==1 && linesIntensity<0.5){
-			currentLineIntensity*=2*dpr;
+		if (maxLineIntensity == 1 && linesIntensity < 0.5) {
+			currentLineIntensity *= 2 * dpr;
 		}
 		gl.uniform1f(edgesShaderProgram.uniforms.linesIntensity, currentLineIntensity);
 
@@ -717,7 +794,7 @@ async function startVisualization() {
 		let canvasNode = canvas.node();
 		width = svgNode.clientWidth;
 		height = svgNode.clientHeight;
-		
+
 
 		dpr = window.devicePixelRatio || 1;
 
@@ -728,7 +805,7 @@ async function startVisualization() {
 
 
 		hoverTextBox
-			.attr("transform", `translate(${width-20},30)`);
+			.attr("transform", `translate(${width - 20},10)`);
 
 		let xextent = d3.extent(nodes, d => d.x);
 		let yextent = d3.extent(nodes, d => d.y);
@@ -759,7 +836,7 @@ async function startVisualization() {
 			scaleFactor = targetScaleFactor;
 		}
 
-		
+
 		xscale
 			.range([width / 2 - dataWidth / 2 * scaleFactor * zoomScale, width / 2 + dataWidth / 2 * scaleFactor * zoomScale])
 			.domain([xcenter - dataWidth / 2, xcenter + dataWidth / 2]);
@@ -799,7 +876,7 @@ async function startVisualization() {
 				let x2 = xscale(d.target.x);
 				let y2 = yscale(d.target.y);
 
-				ctx.globalAlpha = d.widthFactor*(maxLineOpacity-minLineOpacity)+minLineOpacity;
+				ctx.globalAlpha = d.widthFactor * (maxLineOpacity - minLineOpacity) + minLineOpacity;
 				if (renderGradientLinks) {
 					let grad = ctx.createLinearGradient(x1, y1, x2, y2);
 					grad.addColorStop(0.0, colorStart);
@@ -819,8 +896,8 @@ async function startVisualization() {
 			updateSVGLinks();
 		}
 		updateSelectedNodes(true);
-		if(Math.abs(scaleFactor-targetScaleFactor)>0.005){
-			needsUpdate=true;
+		if (Math.abs(scaleFactor - targetScaleFactor) > 0.005) {
+			needsUpdate = true;
 		}
 	}
 
@@ -828,21 +905,98 @@ async function startVisualization() {
 	//Loading Networks
 	let networks = [];
 	let timeIndices = [];
-	let timelines = extraDataset["timelines"];
-	
-	let thresholds = [50,60,70,80,90]
+	let timelines = null;//extraDataset["timelines"];
+
+	const queryString = window.location.search;
+	const urlParams = new URLSearchParams(queryString);
+
+	// let thresholdMode = "backbone"
+	let thresholdMode = "weight"
+
+	if (urlParams.has("backbone")) {
+		thresholdMode = "backbone";
+	}
+
+	let thresholds;
+	if (thresholdMode == "backbone") {
+		thresholds =
+			[0.7973,
+				0.82851,
+				0.85491,
+				0.87724,
+				0.89614,
+				0.91213,
+				0.92566,
+				0.9371,
+				0.94679,
+				0.95498,
+				0.96191,
+				0.96777,
+				0.97273,
+				0.97693,
+				0.98048,
+				0.98349,
+				0.98603,
+				0.98818,
+				0.99];
+	} else if (thresholdMode == "weight") {
+		thresholds = [
+			0.96,
+			0.97,
+			0.98,
+			0.99,
+			0.94,
+			0.95,
+			0.92,
+			0.93,
+			0.9,
+			0.91,
+			0.89,
+			0.88,
+			0.86,
+			0.87,
+			0.85,
+			0.84,
+			0.83,
+			0.82,
+			0.81,
+			0.8,
+			0.79,
+			0.78,
+			0.77,
+			0.76,
+			0.75,
+			0.74,
+			0.73,
+			0.72,
+			0.71,
+			0.7,
+			0.69,
+			0.68,
+			0.67,
+			0.66,
+			0.65,
+			0.64,
+			0.63,
+			0.62,
+			0.61,
+			0.6,
+		];
+	}
+	thresholds.sort();
 	displayProperties = ["Label"];
 	IDProperty = "Label";
 	colorProperty = "Louvain Layered";
 
 	for (let thresholdIndex = 0; thresholdIndex < thresholds.length; thresholdIndex++) {
-		let threshold=thresholds[thresholdIndex];
+		let threshold = thresholds[thresholdIndex];
 		let network = null;
 		// try {
-			let filename = `net_Control_vs_EKB_081922_Aggregated_T0.${threshold}_pos-major`;
-			network = await readNetworkFile("Data/" + filename + ".xnet");
-			// network = xnet.load(JUPYTER_DATA["networks"][year]);
-			network.name = filename;
+		// let filename = `net_Control_vs_EKB_081922_Aggregated_T0.${threshold}_pos-major`;
+		let filename = `new_net_Control_vs_EKB_081922_Aggregated_${thresholdMode}_T${threshold}_pos`;
+		network = await readNetworkFile("Data/" + filename + ".xnet");
+		// network = xnet.load(JUPYTER_DATA["networks"][year]);
+		network.name = filename;
 		// } catch (error) {
 		// 	console.log(threshold);
 		// 	console.log(error);
@@ -852,11 +1006,11 @@ async function startVisualization() {
 	}
 
 
-	setDrawNetwork(networks[startIndex],startIndex);
+	setDrawNetwork(networks[startIndex], startIndex);
 	window.setNetwork = (i) => {
 		let network = networks[i];
 		if (network) {
-			setDrawNetwork(network,i);
+			setDrawNetwork(network, i);
 			restart();
 		}
 	}
@@ -887,21 +1041,21 @@ async function startVisualization() {
 		let ruleHeight = timeRulerSVG.node().clientHeight;
 		let ruleScale = d3.scaleLinear()
 			.range([5, ruleWidth - 5])
-			.domain([0, thresholds.length-1]);
+			.domain([0, thresholds.length - 1]);
 		timeRulerSVG.selectAll("*").remove();
 		timeRulerSVG.append("g")
 			.attr("class", "axis")
 			.attr("transform", "translate(0," + "20" + ")")
 			.call(d3.axisTop(ruleScale)
-				.ticks(thresholds.length-1)
+				.ticks(thresholds.length - 1)
 				.tickFormat(d3.timeFormat("")));
 
 		timeRulerSVG.append("g")
 			.attr("class", "axis")
 			.attr("transform", "translate(0," + "20" + ")")
 			.call(d3.axisTop(ruleScale)
-				.ticks(thresholds.length-1)
-				.tickFormat(d=>{return "T="+(thresholds[d]/100);}));
+				.ticks(thresholds.length - 1)
+				.tickFormat(d => { return thresholds[d].toPrecision(3) }));
 		// .selectAll("text")	
 		//   .style("text-anchor", "end")
 		//   .attr("dx", "-.8em")
@@ -911,7 +1065,7 @@ async function startVisualization() {
 	}
 
 	function zoomAnimation() {
-		if(needsUpdate){
+		if (needsUpdate) {
 			redraw();
 		}
 		myRequestAnimationFrame(zoomAnimation);
@@ -926,46 +1080,46 @@ async function startVisualization() {
 
 
 
-	function plotBottomGraphics(){
+	function plotBottomGraphics() {
 		extraDataset["plots"].forEach(plotData => {
 			let name = plotData.name;
 			let order = plotData.order;
 			let data = plotData.data;
 			console.log(data);
-			let margin = {top: 25, right: 20, bottom: 35, left: 50};
-			let panelSize = [400,100];
+			let margin = { top: 25, right: 20, bottom: 35, left: 50 };
+			let panelSize = [400, 100];
 			let width = panelSize[0] - margin.left - margin.right;
 			let height = panelSize[1] - margin.top - margin.bottom;
 
 			let Xkey = order[0];
 			let Ykeys = order.slice(1);
-			let color = d3.scaleOrdinal().range(["#aa6666","#666666"]);
-			let lineType = d3.scaleOrdinal().range(["5,5",null]);
+			let color = d3.scaleOrdinal().range(["#aa6666", "#666666"]);
+			let lineType = d3.scaleOrdinal().range(["5,5", null]);
 
 			let svg = d3.select("#plotsPanel")
 				.append("svg")
-				.attr("width",panelSize[0])
-				.attr("height",panelSize[1])
-				.classed("linePlot",true);
+				.attr("width", panelSize[0])
+				.attr("height", panelSize[1])
+				.classed("linePlot", true);
 
 			let g = svg
 				.append("g")
 				.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 			let xRange = d3.scaleLinear()
-							.rangeRound([0, width]);
+				.rangeRound([0, width]);
 
 			let yRange = d3.scaleLinear()
-					.range([height, 0]);
+				.range([height, 0]);
 
 			let lines = Ykeys.map(Ykey => {
 				return d3.line()
 					.x(d => xRange(d[Xkey]))
 					.y(d => yRange(d[Ykey]));
-					// .curve(d3.curveMonotoneX);
-				});
-				console.log(lines);
-			
+				// .curve(d3.curveMonotoneX);
+			});
+			console.log(lines);
+
 			let allY = [];
 			data.forEach(d => {
 				Ykeys.forEach(Ykey => {
@@ -973,87 +1127,87 @@ async function startVisualization() {
 				});
 			});
 
-			xRange = xRange.domain(d3.extent(data, d=>+d[Xkey])).nice();
+			xRange = xRange.domain(d3.extent(data, d => +d[Xkey])).nice();
 			yRange = yRange.domain(d3.extent(allY)).nice();
 
 			g.append("g")
-						.attr("class", "axis")
-						.attr("transform", "translate(0," + height + ")")
-						.call(d3.axisBottom(xRange).tickFormat(d3.format("d")))
-						.style("text-anchor", "middle")
-						.attr("dx", "-.1em")
-						.attr("font-size", "10px");
+				.attr("class", "axis")
+				.attr("transform", "translate(0," + height + ")")
+				.call(d3.axisBottom(xRange).tickFormat(d3.format("d")))
+				.style("text-anchor", "middle")
+				.attr("dx", "-.1em")
+				.attr("font-size", "10px");
 
 			g.append("g")
-					.attr("class", "axis")
-					.call(d3.axisLeft(yRange).ticks(3));
-			
+				.attr("class", "axis")
+				.call(d3.axisLeft(yRange).ticks(3));
+
 			g.append("text")
-					.attr("x",width/2)
-					.attr("y", -8)
-					// .attr("dy", "0.71em")
-					.attr("fill", "#000")
-					.attr("text-anchor", "middle")
-					.text(name);
-			
-					Ykeys.forEach((Ykey,i) => {
-						let curve = g.append("g")
-						// curve.selectAll(".curve").data(data)
-						// .enter()
-						curve.append("path")
-						.style("fill", "none")
-						.attr("class", "line")
-						.attr("d", d=>lines[i](data))
-						.style("stroke", color(Ykey))
-						.style("stroke-width", 2)
-						.style("stroke-dasharray",lineType(Ykey));
-						
-						let lastPoints = data[Math.max(0,data.length-2)];
-						console.log(lastPoints);
-						curve.append("text")
-						.attr("fill", color(Ykey))
-						.attr("x", xRange(lastPoints[Xkey])-3)
-						.attr("y", yRange(lastPoints[Ykey])-3)
-						// .attr("dy", "0.35em")
-						.style("font-size", "13px")
-						.text(Ykey);
-					});
-				// let curves = g.selectAll(".curve")
-				// 		.data(Ykeys)
-				// 		.enter()
-				// 		.append("g")
-				// 		.attr("class", "curve");
+				.attr("x", width / 2)
+				.attr("y", -8)
+				// .attr("dy", "0.71em")
+				.attr("fill", "#000")
+				.attr("text-anchor", "middle")
+				.text(name);
 
-				// 	curves.append("path")
-				// 		.style("fill", "none")
-				// 		.attr("class", "line")
-				// 		.attr("d", (d,i)=> )
-				// 		.style("stroke", function(d) { return color(d.id); });
-				
-	// 	browser.append("text")
-	// 			.datum(function(d) { return {id: d.id, value: d.values[0]}; })
-	// 			.attr("transform", function(d) { return "translate(" + xRange(d.value.Date) + "," + yRange(d.value.market_share) + ")"; })
-	// 			.attr("x", 3)
-	// 			.attr("dy", "0.35em")
-	// 			.style("font", "10px sans-serif")
-	// 			.text(function(d) { return d.id; });
+			Ykeys.forEach((Ykey, i) => {
+				let curve = g.append("g")
+				// curve.selectAll(".curve").data(data)
+				// .enter()
+				curve.append("path")
+					.style("fill", "none")
+					.attr("class", "line")
+					.attr("d", d => lines[i](data))
+					.style("stroke", color(Ykey))
+					.style("stroke-width", 2)
+					.style("stroke-dasharray", lineType(Ykey));
 
-	// });
+				let lastPoints = data[Math.max(0, data.length - 2)];
+				console.log(lastPoints);
+				curve.append("text")
+					.attr("fill", color(Ykey))
+					.attr("x", xRange(lastPoints[Xkey]) - 3)
+					.attr("y", yRange(lastPoints[Ykey]) - 3)
+					// .attr("dy", "0.35em")
+					.style("font-size", "13px")
+					.text(Ykey);
+			});
+			// let curves = g.selectAll(".curve")
+			// 		.data(Ykeys)
+			// 		.enter()
+			// 		.append("g")
+			// 		.attr("class", "curve");
+
+			// 	curves.append("path")
+			// 		.style("fill", "none")
+			// 		.attr("class", "line")
+			// 		.attr("d", (d,i)=> )
+			// 		.style("stroke", function(d) { return color(d.id); });
+
+			// 	browser.append("text")
+			// 			.datum(function(d) { return {id: d.id, value: d.values[0]}; })
+			// 			.attr("transform", function(d) { return "translate(" + xRange(d.value.Date) + "," + yRange(d.value.market_share) + ")"; })
+			// 			.attr("x", 3)
+			// 			.attr("dy", "0.35em")
+			// 			.style("font", "10px sans-serif")
+			// 			.text(function(d) { return d.id; });
+
+			// });
 		});
 	}
 	// plotBottomGraphics();
 
 }
 
-function collapsePlots(){
-	if(d3.select("#collapsablePanel").classed("collapsed")){
-		d3.select("#collapsablePanel").classed("collapsed",false);
-	}else{
-		d3.select("#collapsablePanel").classed("collapsed",true);
+function collapsePlots() {
+	if (d3.select("#collapsablePanel").classed("collapsed")) {
+		d3.select("#collapsablePanel").classed("collapsed", false);
+	} else {
+		d3.select("#collapsablePanel").classed("collapsed", true);
 	}
 }
 
-d3.select("#showHideButton").on("click", d=>{
+d3.select("#showHideButton").on("click", d => {
 	collapsePlots();
 });
 

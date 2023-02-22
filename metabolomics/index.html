@@ -67,6 +67,14 @@
         color: rgba(125,125,125,.75);
       }
 
+      #selectedInfo{
+        position:absolute;
+        display:block;
+        pointer-events: none;
+        top:20px;
+        right:5px;
+      }
+
       #netviz {
           position: absolute;
           top:0;
@@ -291,6 +299,7 @@
     <div id="message2"><b>Control vs EKB 081922</b> <br />Nodes are metabolites connected by correlation.</div>
     <div id="tooltip">Tooltip</div>
     <div id="selectionmenu"></div>
+    <img id="selectedInfo" src="" />
 
     <!-- <canvas id="saveCanvas"></canvas> -->
   </body>

@@ -2,6 +2,7 @@
 
 import {Helios,xnet} from "https://cdn.skypack.dev/helios-web?min";
 import * as d3Chromatic from "https://cdn.skypack.dev/d3-scale-chromatic?min";
+import * as d3Fetch from "https://cdn.skypack.dev/d3-fetch?min";
 import { scaleOrdinal as d3ScaleOrdinal, scaleSequential as d3ScaleSequential } from "https://cdn.skypack.dev/d3-scale?min";
 import { select as d3Select } from "https://cdn.skypack.dev/d3-selection?min";
 import { rgb as d3rgb } from "https://cdn.skypack.dev/d3-color?min";
@@ -187,7 +188,7 @@ let visualizeNetwork = (networkName) => {
 		let useCategoricalColormap = false;
 
 		let tooltipElement = document.getElementById("tooltip");
-
+		let selectedInfoElement = document.getElementById("selectedInfo");
 		/*
 		 * Initializing the network
 		*/
@@ -403,13 +404,35 @@ let visualizeNetwork = (networkName) => {
 			}
 		}
 		
+		let stylizeInfo = async (label) => {
+			if(label){
+				// let dataset = await d3Fetch.text("//rest.kegg.jp/find/compound/"+encodeURIComponent(label));
+				fetch("//rest.kegg.jp/find/compound/"+encodeURIComponent(label), {
+					mode: 'cors',
+					headers: {
+					  'Access-Control-Allow-Origin':'*'
+					}
+				  })
+					.then(response => response.text())
+					.then(data => {
+						console.log(dataset)
+					});
+				
+
+			}else{
+				// tooltipElement.style.display = "none";
+			}
+		}
+
 		let showTooltipForNode = (node,x,y,isNew) => {
 			if (node) {
 				let label = node.label ?? node.title ?? node.ID;
 				stylizeTooltip(label,node.color,x,y,isNew);
+				stylizeInfo(label);
 				// nodesHighlight([node],true);
 			} else {
 				stylizeTooltip(null);
+				stylizeInfo(null);
 			}
 		}
 		

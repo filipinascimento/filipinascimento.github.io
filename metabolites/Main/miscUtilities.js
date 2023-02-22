@@ -5,7 +5,7 @@
 
 async function readNetworkFile(networkFile){
 	let networkData = await d3.text(networkFile);
-	console.log(networkData);
+	// console.log(networkData);
 	return xnet.load(networkData);
 }
 
