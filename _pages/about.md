@@ -11,7 +11,7 @@ Hi! I'm Filipi Nascimento Silva, Ph.D. in computational physics, currently worki
 
 <div style="position: relative;">
 <iframe width="100%" height="315" src="
-https://filipinascimento.github.io/helios-web/docs/example/?zoom=0.75&advanced" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://filipinascimento.github.io/helios-web/docs/example/?zoom=0.75&advanced&nosearch&nolegends" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div style="position: relative;">
 <p><a href="https://filipinascimento.github.io/helios-web/docs/example/?advanced" target="_blank">View in full screen</a> - Powered by <a href="https://github.com/filipinascimento/helios-web/" target="_blank">Helios-Web</a><br />
