@@ -1,5 +1,5 @@
 ---
-title: "Enriching and analyzing small citation networks: A case study on transistor’s history"
+title: "Enriching and analyzing small citation networks: A case study on transistor's history"
 collection: publications
 permalink: /publication/2021-benatti2021enriching
 authors: "Alexandre Benatti, Henrique Ferraz de Arrruda, Filipi Nascimento Silva, Luciano da Fontoura Costa"
