@@ -10,11 +10,10 @@ redirect_from:
 Hi! I'm Filipi Nascimento Silva, Ph.D. in computational physics, currently working as a research scientist at the Indiana University Network Science Institute. Creator of <a href="https://github.com/filipinascimento/helios-web/" target="_blank">Helios-Web</a> and several other network-based tools and methods.
 
 <div style="position: relative;">
-<iframe width="100%" height="315" src="
-https://filipinascimento.github.io/helios-web/docs/example/?zoom=0.75&advanced&nosearch&nolegends" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://heliosweb.io/docs/example/?zoom=0.75&advanced&nosearch&nolegends" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div style="position: relative;">
-<p><a href="https://filipinascimento.github.io/helios-web/docs/example/?advanced" target="_blank">View in full screen</a> - Powered by <a href="https://github.com/filipinascimento/helios-web/" target="_blank">Helios-Web</a><br />
+<p><a href="https://heliosweb.io/docs/example/?advanced" target="_blank">View in full screen</a> - Powered by <a href="https://github.com/filipinascimento/helios-web/" target="_blank">Helios-Web</a><br />
 <small>Use mouse wheel or pinch gestures to zoom in. Double click in a node to center on it.</small>
 <br />
 <small>See Helios-Web in action for visualizing Twitter data in the <a href="https://osome.iu.edu/tools/networks" target="_blank">Osome Network tool</a>.</small></p>
