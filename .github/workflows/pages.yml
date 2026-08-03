@@ -2,7 +2,7 @@ name: Refresh data and deploy website
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   schedule:
     - cron: "17 8 * * 1"
   workflow_dispatch:
@@ -48,7 +48,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/openalex data/scholar data/github data/content.json content/publications/generated.md
           git diff --cached --quiet || git commit -m "chore: refresh public research data"
-          git push origin HEAD:main
+          git push origin HEAD:master
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

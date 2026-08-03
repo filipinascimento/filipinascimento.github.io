@@ -74,6 +74,13 @@ test("keeps root-domain GitHub Pages assets free of a repository base path", asy
   assert.match(homePage, /basePath.*work\.figure\.src/);
 });
 
+test("deploys the preserved personal-site repository from master", async () => {
+  const workflow = await readFile(new URL(".github/workflows/pages.yml", root), "utf8");
+  assert.match(workflow, /branches:\s*\[master\]/);
+  assert.match(workflow, /git push origin HEAD:master/);
+  assert.doesNotMatch(workflow, /HEAD:main/);
+});
+
 test("shows the corresponding project and publication figures on the homepage", async () => {
   const homePage = await readFile(new URL("app/page.tsx", root), "utf8");
   const styles = await readFile(new URL("app/globals.css", root), "utf8");
