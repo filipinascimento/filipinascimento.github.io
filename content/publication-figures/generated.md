@@ -1,5 +1,5 @@
 ---
-generatedAt: "2026-08-03T06:14:18.792Z"
+generatedAt: "2026-08-03T11:48:05.879Z"
 figures:
   - title: "The Tone of Awareness: Topic, Sentiment, and Toxicity Maps During Mental Health Month on TikTok"
     normalizedTitle: "the tone of awareness topic sentiment and toxicity maps during mental health month on tiktok"
