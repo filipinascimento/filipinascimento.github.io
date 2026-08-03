@@ -1,6 +1,0 @@
-{
-	"degree" : "Node Degree",
-	"category" : "Category",
-	"mainCategory" : "Main Category",
-	"ORDER" : ["degree", "category", "mainCategory"]
-}

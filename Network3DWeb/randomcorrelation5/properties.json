@@ -1,5 +1,0 @@
-{
-	"degree" : "Node Degree",
-	"Node_Strength" : "Node Strength",
-	"ORDER" : ["degree", "Node_Strength"]
-}

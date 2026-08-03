@@ -1,7 +1,0 @@
-{
-	"degree" : "Node Degree",
-	"Community" : "Community",
-	"Edge_Count" : "Edge Count",
-	"Node_InDegree" : "Node InDegree",
-	"ORDER" : ["degree", "Community", "Edge_Count", "Node_InDegree"]
-}
