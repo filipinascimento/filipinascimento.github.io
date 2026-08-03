@@ -78,6 +78,9 @@ test("deploys the preserved personal-site repository from master", async () => {
   const workflow = await readFile(new URL(".github/workflows/pages.yml", root), "utf8");
   assert.match(workflow, /branches:\s*\[master\]/);
   assert.match(workflow, /git push origin HEAD:master/);
+  assert.match(workflow, /data\/publication-figures\.json/);
+  assert.match(workflow, /content\/publication-figures\/generated\.md/);
+  assert.match(workflow, /public\/figures\/publications/);
   assert.doesNotMatch(workflow, /HEAD:main/);
 });
 
