@@ -42,6 +42,7 @@
       "order": 1,
       "featured": true,
       "accent": "coral",
+      "summary": "Combining science-of-science evidence with structured extraction, network analysis, embedding search, and domain knowledge to identify promising scientific and engineering opportunities across publications, materials, measurements, and device concepts.",
       "topics": [
         "Agentic AI",
         "Science of science",
@@ -49,7 +50,7 @@
         "Devices"
       ],
       "figure": {
-        "src": "/figures/publications/from-node2vec-to-gpt-based-graphrag-scientific-impact-prediction-across-grap.png",
+        "src": "/figures/projects/normalized/agentic-scientific-design.png",
         "alt": "Graph and language-model representations used in an AI research pipeline.",
         "fit": "contain"
       },
@@ -96,6 +97,7 @@
       "order": 2,
       "featured": true,
       "accent": "gold",
+      "summary": "Linking funding acknowledgments, organizations, and publications at scale to study how public, philanthropic, and corporate support shapes scientific directions, researcher trajectories, and the geography of knowledge production.",
       "topics": [
         "Science funding",
         "Data infrastructure",
@@ -108,7 +110,7 @@
         }
       ],
       "figure": {
-        "src": "/figures/publications/linking-global-science-funding-to-research-publications.png",
+        "src": "/figures/projects/normalized/science-funding.png",
         "alt": "Pipeline linking global science funding to research publications.",
         "sourceUrl": "https://arxiv.org/abs/2603.24147"
       },
@@ -159,6 +161,7 @@
       "order": 3,
       "featured": true,
       "accent": "blue",
+      "summary": "Developing embedding models that represent design choices and technical attributes, reveal interpretable directions aligned with measurable progress, and help predict how technological capabilities evolve across materials and device platforms.",
       "topics": [
         "Technology forecasting",
         "Embeddings",
@@ -166,7 +169,7 @@
         "Design spaces"
       ],
       "figure": {
-        "src": "/figures/projects/technology-capability-map.png",
+        "src": "/figures/projects/normalized/technology-capability-map.png",
         "alt": "Embedding map representing technical designs and performance signals.",
         "fit": "contain"
       },
@@ -226,6 +229,7 @@
       "order": 4,
       "featured": true,
       "accent": "violet",
+      "summary": "A browser-first platform for interactive exploration of large networks and embedding spaces, combining GPU rendering, a WebAssembly graph store, real-time layouts, and analysis across browsers, notebooks, and desktop workflows.",
       "topics": [
         "Network visualization",
         "WebGPU",
@@ -247,7 +251,7 @@
         }
       ],
       "figure": {
-        "src": "/software-icons/helios-web-mark.svg",
+        "src": "/figures/projects/normalized/helios-web.png",
         "alt": "Helios Web network visualization mark.",
         "sourceUrl": "https://heliosweb.io/"
       },
