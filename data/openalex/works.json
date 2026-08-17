@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-03T11:47:53.883Z",
+  "fetchedAt": "2026-08-17T09:03:24.480Z",
   "works": [
     {
       "id": "https://openalex.org/W7164499166",
@@ -397,7 +397,7 @@
       "source": "Journal of Informetrics",
       "doi": "https://doi.org/10.1016/j.joi.2026.101791",
       "url": "https://doi.org/10.1016/j.joi.2026.101791",
-      "citedByCount": 5,
+      "citedByCount": 6,
       "openAccess": true,
       "openAccessStatus": "hybrid",
       "preprintUrls": [
@@ -446,23 +446,23 @@
       "authors": [
         {
           "name": "Filipi N. Silva",
-          "id": null
+          "id": "https://openalex.org/A5053702199"
         },
         {
           "name": "Sadamori Kojaku",
-          "id": null
+          "id": "https://openalex.org/A5087795032"
         },
         {
           "name": "Alessandro Flammini",
-          "id": null
+          "id": "https://openalex.org/A5011228873"
         },
         {
           "name": "Filippo Radicchi",
-          "id": null
+          "id": "https://openalex.org/A5048471401"
         },
         {
           "name": "Santo Fortunato",
-          "id": null
+          "id": "https://openalex.org/A5135587706"
         }
       ],
       "topics": [
@@ -929,7 +929,7 @@
       "source": "Nature Methods",
       "doi": "https://doi.org/10.1038/s41592-024-02237-2",
       "url": "https://doi.org/10.1038/s41592-024-02237-2",
-      "citedByCount": 70,
+      "citedByCount": 71,
       "openAccess": true,
       "openAccessStatus": "hybrid",
       "preprintUrls": [
@@ -1647,7 +1647,7 @@
       "source": "Nature Reviews Physics",
       "doi": "https://doi.org/10.1038/s42254-021-00374-7",
       "url": "https://doi.org/10.1038/s42254-021-00374-7",
-      "citedByCount": 17,
+      "citedByCount": 18,
       "openAccess": false,
       "openAccessStatus": "closed",
       "preprintUrls": [],
@@ -1730,7 +1730,7 @@
       "source": "Geophysical Research Letters",
       "doi": "https://doi.org/10.1029/2021gl094707",
       "url": "https://doi.org/10.1029/2021gl094707",
-      "citedByCount": 51,
+      "citedByCount": 52,
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
@@ -1858,7 +1858,7 @@
       "source": "ACM Computing Surveys",
       "doi": "https://doi.org/10.1145/3447755",
       "url": "https://doi.org/10.1145/3447755",
-      "citedByCount": 483,
+      "citedByCount": 491,
       "openAccess": false,
       "openAccessStatus": "closed",
       "preprintUrls": [
@@ -2224,7 +2224,7 @@
       "source": "PLoS ONE",
       "doi": "https://doi.org/10.1371/journal.pone.0229928",
       "url": "https://doi.org/10.1371/journal.pone.0229928",
-      "citedByCount": 27,
+      "citedByCount": 28,
       "openAccess": true,
       "openAccessStatus": "gold",
       "preprintUrls": [
@@ -2887,7 +2887,7 @@
       "source": "Journal of Informetrics",
       "doi": "https://doi.org/10.1016/j.joi.2017.03.003",
       "url": "https://doi.org/10.1016/j.joi.2017.03.003",
-      "citedByCount": 90,
+      "citedByCount": 92,
       "openAccess": true,
       "openAccessStatus": "hybrid",
       "preprintUrls": [
@@ -3200,7 +3200,7 @@
       "source": "Physical Review E",
       "doi": "https://doi.org/10.1103/physreve.92.032810",
       "url": "https://doi.org/10.1103/physreve.92.032810",
-      "citedByCount": 39,
+      "citedByCount": 40,
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
@@ -3403,7 +3403,7 @@
       "publicationDate": "2015-01-21",
       "year": 2015,
       "type": "preprint",
-      "source": "arXiv (Cornell University)",
+      "source": "RePEc: Research Papers in Economics",
       "doi": "https://doi.org/10.48550/arxiv.1501.05040",
       "url": "https://arxiv.org/abs/1501.05040",
       "citedByCount": 13,
@@ -3797,8 +3797,8 @@
       "doi": "https://doi.org/10.1088/1751-8113/43/32/325202",
       "url": "https://doi.org/10.1088/1751-8113/43/32/325202",
       "citedByCount": 16,
-      "openAccess": false,
-      "openAccessStatus": "closed",
+      "openAccess": true,
+      "openAccessStatus": "green",
       "preprintUrls": [],
       "authors": [
         {
