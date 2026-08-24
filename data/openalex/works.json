@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-17T09:03:24.480Z",
+  "fetchedAt": "2026-08-24T09:07:48.967Z",
   "works": [
     {
       "id": "https://openalex.org/W7164499166",
@@ -199,7 +199,6 @@
       "openAccessStatus": "gold",
       "preprintUrls": [
         "https://doi.org/10.1101/2024.12.04.626793",
-        "https://www.biorxiv.org/content/biorxiv/early/2024/12/07/2024.12.04.626793.full.pdf",
         "https://pubmed.ncbi.nlm.nih.gov/39677670",
         "https://www.ncbi.nlm.nih.gov/pmc/articles/11643020"
       ],
@@ -929,7 +928,7 @@
       "source": "Nature Methods",
       "doi": "https://doi.org/10.1038/s41592-024-02237-2",
       "url": "https://doi.org/10.1038/s41592-024-02237-2",
-      "citedByCount": 71,
+      "citedByCount": 72,
       "openAccess": true,
       "openAccessStatus": "hybrid",
       "preprintUrls": [
@@ -1724,7 +1723,7 @@
       "id": "https://openalex.org/W3111149875",
       "title": "Detecting climate teleconnections with Granger causality",
       "normalizedTitle": "detecting climate teleconnections with granger causality",
-      "publicationDate": "2021-09-01",
+      "publicationDate": "2021-08-31",
       "year": 2021,
       "type": "article",
       "source": "Geophysical Research Letters",
@@ -1858,7 +1857,7 @@
       "source": "ACM Computing Surveys",
       "doi": "https://doi.org/10.1145/3447755",
       "url": "https://doi.org/10.1145/3447755",
-      "citedByCount": 491,
+      "citedByCount": 495,
       "openAccess": false,
       "openAccessStatus": "closed",
       "preprintUrls": [
@@ -2114,7 +2113,7 @@
       "source": "Quantitative Science Studies",
       "doi": "https://doi.org/10.1162/qss_a_00070",
       "url": "https://doi.org/10.1162/qss_a_00070",
-      "citedByCount": 8,
+      "citedByCount": 9,
       "openAccess": true,
       "openAccessStatus": "gold",
       "preprintUrls": [
@@ -2744,7 +2743,7 @@
       "source": "Information Sciences",
       "doi": "https://doi.org/10.1016/j.ins.2017.08.091",
       "url": "https://doi.org/10.1016/j.ins.2017.08.091",
-      "citedByCount": 76,
+      "citedByCount": 77,
       "openAccess": true,
       "openAccessStatus": "hybrid",
       "preprintUrls": [
@@ -2887,7 +2886,7 @@
       "source": "Journal of Informetrics",
       "doi": "https://doi.org/10.1016/j.joi.2017.03.003",
       "url": "https://doi.org/10.1016/j.joi.2017.03.003",
-      "citedByCount": 92,
+      "citedByCount": 93,
       "openAccess": true,
       "openAccessStatus": "hybrid",
       "preprintUrls": [
@@ -3343,7 +3342,7 @@
       "source": "PLoS ONE",
       "doi": "https://doi.org/10.1371/journal.pone.0128174",
       "url": "https://doi.org/10.1371/journal.pone.0128174",
-      "citedByCount": 23,
+      "citedByCount": 25,
       "openAccess": true,
       "openAccessStatus": "gold",
       "preprintUrls": [],
