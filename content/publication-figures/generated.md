@@ -1,5 +1,5 @@
 ---
-generatedAt: "2026-08-24T09:08:07.072Z"
+generatedAt: "2026-08-26T05:43:51.954Z"
 figures:
   - title: "The Tone of Awareness: Topic, Sentiment, and Toxicity Maps During Mental Health Month on TikTok"
     normalizedTitle: "the tone of awareness topic sentiment and toxicity maps during mental health month on tiktok"
@@ -88,6 +88,16 @@ figures:
     caption: null
     sourceUrl: "https://arxiv.org/abs/2510.23964"
     sourceLabel: "Paper figure"
+    method: "curated"
+    fit: "contain"
+    position: "center"
+  - title: "Detectability threshold in weighted modular networks"
+    normalizedTitle: "detectability threshold in weighted modular networks"
+    src: "/figures/publications/detectability-threshold-in-weighted-modular-networks.png"
+    alt: "Detectability thresholds for weighted planted-partition network models."
+    caption: null
+    sourceUrl: "https://arxiv.org/abs/2511.00214"
+    sourceLabel: "Preprint figure"
     method: "curated"
     fit: "contain"
     position: "center"
@@ -281,6 +291,16 @@ figures:
     method: "curated"
     fit: "contain"
     position: "center"
+  - title: "Associations between author-level metrics in subsequent time periods"
+    normalizedTitle: "associations between author level metrics in subsequent time periods"
+    src: "/figures/publications/associations-between-author-level-metrics-in-subsequent-time-periods.png"
+    alt: "Citation and reference diversity used to compare author-level metrics across time periods."
+    caption: null
+    sourceUrl: "https://arxiv.org/abs/2011.12479"
+    sourceLabel: "Preprint figure"
+    method: "curated"
+    fit: "contain"
+    position: "center"
   - title: "Detecting climate teleconnections with Granger causality"
     normalizedTitle: "detecting climate teleconnections with granger causality"
     src: "/figures/publications/detecting-climate-teleconnections-with-granger-causality.png"
@@ -419,6 +439,26 @@ figures:
     sourceUrl: "https://arxiv.org/abs/1704.03091"
     sourceLabel: "Preprint figure"
     method: "ar5iv"
+    fit: "contain"
+    position: "center"
+  - title: "Can Spatiality Promote Diversity?"
+    normalizedTitle: "can spatiality promote diversity"
+    src: "/figures/publications/can-spatiality-promote-diversity.png"
+    alt: "Opinion diversity as a function of spatial-network rewiring probability."
+    caption: null
+    sourceUrl: "https://arxiv.org/abs/1809.00729"
+    sourceLabel: "Preprint figure"
+    method: "curated"
+    fit: "contain"
+    position: "center"
+  - title: "The dynamics of knowledge acquisition via self-learning in complex networks"
+    normalizedTitle: "the dynamics of knowledge acquisition via self learning in complex networks"
+    src: "/figures/publications/the-dynamics-of-knowledge-acquisition-via-self-learning-in-complex-networks.png"
+    alt: "Knowledge acquisition dynamics in complex-network learning models."
+    caption: null
+    sourceUrl: "https://arxiv.org/abs/1802.09337"
+    sourceLabel: "Preprint figure"
+    method: "curated"
     fit: "contain"
     position: "center"
   - title: "Topological characterization of world cities"
@@ -712,14 +752,6 @@ figures:
     fit: "contain"
     position: "center"
 missing:
-  - title: "Detectability threshold in weighted modular networks"
-    normalizedTitle: "detectability threshold in weighted modular networks"
-  - title: "Associations between author-level metrics in subsequent time periods"
-    normalizedTitle: "associations between author level metrics in subsequent time periods"
-  - title: "Can Spatiality Promote Diversity?"
-    normalizedTitle: "can spatiality promote diversity"
-  - title: "The dynamics of knowledge acquisition via self-learning in complex networks"
-    normalizedTitle: "the dynamics of knowledge acquisition via self learning in complex networks"
 ---
 
 Publication figures are generated from open preprints and curated author assets.
