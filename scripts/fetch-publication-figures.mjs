@@ -1,4 +1,4 @@
-import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
+import { access, copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 import matter from "gray-matter";
@@ -15,6 +15,12 @@ const overridesSource = await readFile(overridesPath, "utf8");
 const overrides = matter(overridesSource).data.figures || [];
 const overrideByTitle = new Map(
   overrides.map((entry) => [normalizeTitle(entry.title), entry]),
+);
+const previousFigures = await readFile(outputPath, "utf8")
+  .then((source) => JSON.parse(source).figures || [])
+  .catch(() => []);
+const previousFigureByTitle = new Map(
+  previousFigures.map((figure) => [figure.normalizedTitle, figure]),
 );
 
 function normalizeTitle(value = "") {
@@ -153,6 +159,17 @@ function markdownValue(value) {
   return JSON.stringify(value ?? null);
 }
 
+async function previousFigure(work) {
+  const figure = previousFigureByTitle.get(work.normalizedTitle);
+  if (!figure?.src?.startsWith("/figures/publications/")) return null;
+  try {
+    await access(path.join(root, "public", figure.src));
+    return { ...figure, normalizedTitle: work.normalizedTitle, title: work.title };
+  } catch {
+    return null;
+  }
+}
+
 function generatedMarkdown(figures, missing, generatedAt) {
   const lines = [
     "---",
@@ -204,11 +221,23 @@ for (const work of works) {
       console.log(`arXiv: ${work.title}`);
       continue;
     }
+    const cached = await previousFigure(work);
+    if (cached) {
+      figures.push(cached);
+      console.log(`Cached: ${work.title}`);
+      continue;
+    }
     missing.push(work);
     console.warn(`Missing: ${work.title}`);
   } catch (error) {
-    missing.push(work);
-    console.warn(`Missing: ${work.title} (${error.message})`);
+    const cached = await previousFigure(work);
+    if (cached) {
+      figures.push(cached);
+      console.warn(`Cached: ${work.title} (${error.message})`);
+    } else {
+      missing.push(work);
+      console.warn(`Missing: ${work.title} (${error.message})`);
+    }
   }
 }
 

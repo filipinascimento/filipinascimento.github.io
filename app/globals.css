@@ -1349,6 +1349,10 @@ a {
   background: linear-gradient(120deg, color-mix(in srgb, var(--wash-neutral) 78%, transparent), color-mix(in srgb, var(--paper) 48%, transparent));
 }
 
+.publication-list li.publication-list__item--no-figure {
+  grid-template-columns: 64px minmax(0, 1fr);
+}
+
 .publication-list__figure {
   display: block;
   align-self: start;
@@ -2019,6 +2023,10 @@ a {
   .publication-list li {
     grid-template-columns: 50px minmax(0, 1fr);
     gap: 15px;
+  }
+
+  .publication-list li.publication-list__item--no-figure {
+    grid-template-columns: 50px minmax(0, 1fr);
   }
 
   .publication-list__figure {

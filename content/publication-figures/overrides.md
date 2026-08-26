@@ -13,6 +13,11 @@ figures:
     localPath: content/publication-figures/assets/scale-invariance.png
     alt: "Weighted-network structure used to study scale invariance and statistical significance."
     sourceUrl: https://arxiv.org/abs/2510.23964
+  - title: "Detectability threshold in weighted modular networks"
+    src: /figures/publications/detectability-threshold-in-weighted-modular-networks.png
+    alt: "Detectability thresholds for weighted planted-partition network models."
+    sourceUrl: https://arxiv.org/abs/2511.00214
+    sourceLabel: Preprint figure
   - title: "Triadic Novelty: A Typology and Measurement Framework for Recognizing Novel Contributions in Science"
     localPath: content/publication-figures/assets/triadic-novelty.png
     alt: "Three types of triadic novelty in weighted co-occurrence networks."
@@ -49,6 +54,11 @@ figures:
     localPath: content/publication-figures/assets/big-science.png
     alt: "Data integration and network maps for visualizing big science projects."
     sourceUrl: https://doi.org/10.1038/s42254-021-00374-7
+  - title: "Associations between author-level metrics in subsequent time periods"
+    src: /figures/publications/associations-between-author-level-metrics-in-subsequent-time-periods.png
+    alt: "Citation and reference diversity used to compare author-level metrics across time periods."
+    sourceUrl: https://arxiv.org/abs/2011.12479
+    sourceLabel: Preprint figure
   - title: "FURY: advanced scientific visualization"
     localPath: content/publication-figures/assets/fury.png
     alt: "Scientific visualization produced with FURY."
@@ -67,6 +77,16 @@ figures:
     alt: "Protein-interaction networks colored by node accessibility for two Mycoplasma species."
     caption: "Protein-interaction networks colored by node accessibility for Mycoplasma species."
     sourceUrl: https://doi.org/10.1039/c7ib00161d
+  - title: "Can Spatiality Promote Diversity?"
+    src: /figures/publications/can-spatiality-promote-diversity.png
+    alt: "Opinion diversity as a function of spatial-network rewiring probability."
+    sourceUrl: https://arxiv.org/abs/1809.00729
+    sourceLabel: Preprint figure
+  - title: "The dynamics of knowledge acquisition via self-learning in complex networks"
+    src: /figures/publications/the-dynamics-of-knowledge-acquisition-via-self-learning-in-complex-networks.png
+    alt: "Knowledge acquisition dynamics in complex-network learning models."
+    sourceUrl: https://arxiv.org/abs/1802.09337
+    sourceLabel: Preprint figure
   - title: "Modular transcriptional repertoire and MicroRNA target analyses characterize genomic dysregulation in the thymus of Down syndrome infants."
     remoteUrl: https://oncotarget-cdn.atl1.digitaloceanspaces.com/article/7120/figure/108096/7120-108096-1-PB.jpg
     alt: "Modular transcriptional and microRNA analysis of the thymus in Down syndrome."

@@ -25,8 +25,11 @@ test("provides a figure for every audited publication and project", async () => 
   const figures = await json("data/publication-figures.json");
   const works = await json("data/openalex/works.json");
   const content = await json("data/content.json");
+  const figureScript = await readFile(new URL("scripts/fetch-publication-figures.mjs", root), "utf8");
   assert.equal(figures.count, works.works.length);
   assert.equal(figures.missingCount, 0);
+  assert.match(figureScript, /previousFigureByTitle/);
+  assert.match(figureScript, /Cached: \$\{work\.title\}/);
   for (const figure of figures.figures) {
     await access(new URL(`public${figure.src}`, root));
   }
@@ -355,9 +358,12 @@ test("uses dedicated editorial media fields for project figures", async () => {
 });
 
 test("renders publication figures on white surfaces", async () => {
+  const explorer = await readFile(new URL("app/components/PublicationExplorer.tsx", root), "utf8");
   const styles = await readFile(new URL("app/globals.css", root), "utf8");
   assert.match(styles, /\.recent-publications__figure\s*\{[^}]*background:\s*#fff/s);
   assert.match(styles, /\.publication-list__figure\s*\{[^}]*background:\s*#fff/s);
+  assert.match(explorer, /publication-list__item--no-figure/);
+  assert.match(styles, /\.publication-list li\.publication-list__item--no-figure\s*\{[^}]*grid-template-columns:\s*64px minmax\(0, 1fr\)/s);
 });
 
 test("normalizes featured project figures and uses concise homepage summaries", async () => {

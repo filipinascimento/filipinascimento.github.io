@@ -71,7 +71,7 @@ export function PublicationExplorer({ works, assetRoot = "" }: { works: Publicat
       </div>
       <ol className="publication-list">
         {shown.map((work) => (
-          <li key={work.id}>
+          <li className={work.figure ? undefined : "publication-list__item--no-figure"} key={work.id}>
             <div className="publication-list__year">{work.year || "Not dated"}</div>
             {work.figure && (
               <a
