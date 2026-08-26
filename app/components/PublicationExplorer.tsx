@@ -17,6 +17,11 @@ function authorLine(authors: Publication["authors"]) {
   return names.length <= 8 ? names.join(", ") : `${names.slice(0, 7).join(", ")}, et al.`;
 }
 
+function publicationType(type: string) {
+  const label = type.replaceAll("-", " ");
+  return `${label.charAt(0).toUpperCase()}${label.slice(1)}`;
+}
+
 export function PublicationExplorer({ works, assetRoot = "" }: { works: Publication[]; assetRoot?: string }) {
   const [query, setQuery] = useState("");
   const [type, setType] = useState("all");
@@ -39,6 +44,18 @@ export function PublicationExplorer({ works, assetRoot = "" }: { works: Publicat
   }, [query, type, works]);
 
   const shown = filtered.slice(0, visible);
+  const yearGroups = shown.reduce<Array<{ label: string; works: Publication[] }>>((groups, work) => {
+    const label = work.year ? String(work.year) : "Not dated";
+    const currentGroup = groups.at(-1);
+
+    if (currentGroup?.label === label) {
+      currentGroup.works.push(work);
+    } else {
+      groups.push({ label, works: [work] });
+    }
+
+    return groups;
+  }, []);
 
   return (
     <div className="publication-explorer">
@@ -69,51 +86,64 @@ export function PublicationExplorer({ works, assetRoot = "" }: { works: Publicat
       <div className="publication-result-count" aria-live="polite">
         {filtered.length} {filtered.length === 1 ? "record" : "records"}
       </div>
-      <ol className="publication-list">
-        {shown.map((work) => (
-          <li key={work.id}>
-            <div className="publication-list__year">{work.year || "Not dated"}</div>
-            {work.figure && (
-              <a
-                className="publication-list__figure"
-                href={work.figure.sourceUrl || work.url}
-                target="_blank"
-                rel="noreferrer"
-                aria-label={`View figure source for ${work.title}`}
-              >
-                <img
-                  src={`${assetRoot}${work.figure.src}`}
-                  alt={work.figure.alt}
-                  loading="lazy"
-                  style={{
-                    objectFit: work.figure.fit || "contain",
-                    objectPosition: work.figure.position || "center",
-                  }}
-                />
-              </a>
-            )}
-            <div className="publication-list__content">
-              <h3><a href={work.url} target="_blank" rel="noreferrer">{work.title}</a></h3>
-              <p className="publication-list__authors">{authorLine(work.authors)}</p>
-              <div className="publication-list__meta">
-                <span>{work.publicationStatus === "preprint" ? "Preprint" : (work.source || work.type.replace("-", " "))}</span>
-                {work.publicationStatus === "published" && (
-                  <span className="publication-type">{work.type.replace("-", " ")}</span>
-                )}
-                {work.openAccess && <span className="open-access">Open access</span>}
-                <a href={work.url} target="_blank" rel="noreferrer" aria-label={`Open ${work.title}`}>
-                  {work.publicationStatus === "preprint" ? "View preprint" : "Published version"}<ArrowUpRight size={12} aria-hidden="true" />
-                </a>
-                {work.publicationStatus === "published" && work.preprintUrls?.[0] && (
-                  <a href={work.preprintUrls[0]} target="_blank" rel="noreferrer" aria-label={`Open preprint for ${work.title}`}>
-                    Preprint<ArrowUpRight size={12} aria-hidden="true" />
-                  </a>
-                )}
-              </div>
-            </div>
-          </li>
-        ))}
-      </ol>
+      <div className="publication-groups">
+        {yearGroups.map((group) => {
+          const headingId = `publications-${group.label.toLowerCase().replace(/\s+/g, "-")}`;
+
+          return (
+            <section className="publication-year" aria-labelledby={headingId} key={group.label}>
+              <header className="publication-year__heading">
+                <h3 id={headingId}>{group.label}</h3>
+              </header>
+              <ul className="publication-list">
+                {group.works.map((work) => (
+                  <li key={work.id}>
+                    {work.figure && (
+                      <a
+                        className="publication-list__figure"
+                        href={work.figure.sourceUrl || work.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`View figure source for ${work.title}`}
+                      >
+                        <img
+                          src={`${assetRoot}${work.figure.src}`}
+                          alt={work.figure.alt}
+                          loading="lazy"
+                          style={{
+                            objectFit: work.figure.fit || "contain",
+                            objectPosition: work.figure.position || "center",
+                          }}
+                        />
+                      </a>
+                    )}
+                    <div className="publication-list__content">
+                      <h4><a href={work.url} target="_blank" rel="noreferrer">{work.title}</a></h4>
+                      <p className="publication-list__authors">{authorLine(work.authors)}</p>
+                      <div className="publication-list__meta">
+                        <span>{work.publicationStatus === "preprint" ? "Preprint" : (work.source || publicationType(work.type))}</span>
+                        {work.publicationStatus === "published" && (
+                          <>{" · "}<span className="publication-type">{publicationType(work.type)}</span></>
+                        )}
+                        {work.openAccess && <>{" · "}<span className="open-access">Open access</span></>}
+                        {" · "}
+                        <a href={work.url} target="_blank" rel="noreferrer" aria-label={`Open ${work.title}`}>
+                          {work.publicationStatus === "preprint" ? "View preprint" : "Published version"}<ArrowUpRight size={12} aria-hidden="true" />
+                        </a>
+                        {work.publicationStatus === "published" && work.preprintUrls?.[0] && (
+                          <>{" · "}<a href={work.preprintUrls[0]} target="_blank" rel="noreferrer" aria-label={`Open preprint for ${work.title}`}>
+                            Preprint<ArrowUpRight size={12} aria-hidden="true" />
+                          </a></>
+                        )}
+                      </div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          );
+        })}
+      </div>
       {shown.length < filtered.length && (
         <button className="load-more" type="button" onClick={() => setVisible((count) => count + 24)}>
           Show more publications
