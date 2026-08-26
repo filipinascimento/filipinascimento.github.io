@@ -366,6 +366,8 @@ test("groups publications by year without record numbering or run-on metadata", 
   assert.match(explorer, /<ul className="publication-list">/);
   assert.doesNotMatch(explorer, /<ol className="publication-list">/);
   assert.match(explorer, /\{" · "\}/);
+  assert.match(explorer, /yearTotals\[group\.label\]/);
+  assert.match(explorer, /publicationVenue\(work\.source\)/);
 });
 
 test("normalizes featured project figures and uses concise homepage summaries", async () => {

@@ -22,6 +22,20 @@ function publicationType(type: string) {
   return `${label.charAt(0).toUpperCase()}${label.slice(1)}`;
 }
 
+function publicationVenue(source: string) {
+  const venueNames: Record<string, string> = {
+    "Chaos An Interdisciplinary Journal of Nonlinear Science": "Chaos: An Interdisciplinary Journal of Nonlinear Science",
+    "Journal of Physics A Mathematical and Theoretical": "Journal of Physics A: Mathematical and Theoretical",
+    "Journal of Physics Complexity": "Journal of Physics: Complexity",
+    "Journal of Statistical Mechanics Theory and Experiment": "Journal of Statistical Mechanics: Theory and Experiment",
+    "Physica A Statistical Mechanics and its Applications": "Physica A: Statistical Mechanics and its Applications",
+    "Physical review. E": "Physical Review E",
+    "The Journal of Open Source Software": "Journal of Open Source Software",
+  };
+
+  return venueNames[source] || source;
+}
+
 export function PublicationExplorer({ works, assetRoot = "" }: { works: Publication[]; assetRoot?: string }) {
   const [query, setQuery] = useState("");
   const [type, setType] = useState("all");
@@ -44,6 +58,11 @@ export function PublicationExplorer({ works, assetRoot = "" }: { works: Publicat
   }, [query, type, works]);
 
   const shown = filtered.slice(0, visible);
+  const yearTotals = filtered.reduce<Record<string, number>>((totals, work) => {
+    const label = work.year ? String(work.year) : "Not dated";
+    totals[label] = (totals[label] || 0) + 1;
+    return totals;
+  }, {});
   const yearGroups = shown.reduce<Array<{ label: string; works: Publication[] }>>((groups, work) => {
     const label = work.year ? String(work.year) : "Not dated";
     const currentGroup = groups.at(-1);
@@ -94,6 +113,7 @@ export function PublicationExplorer({ works, assetRoot = "" }: { works: Publicat
             <section className="publication-year" aria-labelledby={headingId} key={group.label}>
               <header className="publication-year__heading">
                 <h3 id={headingId}>{group.label}</h3>
+                <span>{yearTotals[group.label]} {yearTotals[group.label] === 1 ? "publication" : "publications"}</span>
               </header>
               <ul className="publication-list">
                 {group.works.map((work) => (
@@ -121,7 +141,7 @@ export function PublicationExplorer({ works, assetRoot = "" }: { works: Publicat
                       <h4><a href={work.url} target="_blank" rel="noreferrer">{work.title}</a></h4>
                       <p className="publication-list__authors">{authorLine(work.authors)}</p>
                       <div className="publication-list__meta">
-                        <span>{work.publicationStatus === "preprint" ? "Preprint" : (work.source || publicationType(work.type))}</span>
+                        <span className="publication-list__venue">{work.publicationStatus === "preprint" ? "Preprint" : (publicationVenue(work.source) || publicationType(work.type))}</span>
                         {work.publicationStatus === "published" && (
                           <>{" · "}<span className="publication-type">{publicationType(work.type)}</span></>
                         )}
