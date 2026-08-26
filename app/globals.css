@@ -1333,39 +1333,26 @@ a {
 
 .publication-groups {
   display: grid;
-  gap: 54px;
+  gap: 38px;
 }
 
 .publication-year {
-  display: block;
-}
-
-.publication-year__heading {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 20px;
-  margin-bottom: 12px;
-  padding: 15px 20px 16px;
-  border-left: 4px solid var(--teal);
-  border-radius: 3px 14px 3px 14px;
-  background: linear-gradient(110deg, color-mix(in srgb, var(--teal-soft) 88%, transparent), color-mix(in srgb, var(--paper-raised) 42%, transparent));
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  align-items: start;
+  gap: 26px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
 }
 
 .publication-year__heading h3 {
-  margin: 0;
+  margin: 13px 0 0;
   color: var(--teal);
   font-family: var(--font-display);
-  font-size: 1.85rem;
+  font-size: 1.35rem;
   font-weight: 650;
-  letter-spacing: -0.04em;
-  line-height: 1;
-}
-
-.publication-year__heading > span {
-  color: var(--ink-faint);
-  font-size: 0.92rem;
-  font-weight: 650;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
 }
 
 .publication-list {
@@ -1381,9 +1368,8 @@ a {
   grid-template-columns: 118px minmax(0, 1fr);
   gap: 24px;
   padding: 20px 22px;
-  border: 1px solid color-mix(in srgb, var(--line) 74%, transparent);
   border-radius: 12px 2px 12px 2px;
-  background: color-mix(in srgb, var(--paper-raised) 70%, var(--paper));
+  background: linear-gradient(120deg, color-mix(in srgb, var(--wash-neutral) 78%, transparent), color-mix(in srgb, var(--paper) 48%, transparent));
 }
 
 .publication-list__figure {
@@ -1435,20 +1421,11 @@ a {
   line-height: 1.75;
 }
 
-.publication-list__venue {
-  color: var(--ink-soft);
-}
-
 .publication-list__meta a {
   display: inline-flex;
   align-items: center;
   gap: 3px;
-  padding-inline: 7px;
-  border: 1px solid color-mix(in srgb, var(--teal) 38%, transparent);
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--teal-soft) 62%, transparent);
   color: var(--teal);
-  line-height: 1.45;
 }
 
 .publication-type {
@@ -2064,16 +2041,17 @@ a {
   }
 
   .publication-groups {
-    gap: 38px;
+    gap: 30px;
   }
 
-  .publication-year__heading {
-    margin-bottom: 10px;
-    padding: 13px 16px 14px;
+  .publication-year {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding-top: 16px;
   }
 
   .publication-year__heading h3 {
-    font-size: 1.55rem;
+    margin: 0;
   }
 
   .publication-list li {
