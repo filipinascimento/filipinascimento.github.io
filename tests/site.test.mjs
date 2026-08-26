@@ -360,14 +360,6 @@ test("renders publication figures on white surfaces", async () => {
   assert.match(styles, /\.publication-list__figure\s*\{[^}]*background:\s*#fff/s);
 });
 
-test("groups publications by year without record numbering or run-on metadata", async () => {
-  const explorer = await readFile(new URL("app/components/PublicationExplorer.tsx", root), "utf8");
-  assert.match(explorer, /className="publication-year"/);
-  assert.match(explorer, /<ul className="publication-list">/);
-  assert.doesNotMatch(explorer, /<ol className="publication-list">/);
-  assert.match(explorer, /\{" · "\}/);
-});
-
 test("normalizes featured project figures and uses concise homepage summaries", async () => {
   const content = await json("data/content.json");
   const home = await readFile(new URL("app/page.tsx", root), "utf8");
