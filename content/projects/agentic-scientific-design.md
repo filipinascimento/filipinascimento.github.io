@@ -7,7 +7,7 @@ order: 1
 featured: true
 accent: coral
 summary: >-
-  Combining science-of-science evidence with structured extraction, network analysis, embedding search, and domain knowledge to identify promising scientific and engineering opportunities across publications, materials, measurements, and device concepts.
+  Building agentic AI pipelines that integrate structured evidence, networks, embeddings, and expert judgment for scientific and engineering discovery.
 topics: [Agentic AI, Science of science, Materials, Devices]
 figure:
   src: /figures/projects/normalized/agentic-scientific-design.png
@@ -15,4 +15,4 @@ figure:
   fit: contain
 ---
 
-Investigating how science-of-science methods can work with structured extraction pipelines, network analysis, embedding-based search, and domain knowledge to identify promising scientific and engineering opportunities. The work connects evidence across publications, materials, measurements, and device concepts while keeping early-stage technical directions deliberately high level.
+Building agentic AI pipelines for scientific and engineering discovery by integrating structured evidence, networks, embeddings, and expert judgment. A complementary line of research uses embedding models to map technology trajectories and predict capabilities across materials and device platforms.

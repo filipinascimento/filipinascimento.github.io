@@ -1,11 +1,11 @@
 ---
 title: Curriculum vitae
-updated: 2026-08-03
+updated: 2026-09-03
 ---
 
 ## Profile
 
-Research Assistant Professor at Northwestern University’s Kellogg School of Management and the Center for Science of Science & Innovation. Researcher, data scientist, and developer with expertise in dynamic complex networks, machine learning, science of science, computational social science, and interactive visualization. Creator of Helios Web and author of {{scholarPublications}} publications, with {{scholarCitations}} citations and an h-index of {{scholarHIndex}} on Google Scholar. Ph.D. in Computational Physics with a strong interdisciplinary focus bridging physics, computer science, biology, and the social sciences.
+Research Assistant Professor at Northwestern University’s Kellogg School of Management and the Center for Science of Science & Innovation. Researcher, data scientist, and developer with expertise in dynamic complex networks, agentic AI for scientific discovery, machine learning, science of science, computational social science, and interactive visualization. Creator of Helios Web and author of {{scholarPublications}} publications, with {{scholarCitations}} citations and an h-index of {{scholarHIndex}} on Google Scholar. Ph.D. in Computational Physics with a strong interdisciplinary focus bridging physics, computer science, biology, and the social sciences.
 
 ## Appointments
 
@@ -25,10 +25,10 @@ Research Assistant Professor at Northwestern University’s Kellogg School of Ma
 >
 > Dissertation received a university-level Honorable Mention, ranking among the top three theses in the exact sciences.
 
-## Selected projects
+## Current research
 
-- **Scientific and engineering discovery:** Combining science-of-science evidence, structured extraction pipelines, network analysis, embedding-based search, and domain knowledge to identify promising scientific and engineering opportunities.
-- **Technology capability maps:** Developing embedding models that represent design choices and technical attributes across papers and patents, predict technological capabilities, and identify interpretable directions aligned with measurable progress in materials and device platforms.
+- **Agentic AI for scientific and engineering discovery:** Integrating structured evidence, networks, embeddings, and expert judgment.
+- **Technology capability maps:** Using embedding models to map design choices and technology trajectories, and predict capabilities across materials and device platforms.
 - **[Graph and language models of scientific impact](https://arxiv.org/abs/2605.18410):** Comparing random-walk embeddings, transformer representations, and graph-retrieval methods to model scientific impact, research similarity, and scholarly trajectories.
 - **[Mapping how science is funded](https://arxiv.org/abs/2603.24147):** Linking funding acknowledgments to organizations and publications to study how different forms of support shape research directions.
 - **[Helios Web](https://heliosweb.io):** Browser-native visualization and exploration of large networks and embedding spaces. [GitHub](https://github.com/filipinascimento/helios-web)
@@ -45,7 +45,7 @@ Research Assistant Professor at Northwestern University’s Kellogg School of Ma
 
 ## Research areas
 
-Network science; science of science; complex systems; artificial intelligence and machine learning; computational social science; scientific and engineering discovery; graph and text embeddings; interactive visualization; community detection; information science; biological, climate, political, and urban networks.
+Network science; science of science; complex systems; agentic AI for scientific discovery; artificial intelligence and machine learning; computational social science; scientific and engineering discovery; graph and text embeddings; interactive visualization; community detection; information science; biological, climate, political, and urban networks.
 
 ## Selected teaching and mentorship
 
