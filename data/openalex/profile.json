@@ -2,16 +2,16 @@
   "id": "https://openalex.org/A5025683130",
   "displayName": "Filipi N. Silva",
   "orcid": "https://orcid.org/0000-0002-9151-6517",
-  "worksCount": 111,
-  "rawUniqueWorksAcrossLinkedAuthors": 128,
-  "manuallyLinkedWorks": 18,
+  "worksCount": 153,
+  "rawUniqueWorksAcrossLinkedAuthors": 117,
+  "manuallyLinkedWorks": 19,
   "candidateWorksBeforePublicationAudit": 96,
   "publishedWorksCount": 64,
   "standalonePreprintsCount": 11,
   "mergedScholarlyWorksCount": 75,
-  "citedByCount": 1793,
-  "hIndex": 19,
-  "i10Index": 35,
+  "citedByCount": 2158,
+  "hIndex": 22,
+  "i10Index": 39,
   "authorIds": [
     "A5025683130",
     "A5133555595",
@@ -24,5 +24,61 @@
     "A5115590821",
     "A5136191170"
   ],
-  "fetchedAt": "2026-08-24T09:07:48.967Z"
+  "resolvedAuthorIds": [
+    "A5025683130",
+    "A5115590821"
+  ],
+  "authorSources": [
+    {
+      "requestedId": "A5025683130",
+      "resolvedId": "A5025683130",
+      "status": "current"
+    },
+    {
+      "requestedId": "A5133555595",
+      "status": "unavailable",
+      "httpStatus": 404
+    },
+    {
+      "requestedId": "A5123858264",
+      "resolvedId": "A5025683130",
+      "status": "redirected"
+    },
+    {
+      "requestedId": "A5120752287",
+      "status": "unavailable",
+      "httpStatus": 404
+    },
+    {
+      "requestedId": "A5133327538",
+      "status": "unavailable",
+      "httpStatus": 404
+    },
+    {
+      "requestedId": "A5122442661",
+      "status": "unavailable",
+      "httpStatus": 404
+    },
+    {
+      "requestedId": "A5135553381",
+      "status": "unavailable",
+      "httpStatus": 404
+    },
+    {
+      "requestedId": "A5102054363",
+      "status": "unavailable",
+      "httpStatus": 404
+    },
+    {
+      "requestedId": "A5115590821",
+      "resolvedId": "A5115590821",
+      "status": "current"
+    },
+    {
+      "requestedId": "A5136191170",
+      "status": "unavailable",
+      "httpStatus": 404
+    }
+  ],
+  "fetchedAt": "2026-11-03T19:39:27.872Z"
 }

@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-24T09:07:48.967Z",
+  "fetchedAt": "2026-11-03T19:39:27.872Z",
   "works": [
     {
       "id": "https://openalex.org/W7164499166",
@@ -28,7 +28,7 @@
         },
         {
           "name": "Pranay Gundala Reddy",
-          "id": "https://openalex.org/A5110801829"
+          "id": "https://openalex.org/A5138405632"
         },
         {
           "name": "Anindya Mondal",
@@ -40,13 +40,13 @@
         },
         {
           "name": "Filipi Nascimento Silva",
-          "id": "https://openalex.org/A5081862548"
+          "id": "https://openalex.org/A5025683130"
         }
       ],
       "topics": [
-        "Misinformation and Its Impacts",
         "Mental Health via Writing",
-        "Social Media in Health Education"
+        "Sentiment Analysis and Opinion Mining",
+        "Hate Speech and Cyberbullying Detection"
       ],
       "openAlexIds": [
         "https://openalex.org/W7164499166"
@@ -77,17 +77,17 @@
         },
         {
           "name": "Filipi N. Silva",
-          "id": "https://openalex.org/A5053702199"
+          "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "Diego Amancio",
-          "id": "https://openalex.org/A5130995587"
+          "name": "Diego R. Amancio",
+          "id": "https://openalex.org/A5074263397"
         }
       ],
       "topics": [
+        "Advanced Graph Neural Networks",
         "Complex Network Analysis Techniques",
-        "Graph Theory and Algorithms",
-        "Bioinformatics and Genomic Networks"
+        "Graph Theory and Algorithms"
       ],
       "openAlexIds": [
         "https://openalex.org/W7162808524",
@@ -117,7 +117,7 @@
       "authors": [
         {
           "name": "Filipi N. Silva",
-          "id": "https://openalex.org/A5053702199"
+          "id": "https://openalex.org/A5025683130"
         },
         {
           "name": "Samin Aref",
@@ -125,17 +125,17 @@
         },
         {
           "name": "Vincent Traag",
-          "id": "https://openalex.org/A5137006337"
+          "id": "https://openalex.org/A5070433540"
         },
         {
           "name": "Santo Fortunato",
-          "id": "https://openalex.org/A5135587706"
+          "id": "https://openalex.org/A5053938061"
         }
       ],
       "topics": [
         "Complex Network Analysis Techniques",
         "Advanced Clustering Algorithms Research",
-        "Mobile Crowdsensing and Crowdsourcing"
+        "Bioinformatics and Genomic Networks"
       ],
       "openAlexIds": [
         "https://openalex.org/W7162444449"
@@ -166,17 +166,17 @@
         },
         {
           "name": "Filipi N. Silva",
-          "id": "https://openalex.org/A5053702199"
+          "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "Diego Amancio",
-          "id": "https://openalex.org/A5130995587"
+          "name": "Diego R. Amancio",
+          "id": "https://openalex.org/A5074263397"
         }
       ],
       "topics": [
-        "Advanced Graph Neural Networks",
-        "Topic Modeling",
-        "Biomedical Text Mining and Ontologies"
+        "scientometrics and bibliometrics research",
+        "Recommender Systems and Techniques",
+        "Web visibility and informetrics"
       ],
       "openAlexIds": [
         "https://openalex.org/W7161680433"
@@ -209,11 +209,11 @@
         },
         {
           "name": "Filipi Nascimento Silva",
-          "id": "https://openalex.org/A5136191170"
+          "id": "https://openalex.org/A5025683130"
         },
         {
           "name": "Shiwei Liu",
-          "id": "https://openalex.org/A5136224752"
+          "id": "https://openalex.org/A5100415818"
         },
         {
           "name": "Soumilee Chaudhuri",
@@ -221,23 +221,23 @@
         },
         {
           "name": "Meichen Yu",
-          "id": "https://openalex.org/A5136194755"
+          "id": "https://openalex.org/A5084916734"
         },
         {
           "name": "Juexin Wang",
           "id": "https://openalex.org/A5080641496"
         },
         {
-          "name": "Kwangsik Nho",
-          "id": "https://openalex.org/A5136268480"
+          "name": "Kwangsik T. Nho",
+          "id": "https://openalex.org/A5087302585"
         },
         {
           "name": "Andrew J. Saykin",
-          "id": "https://openalex.org/A5136269213"
+          "id": "https://openalex.org/A5026257338"
         },
         {
           "name": "David A. Bennett",
-          "id": "https://openalex.org/A5136261388"
+          "id": "https://openalex.org/A5100588422"
         },
         {
           "name": "Olaf Sporns",
@@ -245,13 +245,13 @@
         },
         {
           "name": "Santo Fortunato",
-          "id": "https://openalex.org/A5135587706"
+          "id": "https://openalex.org/A5053938061"
         }
       ],
       "topics": [
         "Single-cell and spatial transcriptomics",
-        "Cell Image Analysis Techniques",
-        "Bioinformatics and Genomic Networks"
+        "Gene expression and cancer classification",
+        "Gene Regulatory Network Analysis"
       ],
       "openAlexIds": [
         "https://openalex.org/W7161295041",
@@ -281,15 +281,15 @@
       "authors": [
         {
           "name": "Tuğrulcan Elmas",
-          "id": "https://openalex.org/A5133590412"
+          "id": "https://openalex.org/A5081836422"
         },
         {
           "name": "Filipi Nascimento Silva",
-          "id": "https://openalex.org/A5133555595"
+          "id": "https://openalex.org/A5025683130"
         },
         {
           "name": "Manita Pote",
-          "id": "https://openalex.org/A5133564365"
+          "id": "https://openalex.org/A5015734898"
         },
         {
           "name": "Priyanka Dey",
@@ -305,7 +305,7 @@
         },
         {
           "name": "Luca Luceri",
-          "id": "https://openalex.org/A5133566487"
+          "id": "https://openalex.org/A5088304530"
         },
         {
           "name": "Cody Buntain",
@@ -313,7 +313,7 @@
         },
         {
           "name": "Emilio Ferrara",
-          "id": "https://openalex.org/A5133615494"
+          "id": "https://openalex.org/A5078699564"
         },
         {
           "name": "Alessandro Flammini",
@@ -321,21 +321,18 @@
         },
         {
           "name": "Fil Menczer",
-          "id": "https://openalex.org/A5133560240"
+          "id": "https://openalex.org/A5058877285"
         }
       ],
       "topics": [
         "Misinformation and Its Impacts",
-        "Terrorism, Counterterrorism, and Political Violence",
-        "Hate Speech and Cyberbullying Detection"
+        "Spam and Phishing Detection",
+        "Social Media and Politics"
       ],
       "openAlexIds": [
-        "https://openalex.org/W7154397648",
-        "https://openalex.org/W7154538749"
+        "https://openalex.org/W7154397648"
       ],
-      "alternateUrls": [
-        "https://arxiv.org/abs/2604.10566"
-      ],
+      "alternateUrls": [],
       "publicationStatus": "preprint"
     },
     {
@@ -370,19 +367,15 @@
       ],
       "topics": [
         "scientometrics and bibliometrics research",
-        "Research Data Management Practices",
-        "Academic Publishing and Open Access"
+        "Library Science and Information Systems",
+        "Data Quality and Management"
       ],
       "openAlexIds": [
         "https://openalex.org/W7140933321",
-        "https://openalex.org/W7141772194",
-        "https://openalex.org/W7140712306",
-        "https://openalex.org/W7140845705"
+        "https://openalex.org/W7140712306"
       ],
       "alternateUrls": [
-        "http://arxiv.org/abs/2603.24147",
-        "https://doi.org/10.5281/zenodo.18895448",
-        "https://doi.org/10.5281/zenodo.18895449"
+        "https://doi.org/10.5281/zenodo.18895448"
       ],
       "publicationStatus": "preprint"
     },
@@ -417,11 +410,12 @@
         }
       ],
       "topics": [
-        "Biomedical Text Mining and Ontologies"
+        "scientometrics and bibliometrics research",
+        "Web visibility and informetrics",
+        "Recommender Systems and Techniques"
       ],
       "openAlexIds": [
-        "https://openalex.org/W4415036962",
-        "https://openalex.org/W7131896683"
+        "https://openalex.org/W4415036962"
       ],
       "alternateUrls": [],
       "publicationStatus": "published"
@@ -437,15 +431,15 @@
       "doi": "https://doi.org/10.1103/4124-dyj8",
       "url": "https://doi.org/10.1103/4124-dyj8",
       "citedByCount": 1,
-      "openAccess": false,
-      "openAccessStatus": "closed",
+      "openAccess": true,
+      "openAccessStatus": "green",
       "preprintUrls": [
         "https://arxiv.org/abs/2510.23964"
       ],
       "authors": [
         {
           "name": "Filipi N. Silva",
-          "id": "https://openalex.org/A5053702199"
+          "id": "https://openalex.org/A5025683130"
         },
         {
           "name": "Sadamori Kojaku",
@@ -461,13 +455,13 @@
         },
         {
           "name": "Santo Fortunato",
-          "id": "https://openalex.org/A5135587706"
+          "id": "https://openalex.org/A5053938061"
         }
       ],
       "topics": [
         "Complex Network Analysis Techniques",
-        "Statistical Mechanics and Entropy",
-        "Bayesian Modeling and Causal Inference"
+        "Complex Systems and Time Series Analysis",
+        "Bioinformatics and Genomic Networks"
       ],
       "openAlexIds": [
         "https://openalex.org/W7131428278"
@@ -515,12 +509,11 @@
       ],
       "topics": [
         "Complex Network Analysis Techniques",
-        "Advanced MIMO Systems Optimization",
-        "Distributed Control Multi-Agent Systems"
+        "Advanced Clustering Algorithms Research",
+        "Opinion Dynamics and Social Influence"
       ],
       "openAlexIds": [
-        "https://openalex.org/W4415936063",
-        "https://openalex.org/W7118992324"
+        "https://openalex.org/W4415936063"
       ],
       "alternateUrls": [],
       "publicationStatus": "published"
@@ -535,9 +528,9 @@
       "source": "Physica A Statistical Mechanics and its Applications",
       "doi": "https://doi.org/10.1016/j.physa.2025.130789",
       "url": "https://doi.org/10.1016/j.physa.2025.130789",
-      "citedByCount": 2,
-      "openAccess": false,
-      "openAccessStatus": "closed",
+      "citedByCount": 3,
+      "openAccess": true,
+      "openAccessStatus": "green",
       "preprintUrls": [
         "https://arxiv.org/abs/2407.19942"
       ],
@@ -561,16 +554,13 @@
       ],
       "topics": [
         "scientometrics and bibliometrics research",
-        "Topic Modeling",
-        "Advanced Text Analysis Techniques"
+        "Web visibility and informetrics",
+        "Computational and Text Analysis Methods"
       ],
       "openAlexIds": [
-        "https://openalex.org/W4411957658",
-        "https://openalex.org/W4401202339"
+        "https://openalex.org/W4411957658"
       ],
-      "alternateUrls": [
-        "http://arxiv.org/abs/2407.19942"
-      ],
+      "alternateUrls": [],
       "publicationStatus": "published"
     },
     {
@@ -591,26 +581,26 @@
       ],
       "authors": [
         {
-          "name": "Ai, Jin",
-          "id": null
+          "name": "Jin Ai",
+          "id": "https://openalex.org/A5101400523"
         },
         {
-          "name": "Steinberg, Richard S.",
-          "id": null
+          "name": "Richard S. Steinberg",
+          "id": "https://openalex.org/A5149989959"
         },
         {
           "name": "Guo, Chao",
           "id": null
         },
         {
-          "name": "Silva, Filipi Nascimento",
-          "id": null
+          "name": "Filipi Nascimento Silva",
+          "id": "https://openalex.org/A5025683130"
         }
       ],
       "topics": [
         "scientometrics and bibliometrics research",
-        "Innovation, Sustainability, Human-Machine Systems",
-        "Meta-analysis and systematic reviews"
+        "Research, Science, and Academia",
+        "Interdisciplinary Research and Collaboration"
       ],
       "openAlexIds": [
         "https://openalex.org/W6891889291"
@@ -641,11 +631,11 @@
         },
         {
           "name": "Filipi Nascimento Silva",
-          "id": "https://openalex.org/A5120752287"
+          "id": "https://openalex.org/A5025683130"
         },
         {
           "name": "Bao Tran Truong",
-          "id": "https://openalex.org/A5090414289"
+          "id": "https://openalex.org/A5080016648"
         },
         {
           "name": "Sangyeon Kim",
@@ -653,11 +643,11 @@
         },
         {
           "name": "Fan Huang",
-          "id": "https://openalex.org/A5120752288"
+          "id": "https://openalex.org/A5038274891"
         },
         {
-          "name": "Nick Liu",
-          "id": "https://openalex.org/A5069717687"
+          "name": "Liu, Nick",
+          "id": null
         },
         {
           "name": "Alessandro Flammini",
@@ -669,9 +659,9 @@
         }
       ],
       "topics": [
-        "Persona Design and Applications",
-        "Personal Information Management and User Behavior",
-        "Big Data and Digital Economy"
+        "Complex Network Analysis Techniques",
+        "Social Media and Politics",
+        "Media and Digital Communication"
       ],
       "openAlexIds": [
         "https://openalex.org/W4417090746"
@@ -709,8 +699,8 @@
       ],
       "topics": [
         "scientometrics and bibliometrics research",
-        "Scientific Computing and Data Management",
-        "Research Data Management Practices"
+        "Complex Network Analysis Techniques",
+        "Web visibility and informetrics"
       ],
       "openAlexIds": [
         "https://openalex.org/W4409345251"
@@ -724,7 +714,7 @@
       "normalizedTitle": "using network analysis and large language models to obtain a landscape of the literature on dressing materials for wound healing the predominance of chitosan and other",
       "publicationDate": "2025-02-27",
       "year": 2025,
-      "type": "article",
+      "type": "review",
       "source": "International Journal of Biological Macromolecules",
       "doi": "https://doi.org/10.1016/j.ijbiomac.2025.141565",
       "url": "https://doi.org/10.1016/j.ijbiomac.2025.141565",
@@ -771,7 +761,9 @@
         }
       ],
       "topics": [
-        "Wound Healing and Treatments"
+        "Wound Healing and Treatments",
+        "scientometrics and bibliometrics research",
+        "Electrospun Nanofibers in Biomedical Applications"
       ],
       "openAlexIds": [
         "https://openalex.org/W4407947128"
@@ -789,7 +781,7 @@
       "source": "Quantitative Science Studies",
       "doi": "https://doi.org/10.1162/qss.a.13",
       "url": "https://doi.org/10.1162/qss.a.13",
-      "citedByCount": 1,
+      "citedByCount": 0,
       "openAccess": true,
       "openAccessStatus": "gold",
       "preprintUrls": [
@@ -810,17 +802,14 @@
         }
       ],
       "topics": [
-        "Scientific Computing and Data Management",
         "scientometrics and bibliometrics research",
-        "Biomedical Text Mining and Ontologies"
+        "Complex Network Analysis Techniques",
+        "Web visibility and informetrics"
       ],
       "openAlexIds": [
-        "https://openalex.org/W4412401937",
-        "https://openalex.org/W4403809124"
+        "https://openalex.org/W4412401937"
       ],
-      "alternateUrls": [
-        "http://arxiv.org/abs/2409.18240"
-      ],
+      "alternateUrls": [],
       "publicationStatus": "published"
     },
     {
@@ -854,9 +843,9 @@
         }
       ],
       "topics": [
-        "Complex Network Analysis Techniques",
         "Advanced Graph Neural Networks",
-        "Bioinformatics and Genomic Networks"
+        "Complex Network Analysis Techniques",
+        "Graph Theory and Algorithms"
       ],
       "openAlexIds": [
         "https://openalex.org/W4404103503",
@@ -880,7 +869,9 @@
       "citedByCount": 0,
       "openAccess": true,
       "openAccessStatus": "gold",
-      "preprintUrls": [],
+      "preprintUrls": [
+        "https://arxiv.org/abs/2210.02334"
+      ],
       "authors": [
         {
           "name": "Giovana D. da Silva",
@@ -908,14 +899,17 @@
         }
       ],
       "topics": [
-        "Advanced Text Analysis Techniques",
-        "Publishing and Scholarly Communication",
-        "Information Retrieval and Search Behavior"
+        "Digital Humanities and Scholarship",
+        "Computational and Text Analysis Methods",
+        "Text and Document Classification Technologies"
       ],
       "openAlexIds": [
-        "https://openalex.org/W4395676868"
+        "https://openalex.org/W4395676868",
+        "https://openalex.org/W4303440310"
       ],
-      "alternateUrls": [],
+      "alternateUrls": [
+        "http://arxiv.org/abs/2210.02334"
+      ],
       "publicationStatus": "published"
     },
     {
@@ -928,7 +922,7 @@
       "source": "Nature Methods",
       "doi": "https://doi.org/10.1038/s41592-024-02237-2",
       "url": "https://doi.org/10.1038/s41592-024-02237-2",
-      "citedByCount": 72,
+      "citedByCount": 77,
       "openAccess": true,
       "openAccessStatus": "hybrid",
       "preprintUrls": [
@@ -937,10 +931,10 @@
       "authors": [
         {
           "name": "Soichi Hayashi",
-          "id": "https://openalex.org/A5034244164"
+          "id": null
         },
         {
-          "name": "Bradley Caron",
+          "name": "Bradley A. Caron",
           "id": "https://openalex.org/A5076230258"
         },
         {
@@ -952,11 +946,11 @@
           "id": "https://openalex.org/A5029199407"
         },
         {
-          "name": "Brent McPherson",
+          "name": "Brent Caleb McPherson",
           "id": "https://openalex.org/A5034241831"
         },
         {
-          "name": "Daniel Bullock",
+          "name": "Daniel N. Bullock",
           "id": "https://openalex.org/A5042549669"
         },
         {
@@ -972,7 +966,7 @@
           "id": "https://openalex.org/A5011491659"
         },
         {
-          "name": "Daniel Levitas",
+          "name": "Daniel J. Levitas",
           "id": "https://openalex.org/A5059565145"
         },
         {
@@ -980,15 +974,15 @@
           "id": "https://openalex.org/A5023028814"
         },
         {
-          "name": "Anne MacKenzie",
-          "id": "https://openalex.org/A5110987011"
+          "name": "Anne M. MacKenzie",
+          "id": "https://openalex.org/A5017990671"
         },
         {
           "name": "Paolo Avesani",
           "id": "https://openalex.org/A5060974774"
         },
         {
-          "name": "Lindsey Kitchell",
+          "name": "Lindsey M. Kitchell",
           "id": "https://openalex.org/A5004820176"
         },
         {
@@ -1001,7 +995,7 @@
         },
         {
           "name": "Serge Koudoro",
-          "id": "https://openalex.org/A5108280418"
+          "id": "https://openalex.org/A5027871734"
         },
         {
           "name": "Hanna E. Willis",
@@ -1056,7 +1050,7 @@
           "id": "https://openalex.org/A5086176050"
         },
         {
-          "name": "Fang‐Cheng Yeh",
+          "name": "Fang-Cheng F. Yeh",
           "id": "https://openalex.org/A5077227967"
         },
         {
@@ -1080,12 +1074,12 @@
           "id": "https://openalex.org/A5005941814"
         },
         {
-          "name": "Ricardo Fábrega",
-          "id": "https://openalex.org/A5058922835"
+          "name": "Ricardo Fabrega",
+          "id": null
         },
         {
           "name": "David Hunt",
-          "id": "https://openalex.org/A5054196867"
+          "id": null
         },
         {
           "name": "Shawn McKee",
@@ -1112,7 +1106,7 @@
           "id": "https://openalex.org/A5047882948"
         },
         {
-          "name": "R. Cameron Craddock",
+          "name": "Richard Cameron Craddock",
           "id": "https://openalex.org/A5065821998"
         },
         {
@@ -1120,7 +1114,7 @@
           "id": "https://openalex.org/A5104535164"
         },
         {
-          "name": "Jamie L. Hanson",
+          "name": "Jamie Lars Hanson",
           "id": "https://openalex.org/A5048158896"
         },
         {
@@ -1145,7 +1139,7 @@
         },
         {
           "name": "Craig A. Stewart",
-          "id": "https://openalex.org/A5081974094"
+          "id": "https://openalex.org/A5081468884"
         },
         {
           "name": "David M. Schnyer",
@@ -1156,7 +1150,7 @@
           "id": "https://openalex.org/A5009660887"
         },
         {
-          "name": "Russell A. Poldrack",
+          "name": "Russell Alan Poldrack",
           "id": "https://openalex.org/A5046868253"
         },
         {
@@ -1164,7 +1158,7 @@
           "id": "https://openalex.org/A5007006482"
         },
         {
-          "name": "Ashley Stewart",
+          "name": "Ashley Wilton Stewart",
           "id": "https://openalex.org/A5039280588"
         },
         {
@@ -1173,7 +1167,7 @@
         },
         {
           "name": "Ilaria Sani",
-          "id": "https://openalex.org/A5077663383"
+          "id": null
         },
         {
           "name": "Winrich A. Freiwald",
@@ -1193,9 +1187,9 @@
         }
       ],
       "topics": [
-        "Functional Brain Connectivity Studies",
-        "Cell Image Analysis Techniques",
-        "Advanced MRI Techniques and Applications"
+        "Scientific Computing and Data Management",
+        "Research Data Management Practices",
+        "Functional Brain Connectivity Studies"
       ],
       "openAlexIds": [
         "https://openalex.org/W4379539304"
@@ -1235,8 +1229,8 @@
       ],
       "topics": [
         "Complex Network Analysis Techniques",
-        "Bioinformatics and Genomic Networks",
-        "Topological and Geometric Data Analysis"
+        "Complex Systems and Time Series Analysis",
+        "Graph theory and applications"
       ],
       "openAlexIds": [
         "https://openalex.org/W4392136466",
@@ -1279,16 +1273,13 @@
       ],
       "topics": [
         "Complex Network Analysis Techniques",
-        "Opinion Dynamics and Social Influence",
-        "Evolutionary Game Theory and Cooperation"
+        "Graph theory and applications",
+        "Complex Systems and Time Series Analysis"
       ],
       "openAlexIds": [
-        "https://openalex.org/W4391019881",
-        "https://openalex.org/W4309129954"
+        "https://openalex.org/W4391019881"
       ],
-      "alternateUrls": [
-        "http://arxiv.org/abs/2211.06657"
-      ],
+      "alternateUrls": [],
       "publicationStatus": "published"
     },
     {
@@ -1328,9 +1319,9 @@
         }
       ],
       "topics": [
-        "Advanced Text Analysis Techniques",
-        "Topic Modeling",
-        "Text and Document Classification Technologies"
+        "scientometrics and bibliometrics research",
+        "Psychology Research and Bibliometrics",
+        "Computational and Text Analysis Methods"
       ],
       "openAlexIds": [
         "https://openalex.org/W4390750810"
@@ -1344,7 +1335,7 @@
       "normalizedTitle": "network analysis and natural language processing to obtain a landscape of the scientific literature on materials applications",
       "publicationDate": "2023-06-04",
       "year": 2023,
-      "type": "article",
+      "type": "review",
       "source": "ACS Applied Materials & Interfaces",
       "doi": "https://doi.org/10.1021/acsami.3c01632",
       "url": "https://doi.org/10.1021/acsami.3c01632",
@@ -1375,8 +1366,9 @@
         }
       ],
       "topics": [
-        "Machine Learning in Materials Science",
-        "Computational Drug Discovery Methods"
+        "scientometrics and bibliometrics research",
+        "Computational and Text Analysis Methods",
+        "Diverse Approaches in Healthcare and Education Studies"
       ],
       "openAlexIds": [
         "https://openalex.org/W4379348298"
@@ -1394,9 +1386,9 @@
       "source": "Information Sciences",
       "doi": "https://doi.org/10.1016/j.ins.2023.119124",
       "url": "https://doi.org/10.1016/j.ins.2023.119124",
-      "citedByCount": 7,
-      "openAccess": false,
-      "openAccessStatus": "closed",
+      "citedByCount": 8,
+      "openAccess": true,
+      "openAccessStatus": "green",
       "preprintUrls": [
         "https://arxiv.org/abs/2201.06665"
       ],
@@ -1427,17 +1419,14 @@
         }
       ],
       "topics": [
-        "Advanced Text Analysis Techniques",
-        "Topic Modeling",
-        "Authorship Attribution and Profiling"
+        "Complex Network Analysis Techniques",
+        "Complex Systems and Time Series Analysis",
+        "Digital Humanities and Scholarship"
       ],
       "openAlexIds": [
-        "https://openalex.org/W4376309372",
-        "https://openalex.org/W4229049996"
+        "https://openalex.org/W4376309372"
       ],
-      "alternateUrls": [
-        "http://arxiv.org/abs/2201.06665"
-      ],
+      "alternateUrls": [],
       "publicationStatus": "published"
     },
     {
@@ -1450,9 +1439,9 @@
       "source": "Scientometrics",
       "doi": "https://doi.org/10.1007/s11192-023-04669-7",
       "url": "https://doi.org/10.1007/s11192-023-04669-7",
-      "citedByCount": 13,
-      "openAccess": false,
-      "openAccessStatus": "closed",
+      "citedByCount": 14,
+      "openAccess": true,
+      "openAccessStatus": "green",
       "preprintUrls": [
         "https://arxiv.org/abs/2112.06607"
       ],
@@ -1472,15 +1461,13 @@
       ],
       "topics": [
         "scientometrics and bibliometrics research",
-        "Complex Network Analysis Techniques"
+        "Web visibility and informetrics",
+        "Psychology Research and Bibliometrics"
       ],
       "openAlexIds": [
-        "https://openalex.org/W4323364208",
-        "https://openalex.org/W4226090652"
+        "https://openalex.org/W4323364208"
       ],
-      "alternateUrls": [
-        "http://arxiv.org/abs/2112.06607"
-      ],
+      "alternateUrls": [],
       "publicationStatus": "published"
     },
     {
@@ -1494,8 +1481,8 @@
       "doi": "https://doi.org/10.1016/j.physa.2022.128399",
       "url": "https://doi.org/10.1016/j.physa.2022.128399",
       "citedByCount": 8,
-      "openAccess": false,
-      "openAccessStatus": "closed",
+      "openAccess": true,
+      "openAccessStatus": "bronze",
       "preprintUrls": [
         "https://arxiv.org/abs/2105.01693"
       ],
@@ -1513,7 +1500,7 @@
           "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "César Henrique Comin",
+          "name": "Cesar Henrique Comin",
           "id": "https://openalex.org/A5076528057"
         },
         {
@@ -1523,16 +1510,13 @@
       ],
       "topics": [
         "Complex Network Analysis Techniques",
-        "Opinion Dynamics and Social Influence",
-        "Bioinformatics and Genomic Networks"
+        "scientometrics and bibliometrics research",
+        "Web visibility and informetrics"
       ],
       "openAlexIds": [
-        "https://openalex.org/W3159190144",
-        "https://openalex.org/W4310845086"
+        "https://openalex.org/W3159190144"
       ],
-      "alternateUrls": [
-        "http://arxiv.org/abs/2105.01693"
-      ],
+      "alternateUrls": [],
       "publicationStatus": "published"
     },
     {
@@ -1557,7 +1541,7 @@
           "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "Aiiad Albeshri",
+          "name": "Aiiad Ahmad Albeshri",
           "id": "https://openalex.org/A5045587553"
         },
         {
@@ -1575,8 +1559,8 @@
       ],
       "topics": [
         "Complex Network Analysis Techniques",
-        "Topological and Geometric Data Analysis",
-        "Opinion Dynamics and Social Influence"
+        "Advanced Clustering Algorithms Research",
+        "Bioinformatics and Genomic Networks"
       ],
       "openAlexIds": [
         "https://openalex.org/W3204399149"
@@ -1594,9 +1578,9 @@
       "source": "Physica A Statistical Mechanics and its Applications",
       "doi": "https://doi.org/10.1016/j.physa.2022.127387",
       "url": "https://doi.org/10.1016/j.physa.2022.127387",
-      "citedByCount": 6,
+      "citedByCount": 7,
       "openAccess": true,
-      "openAccessStatus": "hybrid",
+      "openAccessStatus": "bronze",
       "preprintUrls": [
         "https://arxiv.org/abs/2107.08512"
       ],
@@ -1623,16 +1607,16 @@
         }
       ],
       "topics": [
-        "Music and Audio Processing",
-        "Advanced Text Analysis Techniques",
-        "Data Visualization and Analytics"
+        "Digital Humanities and Scholarship",
+        "Authorship Attribution and Profiling",
+        "Computational and Text Analysis Methods"
       ],
       "openAlexIds": [
         "https://openalex.org/W4224106798",
-        "https://openalex.org/W3184496899"
+        "https://openalex.org/W7111669703"
       ],
       "alternateUrls": [
-        "http://arxiv.org/abs/2107.08512"
+        "https://openalex.org/W7111669703"
       ],
       "publicationStatus": "published"
     },
@@ -1642,7 +1626,7 @@
       "normalizedTitle": "visualizing big science projects",
       "publicationDate": "2021-09-28",
       "year": 2021,
-      "type": "article",
+      "type": "review",
       "source": "Nature Reviews Physics",
       "doi": "https://doi.org/10.1038/s42254-021-00374-7",
       "url": "https://doi.org/10.1038/s42254-021-00374-7",
@@ -1665,9 +1649,9 @@
         }
       ],
       "topics": [
-        "Scientific Computing and Data Management",
-        "Research Data Management Practices",
-        "Genetics, Bioinformatics, and Biomedical Research"
+        "scientometrics and bibliometrics research",
+        "Interdisciplinary Research and Collaboration",
+        "Web visibility and informetrics"
       ],
       "openAlexIds": [
         "https://openalex.org/W3204957649"
@@ -1698,17 +1682,17 @@
         },
         {
           "name": "Filipi N. Silva",
-          "id": null
+          "id": "https://openalex.org/A5025683130"
         },
         {
           "name": "Diego R. Amancio",
-          "id": null
+          "id": "https://openalex.org/A5074263397"
         }
       ],
       "topics": [
         "scientometrics and bibliometrics research",
-        "Innovation, Sustainability, Human-Machine Systems",
-        "Interdisciplinary Research and Collaboration"
+        "Web visibility and informetrics",
+        "Psychology Research and Bibliometrics"
       ],
       "openAlexIds": [
         "https://openalex.org/W3107339397",
@@ -1729,7 +1713,7 @@
       "source": "Geophysical Research Letters",
       "doi": "https://doi.org/10.1029/2021gl094707",
       "url": "https://doi.org/10.1029/2021gl094707",
-      "citedByCount": 52,
+      "citedByCount": 53,
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
@@ -1770,9 +1754,9 @@
         }
       ],
       "topics": [
-        "Complex Systems and Time Series Analysis",
-        "Energy Load and Power Forecasting",
-        "Climate variability and models"
+        "Climate variability and models",
+        "Ecosystem dynamics and resilience",
+        "Geology and Paleoclimatology Research"
       ],
       "openAlexIds": [
         "https://openalex.org/W3111149875"
@@ -1790,7 +1774,7 @@
       "source": "The Journal of Open Source Software",
       "doi": "https://doi.org/10.21105/joss.03384",
       "url": "https://doi.org/10.21105/joss.03384",
-      "citedByCount": 16,
+      "citedByCount": 15,
       "openAccess": true,
       "openAccessStatus": "diamond",
       "preprintUrls": [],
@@ -1829,7 +1813,7 @@
         },
         {
           "name": "Geoffrey Fox",
-          "id": "https://openalex.org/A5078240493"
+          "id": "https://openalex.org/A5108016089"
         },
         {
           "name": "Fury Contributors",
@@ -1837,9 +1821,9 @@
         }
       ],
       "topics": [
-        "Computational Physics and Python Applications",
         "Computer Graphics and Visualization Techniques",
-        "Parallel Computing and Optimization Techniques"
+        "Computational Physics and Python Applications",
+        "Data Visualization and Analytics"
       ],
       "openAlexIds": [
         "https://openalex.org/W3187100106"
@@ -1857,16 +1841,16 @@
       "source": "ACM Computing Surveys",
       "doi": "https://doi.org/10.1145/3447755",
       "url": "https://doi.org/10.1145/3447755",
-      "citedByCount": 495,
-      "openAccess": false,
-      "openAccessStatus": "closed",
+      "citedByCount": 615,
+      "openAccess": true,
+      "openAccessStatus": "green",
       "preprintUrls": [
         "https://arxiv.org/abs/1804.02502"
       ],
       "authors": [
         {
-          "name": "Felipe L. Gewers",
-          "id": "https://openalex.org/A5032418160"
+          "name": "Felipe Lucas Gewers",
+          "id": "https://openalex.org/A5005175238"
         },
         {
           "name": "Gustavo R. Ferreira",
@@ -1881,7 +1865,7 @@
           "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "César H. Comin",
+          "name": "Cesar Henrique Comin",
           "id": "https://openalex.org/A5076528057"
         },
         {
@@ -1894,17 +1878,14 @@
         }
       ],
       "topics": [
-        "Spectroscopy and Chemometric Analyses",
+        "Statistical Methods and Applications",
         "Face and Expression Recognition",
         "Advanced Statistical Methods and Models"
       ],
       "openAlexIds": [
-        "https://openalex.org/W3165355909",
-        "https://openalex.org/W2796210736"
+        "https://openalex.org/W3165355909"
       ],
-      "alternateUrls": [
-        "http://arxiv.org/abs/1804.02502"
-      ],
+      "alternateUrls": [],
       "publicationStatus": "published"
     },
     {
@@ -1930,7 +1911,7 @@
         },
         {
           "name": "Filipi N. Silva",
-          "id": null
+          "id": "https://openalex.org/A5025683130"
         },
         {
           "name": "Henrique F. de Arruda",
@@ -1942,17 +1923,17 @@
         },
         {
           "name": "Diego R. Amancio",
-          "id": null
+          "id": "https://openalex.org/A5074263397"
         },
         {
-          "name": "Luciano da F. Costa",
-          "id": null
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
         }
       ],
       "topics": [
-        "Academic Publishing and Open Access",
         "scientometrics and bibliometrics research",
-        "Cell Image Analysis Techniques"
+        "Academic Publishing and Open Access",
+        "Web visibility and informetrics"
       ],
       "openAlexIds": [
         "https://openalex.org/W3092569637",
@@ -1977,7 +1958,7 @@
       "url": "https://doi.org/10.1016/j.physa.2021.125901",
       "citedByCount": 2,
       "openAccess": true,
-      "openAccessStatus": "hybrid",
+      "openAccessStatus": "bronze",
       "preprintUrls": [
         "https://arxiv.org/abs/2008.03134"
       ],
@@ -2000,9 +1981,9 @@
         }
       ],
       "topics": [
+        "scientometrics and bibliometrics research",
         "Complex Network Analysis Techniques",
-        "Machine Learning in Materials Science",
-        "Data Visualization and Analytics"
+        "Web visibility and informetrics"
       ],
       "openAlexIds": [
         "https://openalex.org/W3136215456",
@@ -2023,7 +2004,7 @@
       "source": "Journal of Physics Complexity",
       "doi": "https://doi.org/10.1088/2632-072x/abe561",
       "url": "https://doi.org/10.1088/2632-072x/abe561",
-      "citedByCount": 8,
+      "citedByCount": 9,
       "openAccess": true,
       "openAccessStatus": "gold",
       "preprintUrls": [
@@ -2032,7 +2013,7 @@
       "authors": [
         {
           "name": "Henrique Ferraz de Arruda",
-          "id": null
+          "id": "https://openalex.org/A5085599698"
         },
         {
           "name": "Alexandre Benatti",
@@ -2040,7 +2021,7 @@
         },
         {
           "name": "Filipi Nascimento Silva",
-          "id": null
+          "id": "https://openalex.org/A5025683130"
         },
         {
           "name": "César Henrique Comin",
@@ -2048,13 +2029,13 @@
         },
         {
           "name": "Luciano da Fontoura Costa",
-          "id": null
+          "id": "https://openalex.org/A5005669749"
         }
       ],
       "topics": [
         "Opinion Dynamics and Social Influence",
-        "stochastic dynamics and bifurcation",
-        "Distributed Control Multi-Agent Systems"
+        "Complex Network Analysis Techniques",
+        "Complex Systems and Time Series Analysis"
       ],
       "openAlexIds": [
         "https://openalex.org/W2980538567"
@@ -2074,7 +2055,7 @@
       "url": "https://doi.org/10.1016/j.ins.2020.12.060",
       "citedByCount": 17,
       "openAccess": true,
-      "openAccessStatus": "hybrid",
+      "openAccessStatus": "green",
       "preprintUrls": [
         "https://arxiv.org/abs/2007.12028"
       ],
@@ -2094,8 +2075,8 @@
       ],
       "topics": [
         "Complex Network Analysis Techniques",
-        "Opinion Dynamics and Social Influence",
-        "Complex Systems and Time Series Analysis"
+        "Neural Networks and Applications",
+        "Data Mining Algorithms and Applications"
       ],
       "openAlexIds": [
         "https://openalex.org/W3043880351"
@@ -2113,7 +2094,7 @@
       "source": "Quantitative Science Studies",
       "doi": "https://doi.org/10.1162/qss_a_00070",
       "url": "https://doi.org/10.1162/qss_a_00070",
-      "citedByCount": 9,
+      "citedByCount": 12,
       "openAccess": true,
       "openAccessStatus": "gold",
       "preprintUrls": [
@@ -2122,37 +2103,37 @@
       "authors": [
         {
           "name": "Filipi Nascimento Silva",
-          "id": null
+          "id": "https://openalex.org/A5025683130"
         },
         {
           "name": "Aditya Tandon",
-          "id": null
+          "id": "https://openalex.org/A5068298861"
         },
         {
           "name": "Diego Raphael Amancio",
-          "id": null
+          "id": "https://openalex.org/A5074263397"
         },
         {
           "name": "Alessandro Flammini",
-          "id": null
+          "id": "https://openalex.org/A5011228873"
         },
         {
           "name": "Filippo Menczer",
-          "id": null
+          "id": "https://openalex.org/A5021346979"
         },
         {
           "name": "Staša Milojević",
-          "id": null
+          "id": "https://openalex.org/A5108688680"
         },
         {
           "name": "Santo Fortunato",
-          "id": null
+          "id": "https://openalex.org/A5053938061"
         }
       ],
       "topics": [
         "scientometrics and bibliometrics research",
         "Complex Network Analysis Techniques",
-        "Academic Writing and Publishing"
+        "Web visibility and informetrics"
       ],
       "openAlexIds": [
         "https://openalex.org/W2991003614"
@@ -2170,15 +2151,15 @@
       "source": "Physics Reports",
       "doi": "https://doi.org/10.1016/j.physrep.2020.03.002",
       "url": "https://doi.org/10.1016/j.physrep.2020.03.002",
-      "citedByCount": 9,
+      "citedByCount": 8,
       "openAccess": true,
-      "openAccessStatus": "hybrid",
+      "openAccessStatus": "green",
       "preprintUrls": [
         "https://arxiv.org/abs/1606.05400"
       ],
       "authors": [
         {
-          "name": "César H. Comin",
+          "name": "Cesar Henrique Comin",
           "id": "https://openalex.org/A5076528057"
         },
         {
@@ -2205,7 +2186,7 @@
       "topics": [
         "Complex Network Analysis Techniques",
         "Complex Systems and Time Series Analysis",
-        "Opinion Dynamics and Social Influence"
+        "Graph theory and applications"
       ],
       "openAlexIds": [
         "https://openalex.org/W2434350671"
@@ -2223,7 +2204,7 @@
       "source": "PLoS ONE",
       "doi": "https://doi.org/10.1371/journal.pone.0229928",
       "url": "https://doi.org/10.1371/journal.pone.0229928",
-      "citedByCount": 28,
+      "citedByCount": 27,
       "openAccess": true,
       "openAccessStatus": "gold",
       "preprintUrls": [
@@ -2246,7 +2227,7 @@
       "topics": [
         "Complex Network Analysis Techniques",
         "Opinion Dynamics and Social Influence",
-        "Social Media and Politics"
+        "Electoral Systems and Political Participation"
       ],
       "openAlexIds": [
         "https://openalex.org/W3012543558"
@@ -2264,7 +2245,7 @@
       "source": "Journal of Statistical Mechanics Theory and Experiment",
       "doi": "https://doi.org/10.1088/1742-5468/ab6de3",
       "url": "https://doi.org/10.1088/1742-5468/ab6de3",
-      "citedByCount": 17,
+      "citedByCount": 16,
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
@@ -2284,7 +2265,7 @@
           "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "César Henrique Comin",
+          "name": "Cesar Henrique Comin",
           "id": "https://openalex.org/A5076528057"
         },
         {
@@ -2295,7 +2276,7 @@
       "topics": [
         "Opinion Dynamics and Social Influence",
         "Complex Network Analysis Techniques",
-        "Statistical Mechanics and Entropy"
+        "Complex Systems and Time Series Analysis"
       ],
       "openAlexIds": [
         "https://openalex.org/W2943199437"
@@ -2325,7 +2306,7 @@
           "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "César H. Comin",
+          "name": "Cesar Henrique Comin",
           "id": "https://openalex.org/A5076528057"
         },
         {
@@ -2335,8 +2316,8 @@
       ],
       "topics": [
         "Complex Network Analysis Techniques",
-        "Complex Systems and Time Series Analysis",
-        "Opinion Dynamics and Social Influence"
+        "Graph theory and applications",
+        "Complex Systems and Time Series Analysis"
       ],
       "openAlexIds": [
         "https://openalex.org/W2897856032"
@@ -2376,7 +2357,7 @@
           "id": "https://openalex.org/A5005669749"
         },
         {
-          "name": "Cecília M. Abe",
+          "name": "Cecilia Mari Abe",
           "id": "https://openalex.org/A5083005020"
         },
         {
@@ -2398,8 +2379,8 @@
       ],
       "topics": [
         "Escherichia coli research studies",
-        "Viral gastroenteritis research and epidemiology",
-        "Gut microbiota and health"
+        "Complement system in diseases",
+        "Bacterial Genetics and Biotechnology"
       ],
       "openAlexIds": [
         "https://openalex.org/W2961916675"
@@ -2417,9 +2398,9 @@
       "source": "Physica A Statistical Mechanics and its Applications",
       "doi": "https://doi.org/10.1016/j.physa.2018.10.005",
       "url": "https://doi.org/10.1016/j.physa.2018.10.005",
-      "citedByCount": 17,
+      "citedByCount": 16,
       "openAccess": true,
-      "openAccessStatus": "green",
+      "openAccessStatus": "bronze",
       "preprintUrls": [
         "https://arxiv.org/abs/1704.03091"
       ],
@@ -2433,7 +2414,7 @@
           "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "César H. Comin",
+          "name": "Cesar Henrique Comin",
           "id": "https://openalex.org/A5076528057"
         },
         {
@@ -2447,8 +2428,8 @@
       ],
       "topics": [
         "Complex Network Analysis Techniques",
-        "Opinion Dynamics and Social Influence",
-        "Fractal and DNA sequence analysis"
+        "Graph theory and applications",
+        "Complex Systems and Time Series Analysis"
       ],
       "openAlexIds": [
         "https://openalex.org/W2627843632",
@@ -2460,51 +2441,6 @@
       "publicationStatus": "published"
     },
     {
-      "id": "https://openalex.org/W2891753045",
-      "title": "Can Spatiality Promote Diversity?",
-      "normalizedTitle": "can spatiality promote diversity",
-      "publicationDate": "2018-09-03",
-      "year": 2018,
-      "type": "preprint",
-      "source": "arXiv (Cornell University)",
-      "doi": "https://doi.org/10.48550/arxiv.1809.00729",
-      "url": "https://arxiv.org/abs/1809.00729",
-      "citedByCount": 2,
-      "openAccess": true,
-      "openAccessStatus": "green",
-      "preprintUrls": [
-        "https://arxiv.org/abs/1809.00729"
-      ],
-      "authors": [
-        {
-          "name": "Bruno Messias",
-          "id": "https://openalex.org/A5049924459"
-        },
-        {
-          "name": "Filipi N. Silva",
-          "id": "https://openalex.org/A5025683130"
-        },
-        {
-          "name": "César H. Comin",
-          "id": "https://openalex.org/A5076528057"
-        },
-        {
-          "name": "Luciano da Fontoura Costa",
-          "id": "https://openalex.org/A5005669749"
-        }
-      ],
-      "topics": [
-        "Opinion Dynamics and Social Influence",
-        "Evolutionary Game Theory and Cooperation",
-        "Complex Network Analysis Techniques"
-      ],
-      "openAlexIds": [
-        "https://openalex.org/W2891753045"
-      ],
-      "alternateUrls": [],
-      "publicationStatus": "preprint"
-    },
-    {
       "id": "https://openalex.org/W2789151723",
       "title": "The dynamics of knowledge acquisition via self-learning in complex networks",
       "normalizedTitle": "the dynamics of knowledge acquisition via self learning in complex networks",
@@ -2514,7 +2450,7 @@
       "source": "Chaos An Interdisciplinary Journal of Nonlinear Science",
       "doi": "https://doi.org/10.1063/1.5027007",
       "url": "https://doi.org/10.1063/1.5027007",
-      "citedByCount": 17,
+      "citedByCount": 16,
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
@@ -2534,7 +2470,7 @@
           "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "César H. Comin",
+          "name": "Cesar Henrique Comin",
           "id": "https://openalex.org/A5076528057"
         },
         {
@@ -2547,9 +2483,9 @@
         }
       ],
       "topics": [
-        "Opinion Dynamics and Social Influence",
         "Complex Network Analysis Techniques",
-        "Neural dynamics and brain function"
+        "Complex Systems and Time Series Analysis",
+        "Knowledge Management and Sharing"
       ],
       "openAlexIds": [
         "https://openalex.org/W2789151723"
@@ -2583,7 +2519,7 @@
           "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "César H. Comin",
+          "name": "Cesar Henrique Comin",
           "id": "https://openalex.org/A5076528057"
         },
         {
@@ -2592,9 +2528,9 @@
         }
       ],
       "topics": [
-        "Urban Design and Spatial Analysis",
         "Complex Network Analysis Techniques",
-        "Land Use and Ecosystem Services"
+        "Urban Design and Spatial Analysis",
+        "Global Urban Networks and Dynamics"
       ],
       "openAlexIds": [
         "https://openalex.org/W2760570940"
@@ -2613,8 +2549,8 @@
       "doi": "https://doi.org/10.1002/cta.2450",
       "url": "https://doi.org/10.1002/cta.2450",
       "citedByCount": 4,
-      "openAccess": true,
-      "openAccessStatus": "green",
+      "openAccess": false,
+      "openAccessStatus": "closed",
       "preprintUrls": [
         "https://arxiv.org/abs/1701.02269"
       ],
@@ -2628,14 +2564,14 @@
           "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "César H. Comin",
+          "name": "Cesar Henrique Comin",
           "id": "https://openalex.org/A5076528057"
         }
       ],
       "topics": [
+        "Advancements in Semiconductor Devices and Circuit Design",
         "Analog and Mixed-Signal Circuit Design",
-        "Neural Networks and Applications",
-        "Model Reduction and Neural Networks"
+        "Semiconductor materials and devices"
       ],
       "openAlexIds": [
         "https://openalex.org/W2796775613",
@@ -2657,29 +2593,29 @@
       "doi": "https://doi.org/10.1016/j.physa.2018.02.011",
       "url": "https://doi.org/10.1016/j.physa.2018.02.011",
       "citedByCount": 0,
-      "openAccess": true,
-      "openAccessStatus": "hybrid",
+      "openAccess": false,
+      "openAccessStatus": "closed",
       "preprintUrls": [
         "https://arxiv.org/abs/1708.00469"
       ],
       "authors": [
         {
           "name": "Luciano da Fontoura Costa",
-          "id": "https://openalex.org/A5104228786"
+          "id": "https://openalex.org/A5005669749"
         },
         {
           "name": "Filipi N. Silva",
           "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "César H. Comin",
+          "name": "Cesar Henrique Comin",
           "id": "https://openalex.org/A5076528057"
         }
       ],
       "topics": [
+        "Statistical Methods and Applications",
         "Analog and Mixed-Signal Circuit Design",
-        "Neural Networks and Applications",
-        "Evolutionary Algorithms and Applications"
+        "Advancements in Semiconductor Devices and Circuit Design"
       ],
       "openAlexIds": [
         "https://openalex.org/W2740971051",
@@ -2689,6 +2625,52 @@
         "http://arxiv.org/abs/1708.00469"
       ],
       "publicationStatus": "published"
+    },
+    {
+      "id": "https://openalex.org/W6959904339",
+      "title": "Can Spatiality Promote Diversity?",
+      "normalizedTitle": "can spatiality promote diversity",
+      "publicationDate": "2018-01-01",
+      "year": 2018,
+      "type": "preprint",
+      "source": "arXiv (Cornell University)",
+      "doi": "https://doi.org/10.13140/rg.2.2.17782.45129",
+      "url": "https://doi.org/10.13140/rg.2.2.17782.45129",
+      "citedByCount": 3,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://doi.org/10.13140/rg.2.2.17782.45129",
+        "https://arxiv.org/abs/1809.00729"
+      ],
+      "authors": [
+        {
+          "name": "Bruno Messias",
+          "id": "https://openalex.org/A5020696962"
+        },
+        {
+          "name": "Filipi Nascimento Silva",
+          "id": "https://openalex.org/A5025683130"
+        },
+        {
+          "name": "Comin, Cesar H",
+          "id": null
+        },
+        {
+          "name": "Luciano da F. Costa",
+          "id": "https://openalex.org/A5103239390"
+        }
+      ],
+      "topics": [
+        "Regional Economics and Spatial Analysis",
+        "Ecology and Vegetation Dynamics Studies",
+        "Spatial and Panel Data Analysis"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W6959904339"
+      ],
+      "alternateUrls": [],
+      "publicationStatus": "preprint"
     },
     {
       "id": "https://openalex.org/W2766717180",
@@ -2701,8 +2683,8 @@
       "doi": "https://doi.org/10.1039/c7ib00161d",
       "url": "https://doi.org/10.1039/c7ib00161d",
       "citedByCount": 2,
-      "openAccess": true,
-      "openAccessStatus": "green",
+      "openAccess": false,
+      "openAccessStatus": "closed",
       "preprintUrls": [],
       "authors": [
         {
@@ -2710,7 +2692,7 @@
           "id": "https://openalex.org/A5057850491"
         },
         {
-          "name": "César H. Comin",
+          "name": "Cesar Henrique Comin",
           "id": "https://openalex.org/A5076528057"
         },
         {
@@ -2724,8 +2706,8 @@
       ],
       "topics": [
         "Bioinformatics and Genomic Networks",
-        "Computational Drug Discovery Methods",
-        "Advanced Proteomics Techniques and Applications"
+        "Complex Network Analysis Techniques",
+        "Gene Regulatory Network Analysis"
       ],
       "openAlexIds": [
         "https://openalex.org/W2766717180"
@@ -2743,9 +2725,9 @@
       "source": "Information Sciences",
       "doi": "https://doi.org/10.1016/j.ins.2017.08.091",
       "url": "https://doi.org/10.1016/j.ins.2017.08.091",
-      "citedByCount": 77,
+      "citedByCount": 75,
       "openAccess": true,
-      "openAccessStatus": "hybrid",
+      "openAccessStatus": "green",
       "preprintUrls": [
         "https://arxiv.org/abs/1703.03366"
       ],
@@ -2769,8 +2751,8 @@
       ],
       "topics": [
         "Complex Network Analysis Techniques",
-        "Opinion Dynamics and Social Influence",
-        "Complex Systems and Time Series Analysis"
+        "Complex Systems and Time Series Analysis",
+        "Knowledge Management and Sharing"
       ],
       "openAlexIds": [
         "https://openalex.org/W2604444759"
@@ -2788,7 +2770,7 @@
       "source": "Journal of Complex Networks",
       "doi": "https://doi.org/10.1093/comnet/cnx023",
       "url": "https://doi.org/10.1093/comnet/cnx023",
-      "citedByCount": 34,
+      "citedByCount": 41,
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
@@ -2797,11 +2779,11 @@
       "authors": [
         {
           "name": "Henrique Ferraz de Arruda",
-          "id": null
+          "id": "https://openalex.org/A5085599698"
         },
         {
           "name": "Filipi Nascimento Silva",
-          "id": null
+          "id": "https://openalex.org/A5025683130"
         },
         {
           "name": "Vanessa Queiroz Marinho",
@@ -2809,17 +2791,17 @@
         },
         {
           "name": "Diego Raphael Amancio",
-          "id": null
+          "id": "https://openalex.org/A5074263397"
         },
         {
           "name": "Luciano da Fontoura Costa",
-          "id": null
+          "id": "https://openalex.org/A5005669749"
         }
       ],
       "topics": [
-        "Authorship Attribution and Profiling",
-        "Topic Modeling",
-        "Complex Network Analysis Techniques"
+        "Complex Network Analysis Techniques",
+        "Computational and Text Analysis Methods",
+        "Advanced Text Analysis Techniques"
       ],
       "openAlexIds": [
         "https://openalex.org/W2596836281",
@@ -2840,9 +2822,9 @@
       "source": "Electrical Engineering",
       "doi": "https://doi.org/10.1007/s00202-017-0573-8",
       "url": "https://doi.org/10.1007/s00202-017-0573-8",
-      "citedByCount": 5,
-      "openAccess": true,
-      "openAccessStatus": "green",
+      "citedByCount": 4,
+      "openAccess": false,
+      "openAccessStatus": "closed",
       "preprintUrls": [
         "https://arxiv.org/abs/1611.06356"
       ],
@@ -2856,14 +2838,14 @@
           "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "César H. Comin",
+          "name": "Cesar Henrique Comin",
           "id": "https://openalex.org/A5076528057"
         }
       ],
       "topics": [
-        "Neural Networks and Applications",
         "Analog and Mixed-Signal Circuit Design",
-        "stochastic dynamics and bifurcation"
+        "Advanced Power Amplifier Design",
+        "Control Systems and Identification"
       ],
       "openAlexIds": [
         "https://openalex.org/W2552257038",
@@ -2886,9 +2868,9 @@
       "source": "Journal of Informetrics",
       "doi": "https://doi.org/10.1016/j.joi.2017.03.003",
       "url": "https://doi.org/10.1016/j.joi.2017.03.003",
-      "citedByCount": 93,
+      "citedByCount": 100,
       "openAccess": true,
-      "openAccessStatus": "hybrid",
+      "openAccessStatus": "green",
       "preprintUrls": [
         "https://arxiv.org/abs/1609.05545"
       ],
@@ -2899,21 +2881,21 @@
         },
         {
           "name": "Filipi N. Silva",
-          "id": null
+          "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "Luciano da F. Costa",
-          "id": null
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
         },
         {
           "name": "Diego R. Amancio",
-          "id": null
+          "id": "https://openalex.org/A5074263397"
         }
       ],
       "topics": [
         "scientometrics and bibliometrics research",
         "Academic Writing and Publishing",
-        "Authorship Attribution and Profiling"
+        "Psychology Research and Bibliometrics"
       ],
       "openAlexIds": [
         "https://openalex.org/W2521984931",
@@ -2934,7 +2916,7 @@
       "source": "Review of Scientific Instruments",
       "doi": "https://doi.org/10.1063/1.4969058",
       "url": "https://doi.org/10.1063/1.4969058",
-      "citedByCount": 6,
+      "citedByCount": 7,
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
@@ -2943,21 +2925,21 @@
       "authors": [
         {
           "name": "Filipi N. Silva",
-          "id": null
+          "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "Cesar H. Comin",
-          "id": null
+          "name": "Cesar Henrique Comin",
+          "id": "https://openalex.org/A5076528057"
         },
         {
-          "name": "Luciano da F. Costa",
-          "id": null
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
         }
       ],
       "topics": [
+        "Control Systems and Identification",
         "Analog and Mixed-Signal Circuit Design",
-        "Ferroelectric and Negative Capacitance Devices",
-        "Engineering and Technology Innovations"
+        "Sensor Technology and Measurement Systems"
       ],
       "openAlexIds": [
         "https://openalex.org/W2512437160"
@@ -2969,7 +2951,7 @@
       "id": "https://openalex.org/W2408300690",
       "title": "A diffusion-based approach to obtaining the borders of urban areas",
       "normalizedTitle": "a diffusion based approach to obtaining the borders of urban areas",
-      "publicationDate": "2016-05-19",
+      "publicationDate": "2016-05-01",
       "year": 2016,
       "type": "article",
       "source": "Journal of Statistical Mechanics Theory and Experiment",
@@ -2984,20 +2966,20 @@
       "authors": [
         {
           "name": "Cesar Henrique Comin",
-          "id": null
+          "id": "https://openalex.org/A5076528057"
         },
         {
           "name": "Filipi Nascimento Silva",
-          "id": null
+          "id": "https://openalex.org/A5025683130"
         },
         {
           "name": "Luciano da Fontoura Costa",
-          "id": null
+          "id": "https://openalex.org/A5005669749"
         }
       ],
       "topics": [
         "Urban Design and Spatial Analysis",
-        "Regional Economics and Spatial Analysis",
+        "Complex Network Analysis Techniques",
         "Human Mobility and Location-Based Analysis"
       ],
       "openAlexIds": [
@@ -3019,7 +3001,7 @@
       "source": "Journal of Informetrics",
       "doi": "https://doi.org/10.1016/j.joi.2016.03.008",
       "url": "https://doi.org/10.1016/j.joi.2016.03.008",
-      "citedByCount": 121,
+      "citedByCount": 120,
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
@@ -3028,19 +3010,19 @@
       "authors": [
         {
           "name": "Filipi N. Silva",
-          "id": null
+          "id": "https://openalex.org/A5025683130"
         },
         {
           "name": "Diego R. Amancio",
-          "id": null
+          "id": "https://openalex.org/A5074263397"
         },
         {
           "name": "Maria Bardosova",
-          "id": null
+          "id": "https://openalex.org/A5061150393"
         },
         {
-          "name": "Luciano da F. Costa",
-          "id": null
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
         },
         {
           "name": "Osvaldo N. Oliveira",
@@ -3048,9 +3030,9 @@
         }
       ],
       "topics": [
+        "scientometrics and bibliometrics research",
         "Complex Network Analysis Techniques",
-        "Photonic Crystals and Applications",
-        "Data Visualization and Analytics"
+        "Web visibility and informetrics"
       ],
       "openAlexIds": [
         "https://openalex.org/W1739599771",
@@ -3071,7 +3053,7 @@
       "source": "Oncotarget",
       "doi": "https://doi.org/10.18632/oncotarget.7120",
       "url": "https://doi.org/10.18632/oncotarget.7120",
-      "citedByCount": 25,
+      "citedByCount": 23,
       "openAccess": true,
       "openAccessStatus": "diamond",
       "preprintUrls": [],
@@ -3105,22 +3087,22 @@
           "id": "https://openalex.org/A5108190721"
         },
         {
-          "name": "Paulo Chacur",
-          "id": "https://openalex.org/A5050350312"
+          "name": "Paulo Chaccur",
+          "id": "https://openalex.org/A5032317028"
         },
         {
           "name": "Maria Cláudia Nogueira Zerbini",
           "id": "https://openalex.org/A5086965467"
         },
         {
-          "name": "Magda Carneiro‐Sampaio",
+          "name": "Magda Maria Sales Carneiro-Sampaio",
           "id": "https://openalex.org/A5085211757"
         }
       ],
       "topics": [
-        "Genomics and Rare Diseases",
         "Down syndrome and intellectual disability research",
-        "Single-cell and spatial transcriptomics"
+        "MicroRNA in disease regulation",
+        "Genomics and Rare Diseases"
       ],
       "openAlexIds": [
         "https://openalex.org/W2282533933"
@@ -3138,9 +3120,9 @@
       "source": "Information Sciences",
       "doi": "https://doi.org/10.1016/j.ins.2015.11.014",
       "url": "https://doi.org/10.1016/j.ins.2015.11.014",
-      "citedByCount": 14,
+      "citedByCount": 16,
       "openAccess": true,
-      "openAccessStatus": "hybrid",
+      "openAccessStatus": "green",
       "preprintUrls": [
         "https://arxiv.org/abs/1407.0224"
       ],
@@ -3150,7 +3132,7 @@
           "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "César H. Comin",
+          "name": "Cesar Henrique Comin",
           "id": "https://openalex.org/A5076528057"
         },
         {
@@ -3180,8 +3162,8 @@
       ],
       "topics": [
         "Complex Network Analysis Techniques",
-        "Opinion Dynamics and Social Influence",
-        "Topological and Geometric Data Analysis"
+        "Graph theory and applications",
+        "Graph Theory and Algorithms"
       ],
       "openAlexIds": [
         "https://openalex.org/W1663952007"
@@ -3211,7 +3193,7 @@
           "id": "https://openalex.org/A5100741781"
         },
         {
-          "name": "César H. Comin",
+          "name": "Cesar Henrique Comin",
           "id": "https://openalex.org/A5076528057"
         },
         {
@@ -3231,7 +3213,7 @@
           "id": "https://openalex.org/A5005669749"
         },
         {
-          "name": "Andrea Torsello",
+          "name": "Andrea Torsello A",
           "id": "https://openalex.org/A5004269930"
         },
         {
@@ -3241,8 +3223,8 @@
       ],
       "topics": [
         "Complex Network Analysis Techniques",
-        "Advanced Thermodynamics and Statistical Mechanics",
-        "Opinion Dynamics and Social Influence"
+        "Graph theory and applications",
+        "Complex Systems and Time Series Analysis"
       ],
       "openAlexIds": [
         "https://openalex.org/W2185756138"
@@ -3260,7 +3242,7 @@
       "source": "Europhysics Letters (EPL)",
       "doi": "https://doi.org/10.1209/0295-5075/110/68002",
       "url": "https://doi.org/10.1209/0295-5075/110/68002",
-      "citedByCount": 3,
+      "citedByCount": 5,
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
@@ -3268,22 +3250,22 @@
       ],
       "authors": [
         {
-          "name": "Cesar H. Comin",
-          "id": null
+          "name": "Cesar Henrique Comin",
+          "id": "https://openalex.org/A5076528057"
         },
         {
           "name": "Filipi N. Silva",
-          "id": null
+          "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "Luciano da F. Costa",
-          "id": null
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
         }
       ],
       "topics": [
-        "Functional Brain Connectivity Studies",
-        "Topological and Geometric Data Analysis",
-        "Complex Network Analysis Techniques"
+        "Complex Network Analysis Techniques",
+        "Graph theory and applications",
+        "Complex Systems and Time Series Analysis"
       ],
       "openAlexIds": [
         "https://openalex.org/W1824082194"
@@ -3301,7 +3283,7 @@
       "source": "Europhysics Letters (EPL)",
       "doi": "https://doi.org/10.1209/0295-5075/110/68001",
       "url": "https://doi.org/10.1209/0295-5075/110/68001",
-      "citedByCount": 50,
+      "citedByCount": 48,
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
@@ -3323,8 +3305,8 @@
       ],
       "topics": [
         "Authorship Attribution and Profiling",
-        "Opinion Dynamics and Social Influence",
-        "Complex Network Analysis Techniques"
+        "Complex Network Analysis Techniques",
+        "Digital Humanities and Scholarship"
       ],
       "openAlexIds": [
         "https://openalex.org/W1933573347"
@@ -3380,14 +3362,14 @@
           "id": "https://openalex.org/A5041237650"
         },
         {
-          "name": "Hung-Tzu Wen",
-          "id": "https://openalex.org/A5067649960"
+          "name": "Wen Hung Tzu",
+          "id": "https://openalex.org/A5072331182"
         }
       ],
       "topics": [
         "Epilepsy research and treatment",
-        "Mitochondrial Function and Pathology",
-        "RNA and protein synthesis mechanisms"
+        "Bioinformatics and Genomic Networks",
+        "Neural dynamics and brain function"
       ],
       "openAlexIds": [
         "https://openalex.org/W1687913548"
@@ -3405,7 +3387,7 @@
       "source": "RePEc: Research Papers in Economics",
       "doi": "https://doi.org/10.48550/arxiv.1501.05040",
       "url": "https://arxiv.org/abs/1501.05040",
-      "citedByCount": 13,
+      "citedByCount": 26,
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
@@ -3417,7 +3399,7 @@
           "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "César H. Comin",
+          "name": "Cesar Henrique Comin",
           "id": "https://openalex.org/A5076528057"
         },
         {
@@ -3446,9 +3428,9 @@
         }
       ],
       "topics": [
+        "Complex Network Analysis Techniques",
         "Complex Systems and Time Series Analysis",
-        "Nonlinear Dynamics and Pattern Formation",
-        "Ecosystem dynamics and resilience"
+        "Mental Health Research Topics"
       ],
       "openAlexIds": [
         "https://openalex.org/W1508289301"
@@ -3463,12 +3445,12 @@
       "publicationDate": "2014-01-01",
       "year": 2014,
       "type": "book-chapter",
-      "source": "",
+      "source": "Springer eBooks",
       "doi": "https://doi.org/10.1007/978-3-319-11985-4_4",
       "url": "https://doi.org/10.1007/978-3-319-11985-4_4",
       "citedByCount": 12,
-      "openAccess": true,
-      "openAccessStatus": "green",
+      "openAccess": false,
+      "openAccessStatus": "closed",
       "preprintUrls": [],
       "authors": [
         {
@@ -3495,7 +3477,7 @@
       "topics": [
         "Bioinformatics and Genomic Networks",
         "Gene Regulatory Network Analysis",
-        "Microbial Metabolic Engineering and Bioproduction"
+        "Complex Network Analysis Techniques"
       ],
       "openAlexIds": [
         "https://openalex.org/W326057588"
@@ -3510,12 +3492,12 @@
       "publicationDate": "2014-01-01",
       "year": 2014,
       "type": "book-chapter",
-      "source": "",
+      "source": "Springer eBooks",
       "doi": "https://doi.org/10.1007/978-3-319-11985-4_7",
       "url": "https://doi.org/10.1007/978-3-319-11985-4_7",
       "citedByCount": 3,
-      "openAccess": true,
-      "openAccessStatus": "green",
+      "openAccess": false,
+      "openAccessStatus": "closed",
       "preprintUrls": [],
       "authors": [
         {
@@ -3539,12 +3521,14 @@
           "id": "https://openalex.org/A5005669749"
         },
         {
-          "name": "Magda Carneiro‐Sampaio",
+          "name": "Magda Maria Sales Carneiro-Sampaio",
           "id": "https://openalex.org/A5085211757"
         }
       ],
       "topics": [
-        "Bioinformatics and Genomic Networks"
+        "Down syndrome and intellectual disability research",
+        "Bioinformatics and Genomic Networks",
+        "Functional Brain Connectivity Studies"
       ],
       "openAlexIds": [
         "https://openalex.org/W83987728"
@@ -3592,8 +3576,8 @@
           "id": "https://openalex.org/A5041237650"
         },
         {
-          "name": "Hung-Tzu Wen",
-          "id": "https://openalex.org/A5067649960"
+          "name": "Wen Hung Tzu",
+          "id": "https://openalex.org/A5072331182"
         },
         {
           "name": "Edson Amaro",
@@ -3605,9 +3589,9 @@
         }
       ],
       "topics": [
+        "Epilepsy research and treatment",
         "Bioinformatics and Genomic Networks",
-        "Gene Regulatory Network Analysis",
-        "Alzheimer's disease research and treatments"
+        "Functional Brain Connectivity Studies"
       ],
       "openAlexIds": [
         "https://openalex.org/W2007196711"
@@ -3633,8 +3617,8 @@
       ],
       "authors": [
         {
-          "name": "F.N. Silva",
-          "id": null
+          "name": "Filipi N. Silva",
+          "id": "https://openalex.org/A5025683130"
         },
         {
           "name": "F.A. Rodrigues",
@@ -3645,14 +3629,14 @@
           "id": null
         },
         {
-          "name": "L. da F. Costa",
-          "id": null
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
         }
       ],
       "topics": [
         "scientometrics and bibliometrics research",
         "Interdisciplinary Research and Collaboration",
-        "Complex Network Analysis Techniques"
+        "Web visibility and informetrics"
       ],
       "openAlexIds": [
         "https://openalex.org/W2093567499",
@@ -3673,7 +3657,7 @@
       "source": "arXiv (Cornell University)",
       "doi": "https://doi.org/10.48550/arxiv.1209.2476",
       "url": "https://arxiv.org/abs/1209.2476",
-      "citedByCount": 16,
+      "citedByCount": 15,
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
@@ -3691,6 +3675,7 @@
       ],
       "topics": [
         "Complex Network Analysis Techniques",
+        "Complex Systems and Time Series Analysis",
         "Graph theory and applications"
       ],
       "openAlexIds": [
@@ -3709,9 +3694,9 @@
       "source": "Journal of Informetrics",
       "doi": "https://doi.org/10.1016/j.joi.2011.03.003",
       "url": "https://doi.org/10.1016/j.joi.2011.03.003",
-      "citedByCount": 30,
-      "openAccess": true,
-      "openAccessStatus": "green",
+      "citedByCount": 32,
+      "openAccess": false,
+      "openAccessStatus": "closed",
       "preprintUrls": [],
       "authors": [
         {
@@ -3719,7 +3704,7 @@
           "id": "https://openalex.org/A5025683130"
         },
         {
-          "name": "Matheus P. Viana",
+          "name": "Matheus Palhares Viana",
           "id": "https://openalex.org/A5064637719"
         },
         {
@@ -3733,8 +3718,8 @@
       ],
       "topics": [
         "Complex Network Analysis Techniques",
-        "Wikis in Education and Collaboration",
-        "Bioinformatics and Genomic Networks"
+        "scientometrics and bibliometrics research",
+        "Web visibility and informetrics"
       ],
       "openAlexIds": [
         "https://openalex.org/W1973716318"
@@ -3752,9 +3737,9 @@
       "source": "Journal of Statistical Mechanics Theory and Experiment",
       "doi": "https://doi.org/10.1088/1742-5468/2010/11/p11015",
       "url": "https://doi.org/10.1088/1742-5468/2010/11/p11015",
-      "citedByCount": 30,
-      "openAccess": true,
-      "openAccessStatus": "green",
+      "citedByCount": 29,
+      "openAccess": false,
+      "openAccessStatus": "closed",
       "preprintUrls": [],
       "authors": [
         {
@@ -3776,8 +3761,8 @@
       ],
       "topics": [
         "Complex Network Analysis Techniques",
-        "Opinion Dynamics and Social Influence",
-        "Neural Networks and Applications"
+        "Graph theory and applications",
+        "Topological and Geometric Data Analysis"
       ],
       "openAlexIds": [
         "https://openalex.org/W1967545017"
@@ -3796,8 +3781,8 @@
       "doi": "https://doi.org/10.1088/1751-8113/43/32/325202",
       "url": "https://doi.org/10.1088/1751-8113/43/32/325202",
       "citedByCount": 16,
-      "openAccess": true,
-      "openAccessStatus": "green",
+      "openAccess": false,
+      "openAccessStatus": "closed",
       "preprintUrls": [],
       "authors": [
         {
@@ -3809,7 +3794,7 @@
           "id": "https://openalex.org/A5044390168"
         },
         {
-          "name": "Matheus P. Viana",
+          "name": "Matheus Palhares Viana",
           "id": "https://openalex.org/A5064637719"
         },
         {
@@ -3819,8 +3804,8 @@
       ],
       "topics": [
         "Complex Network Analysis Techniques",
-        "Bioinformatics and Genomic Networks",
-        "Evolutionary Game Theory and Cooperation"
+        "scientometrics and bibliometrics research",
+        "Digital Humanities and Scholarship"
       ],
       "openAlexIds": [
         "https://openalex.org/W2054925329"
@@ -3838,7 +3823,7 @@
       "source": "Physica A Statistical Mechanics and its Applications",
       "doi": "https://doi.org/10.1016/j.physa.2008.06.034",
       "url": "https://doi.org/10.1016/j.physa.2008.06.034",
-      "citedByCount": 23,
+      "citedByCount": 24,
       "openAccess": true,
       "openAccessStatus": "green",
       "preprintUrls": [
@@ -3850,8 +3835,8 @@
           "id": "https://openalex.org/A5005669749"
         },
         {
-          "name": "Marilza A. Rodrigues Tognetti",
-          "id": "https://openalex.org/A5038605560"
+          "name": "Marilza Aparecida Rodrigues Tognetti",
+          "id": "https://openalex.org/A5009749648"
         },
         {
           "name": "Filipi Nascimento Silva",
@@ -3860,8 +3845,8 @@
       ],
       "topics": [
         "Complex Network Analysis Techniques",
-        "Opinion Dynamics and Social Influence",
-        "Peer-to-Peer Network Technologies"
+        "scientometrics and bibliometrics research",
+        "Complex Systems and Time Series Analysis"
       ],
       "openAlexIds": [
         "https://openalex.org/W1842007447"
@@ -3898,9 +3883,9 @@
         }
       ],
       "topics": [
-        "Data Visualization and Analytics",
         "Complex Network Analysis Techniques",
-        "Data Management and Algorithms"
+        "Complex Systems and Time Series Analysis",
+        "Graph theory and applications"
       ],
       "openAlexIds": [
         "https://openalex.org/W1592790501"
@@ -3936,8 +3921,8 @@
       ],
       "topics": [
         "Complex Network Analysis Techniques",
-        "Topological and Geometric Data Analysis",
-        "Bioinformatics and Genomic Networks"
+        "Graph theory and applications",
+        "Complex Systems and Time Series Analysis"
       ],
       "openAlexIds": [
         "https://openalex.org/W2028525255"

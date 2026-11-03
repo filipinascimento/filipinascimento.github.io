@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
+import { collectAuthorWorks } from "./lib/openalex-sources.mjs";
 
 const root = process.cwd();
 const config = JSON.parse(
@@ -14,6 +15,7 @@ const generatedContentDir = path.join(root, "content/publications");
 const baseUrl = "https://api.openalex.org";
 const scholarlyTypes = new Set([
   "article",
+  "review",
   "conference-paper",
   "book-chapter",
   "report",
@@ -23,6 +25,7 @@ const scholarlyTypes = new Set([
 ]);
 const typePreference = new Map([
   ["article", 90],
+  ["review", 90],
   ["conference-paper", 85],
   ["book-chapter", 80],
   ["editorial", 75],
@@ -50,6 +53,7 @@ function apiUrl(endpoint, params = {}) {
 async function getJson(url, attempt = 0) {
   const response = await fetch(url, {
     headers: { "User-Agent": "filipinascimento-website/1.0" },
+    signal: AbortSignal.timeout(30_000),
   });
   if (response.status === 429 && attempt < 5) {
     const retryAfter = Number(response.headers.get("retry-after") || 1);
@@ -58,7 +62,9 @@ async function getJson(url, attempt = 0) {
     return getJson(url, attempt + 1);
   }
   if (!response.ok) {
-    throw new Error(`OpenAlex request failed (${response.status}): ${url}`);
+    const error = new Error(`OpenAlex request failed (${response.status}): ${url}`);
+    error.status = response.status;
+    throw error;
   }
   return response.json();
 }
@@ -355,21 +361,13 @@ function publicationsMarkdown(profile, works, fetchedAt) {
 }
 
 const authorIds = config.openalex.authorIds;
-const authorProfiles = [];
-const worksByAuthor = [];
-for (const authorId of authorIds) {
-  authorProfiles.push(await getAuthor(authorId));
-  worksByAuthor.push(await getWorks(authorId));
-}
+const { authorProfiles, worksByAuthor, sources, primary } = await collectAuthorWorks(
+  config.openalex, getAuthor, getWorks,
+);
 const manuallyLinkedWorks = [];
 for (const doi of config.openalex.manualWorkDois || []) {
   manuallyLinkedWorks.push(await getJson(apiUrl(`/works/https://doi.org/${doi}`)));
 }
-const primary = authorProfiles.find(
-  (author) => author.id.endsWith(config.openalex.primaryAuthorId),
-);
-if (!primary) throw new Error("Primary OpenAlex author profile was not found.");
-
 const fetchedAt = new Date().toISOString();
 const rawAuthorWorks = worksByAuthor.flat();
 const rawLinkedWorks = [...rawAuthorWorks, ...manuallyLinkedWorks];
@@ -393,8 +391,16 @@ const profile = {
   hIndex: primary.summary_stats?.h_index || null,
   i10Index: primary.summary_stats?.i10_index || null,
   authorIds,
+  resolvedAuthorIds: authorProfiles.map((author) => author.id.split("/").pop()),
+  authorSources: sources,
   fetchedAt,
 };
+
+// Keep works outside the editorial audit visible for review, not publication.
+const approvedIds = new Set(works.flatMap((work) => work.openAlexIds));
+const candidates = titleMergedScholarlyCandidates.filter(
+  (work) => !work.openAlexIds.some((id) => approvedIds.has(id)),
+);
 
 await mkdir(outputDir, { recursive: true });
 await mkdir(generatedContentDir, { recursive: true });
@@ -404,10 +410,14 @@ await writeFile(
   `${JSON.stringify({ fetchedAt, works }, null, 2)}\n`,
 );
 await writeFile(
+  path.join(outputDir, "review-candidates.json"),
+  `${JSON.stringify({ fetchedAt, count: candidates.length, works: candidates }, null, 2)}\n`,
+);
+await writeFile(
   path.join(generatedContentDir, "generated.md"),
   publicationsMarkdown(profile, works, fetchedAt),
 );
 
 console.log(
-  `OpenAlex: ${authorIds.length} author records -> ${works.length} deduplicated publications and preprints.`,
+  `OpenAlex: ${authorIds.length} configured IDs, ${authorProfiles.length} resolved authors -> ${works.length} deduplicated publications and preprints; ${candidates.length} candidates for review.`,
 );

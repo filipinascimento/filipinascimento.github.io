@@ -14,15 +14,15 @@ const headers = {
 if (process.env.GITHUB_TOKEN) headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
 
 async function getJson(url) {
-  const response = await fetch(url, { headers });
+  const response = await fetch(url, { headers, signal: AbortSignal.timeout(30_000) });
   if (!response.ok) throw new Error(`GitHub request failed (${response.status}): ${url}`);
   return response.json();
 }
 
 const fetchedAt = new Date().toISOString();
 const user = await getJson(`https://api.github.com/users/${username}`);
-const repos = await getJson(
-  `https://api.github.com/users/${username}/repos?per_page=100&sort=updated`,
+const repos = await Promise.all(
+  featuredRepositories.map((name) => getJson(`https://api.github.com/repos/${username}/${name}`)),
 );
 const repoMap = new Map(repos.map((repo) => [repo.name, repo]));
 const featured = featuredRepositories

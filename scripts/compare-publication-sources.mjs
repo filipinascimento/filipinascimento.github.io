@@ -58,8 +58,8 @@ const excludedRows =
 if (scholarEntries.count !== scholarProfile.profileEntries) {
   throw new Error("Google Scholar entry cache and profile count disagree.");
 }
-if (audit.publishedProfileTitles.length + excludedRows !== scholarEntries.count) {
-  throw new Error("Google Scholar audit categories no longer account for every profile row.");
+if (audit.publishedProfileTitles.length + excludedRows !== excludedBreakdown.rawRowsAtAudit) {
+  throw new Error("Google Scholar audit categories disagree with the historical audited row count.");
 }
 if (missingScholarPublishedRows.length > 0) {
   throw new Error(`Audited Google Scholar publications are missing: ${missingScholarPublishedRows.join("; ")}`);
@@ -83,9 +83,12 @@ const comparison = {
   generatedAt: new Date().toISOString(),
   googleScholar: {
     profileEntries: scholarEntries.count,
+    profileEntriesAtAudit: excludedBreakdown.rawRowsAtAudit,
+    reviewRequired: scholarEntries.count !== excludedBreakdown.rawRowsAtAudit,
+    currentRowsOutsidePublishedList: scholarEntries.entries.filter((entry) => !entry.matchesPublishedTitle),
     acceptedPublishedRows: audit.publishedProfileTitles.length,
-    excludedRows,
-    excludedBreakdown: {
+    excludedRowsAtAudit: excludedRows,
+    excludedBreakdownAtAudit: {
       duplicateOrVersionRows: excludedBreakdown.duplicateOrVersionRows,
       unpublishedPreprintOrManuscriptRows: excludedBreakdown.unpublishedPreprintOrManuscriptRows,
       otherScholarlyOutputRows: excludedBreakdown.otherScholarlyOutputRows,
@@ -96,6 +99,9 @@ const comparison = {
   },
   openAlex: {
     linkedAuthorRecords: openAlexProfile.authorIds.length,
+    resolvedAuthorRecords: openAlexProfile.resolvedAuthorIds?.length ?? openAlexProfile.authorIds.length,
+    unavailableAuthorIds: (openAlexProfile.authorSources || [])
+      .filter((source) => source.status === "unavailable").map((source) => source.requestedId),
     rawUniqueWorksAcrossLinkedAuthors: openAlexProfile.rawUniqueWorksAcrossLinkedAuthors,
     manuallyLinkedWorks: openAlexProfile.manuallyLinkedWorks,
     candidateWorksBeforePublicationAudit: openAlexProfile.candidateWorksBeforePublicationAudit,

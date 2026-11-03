@@ -7,6 +7,7 @@ import type { Publication } from "../lib/types";
 const filters = [
   ["all", "All"],
   ["article", "Articles"],
+  ["review", "Reviews"],
   ["book-chapter", "Chapters"],
   ["editorial", "Editorials"],
   ["preprint", "Preprints"],

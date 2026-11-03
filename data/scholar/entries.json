@@ -1,7 +1,7 @@
 {
   "profileUrl": "https://scholar.google.com/citations?user=fhWJEysAAAAJ&hl=en",
-  "fetchedAt": "2026-08-02T05:37:51.786Z",
-  "count": 118,
+  "fetchedAt": "2026-11-03T19:38:52.024Z",
+  "count": 122,
   "entries": [
     {
       "id": "fhWJEysAAAAJ:9DLIHnF0jcYC",
@@ -46,15 +46,15 @@
       "matchesPublishedTitle": true
     },
     {
-      "id": "fhWJEysAAAAJ:EaFouW7jFu4C",
-      "title": "brainlife. io: A decentralized and open-source cloud platform to support neuroscience research",
-      "normalizedTitle": "brainlife io a decentralized and open source cloud platform to support neuroscience research",
+      "id": "fhWJEysAAAAJ:4Yq6kJLCcecC",
+      "title": "Detecting climate teleconnections with granger causality",
+      "normalizedTitle": "detecting climate teleconnections with granger causality",
       "matchesPublishedTitle": true
     },
     {
-      "id": "fhWJEysAAAAJ:4Yq6kJLCcecC",
-      "title": "Detecting climate teleconnections with Granger causality",
-      "normalizedTitle": "detecting climate teleconnections with granger causality",
+      "id": "fhWJEysAAAAJ:EaFouW7jFu4C",
+      "title": "brainlife. io: A decentralized and open-source cloud platform to support neuroscience research",
+      "normalizedTitle": "brainlife io a decentralized and open source cloud platform to support neuroscience research",
       "matchesPublishedTitle": true
     },
     {
@@ -70,6 +70,12 @@
       "matchesPublishedTitle": true
     },
     {
+      "id": "fhWJEysAAAAJ:c59VksA5Vz4C",
+      "title": "A complex network approach to political analysis: Application to the Brazilian Chamber of Deputies",
+      "normalizedTitle": "a complex network approach to political analysis application to the brazilian chamber of deputies",
+      "matchesPublishedTitle": true
+    },
+    {
       "id": "fhWJEysAAAAJ:2osOgNQ5qMEC",
       "title": "Investigating relationships within and between category networks in Wikipedia",
       "normalizedTitle": "investigating relationships within and between category networks in wikipedia",
@@ -79,12 +85,6 @@
       "id": "fhWJEysAAAAJ:qE4H1tSSYIIC",
       "title": "Thermodynamic characterization of networks using graph polynomials",
       "normalizedTitle": "thermodynamic characterization of networks using graph polynomials",
-      "matchesPublishedTitle": true
-    },
-    {
-      "id": "fhWJEysAAAAJ:c59VksA5Vz4C",
-      "title": "A complex network approach to political analysis: Application to the Brazilian Chamber of Deputies",
-      "normalizedTitle": "a complex network approach to political analysis application to the brazilian chamber of deputies",
       "matchesPublishedTitle": true
     },
     {
@@ -106,21 +106,39 @@
       "matchesPublishedTitle": false
     },
     {
-      "id": "fhWJEysAAAAJ:SAZ1SQo2q1kC",
-      "title": "Modular transcriptional repertoire and MicroRNA target analyses characterize genomic dysregulation in the thymus of Down syndrome infants.",
-      "normalizedTitle": "modular transcriptional repertoire and microrna target analyses characterize genomic dysregulation in the thymus of down syndrome infants",
-      "matchesPublishedTitle": true
-    },
-    {
       "id": "fhWJEysAAAAJ:qjMakFHDy7sC",
       "title": "A pattern recognition approach to complex networks",
       "normalizedTitle": "a pattern recognition approach to complex networks",
       "matchesPublishedTitle": true
     },
     {
+      "id": "fhWJEysAAAAJ:SAZ1SQo2q1kC",
+      "title": "Modular transcriptional repertoire and MicroRNA target analyses characterize genomic dysregulation in the thymus of Down syndrome infants.",
+      "normalizedTitle": "modular transcriptional repertoire and microrna target analyses characterize genomic dysregulation in the thymus of down syndrome infants",
+      "matchesPublishedTitle": true
+    },
+    {
+      "id": "fhWJEysAAAAJ:YOwf2qJgpHMC",
+      "title": "Community structure analysis of transcriptional networks reveals distinct molecular pathways for early-and late-onset temporal lobe epilepsy with childhood febrile seizures",
+      "normalizedTitle": "community structure analysis of transcriptional networks reveals distinct molecular pathways for early and late onset temporal lobe epilepsy with childhood febrile seizures",
+      "matchesPublishedTitle": true
+    },
+    {
+      "id": "fhWJEysAAAAJ:x21FZCSn4ZoC",
+      "title": "Network analysis and natural language processing to obtain a landscape of the scientific literature on materials applications",
+      "normalizedTitle": "network analysis and natural language processing to obtain a landscape of the scientific literature on materials applications",
+      "matchesPublishedTitle": true
+    },
+    {
       "id": "fhWJEysAAAAJ:u-x6o8ySG0sC",
       "title": "Concentric characterization and classification of complex network nodes: Application to an institutional collaboration network",
       "normalizedTitle": "concentric characterization and classification of complex network nodes application to an institutional collaboration network",
+      "matchesPublishedTitle": true
+    },
+    {
+      "id": "fhWJEysAAAAJ:hNSvKAmkeYkC",
+      "title": "FURY: advanced scientific visualization",
+      "normalizedTitle": "fury advanced scientific visualization",
       "matchesPublishedTitle": true
     },
     {
@@ -142,15 +160,9 @@
       "matchesPublishedTitle": false
     },
     {
-      "id": "fhWJEysAAAAJ:x21FZCSn4ZoC",
-      "title": "Network analysis and natural language processing to obtain a landscape of the scientific literature on materials applications",
-      "normalizedTitle": "network analysis and natural language processing to obtain a landscape of the scientific literature on materials applications",
-      "matchesPublishedTitle": true
-    },
-    {
-      "id": "fhWJEysAAAAJ:hNSvKAmkeYkC",
-      "title": "FURY: advanced scientific visualization",
-      "normalizedTitle": "fury advanced scientific visualization",
+      "id": "fhWJEysAAAAJ:ymY9cBF3mdcC",
+      "title": "Analyzing the influence of prolific collaborations on authors productivity and visibility",
+      "normalizedTitle": "analyzing the influence of prolific collaborations on authors productivity and visibility",
       "matchesPublishedTitle": true
     },
     {
@@ -160,27 +172,21 @@
       "matchesPublishedTitle": true
     },
     {
-      "id": "fhWJEysAAAAJ:JP7YXuLIOvAC",
-      "title": "Topological characterization of world cities",
-      "normalizedTitle": "topological characterization of world cities",
-      "matchesPublishedTitle": true
-    },
-    {
       "id": "fhWJEysAAAAJ:SxCCDk4iOpsC",
       "title": "The dynamics of knowledge acquisition via self-learning in complex networks",
       "normalizedTitle": "the dynamics of knowledge acquisition via self learning in complex networks",
       "matchesPublishedTitle": true
     },
     {
-      "id": "fhWJEysAAAAJ:YOwf2qJgpHMC",
-      "title": "Community structure analysis of transcriptional networks reveals distinct molecular pathways for early-and late-onset temporal lobe epilepsy with childhood febrile seizures",
-      "normalizedTitle": "community structure analysis of transcriptional networks reveals distinct molecular pathways for early and late onset temporal lobe epilepsy with childhood febrile seizures",
+      "id": "fhWJEysAAAAJ:JP7YXuLIOvAC",
+      "title": "Topological characterization of world cities",
+      "normalizedTitle": "topological characterization of world cities",
       "matchesPublishedTitle": true
     },
     {
-      "id": "fhWJEysAAAAJ:ymY9cBF3mdcC",
-      "title": "Analyzing the influence of prolific collaborations on authors productivity and visibility",
-      "normalizedTitle": "analyzing the influence of prolific collaborations on authors productivity and visibility",
+      "id": "fhWJEysAAAAJ:RMgMIBzvq-4C",
+      "title": "Predicting citation impact of research papers using GPT and other text embeddings",
+      "normalizedTitle": "predicting citation impact of research papers using gpt and other text embeddings",
       "matchesPublishedTitle": true
     },
     {
@@ -202,9 +208,9 @@
       "matchesPublishedTitle": true
     },
     {
-      "id": "fhWJEysAAAAJ:RMgMIBzvq-4C",
-      "title": "Predicting citation impact of research papers using GPT and other text embeddings",
-      "normalizedTitle": "predicting citation impact of research papers using gpt and other text embeddings",
+      "id": "fhWJEysAAAAJ:PQEM9vzQD9gC",
+      "title": "Finding contrasting patterns in rhythmic properties between prose and poetry",
+      "normalizedTitle": "finding contrasting patterns in rhythmic properties between prose and poetry",
       "matchesPublishedTitle": true
     },
     {
@@ -226,12 +232,6 @@
       "matchesPublishedTitle": true
     },
     {
-      "id": "fhWJEysAAAAJ:PQEM9vzQD9gC",
-      "title": "Finding contrasting patterns in rhythmic properties between prose and poetry",
-      "normalizedTitle": "finding contrasting patterns in rhythmic properties between prose and poetry",
-      "matchesPublishedTitle": true
-    },
-    {
       "id": "fhWJEysAAAAJ:t-hv7AR41mYC",
       "title": "Characterizing BJTs using the Early voltage in the forward active mode",
       "normalizedTitle": "characterizing bjts using the early voltage in the forward active mode",
@@ -244,10 +244,22 @@
       "matchesPublishedTitle": true
     },
     {
-      "id": "fhWJEysAAAAJ:oTdOBqtIf_kC",
-      "title": "Complex networks accessibility and symmetry",
-      "normalizedTitle": "complex networks accessibility and symmetry",
+      "id": "fhWJEysAAAAJ:natZJ_-F0IUC",
+      "title": "The rise of Bluesky",
+      "normalizedTitle": "the rise of bluesky",
       "matchesPublishedTitle": false
+    },
+    {
+      "id": "fhWJEysAAAAJ:dAp6zn-oMfAC",
+      "title": "Contrarian effects and echo chamber formation in opinion dynamics",
+      "normalizedTitle": "contrarian effects and echo chamber formation in opinion dynamics",
+      "matchesPublishedTitle": true
+    },
+    {
+      "id": "fhWJEysAAAAJ:aEW5N-EHWIMC",
+      "title": "Leveraging GANs for citation intent classification and its impact on citation network analysis",
+      "normalizedTitle": "leveraging gans for citation intent classification and its impact on citation network analysis",
+      "matchesPublishedTitle": true
     },
     {
       "id": "fhWJEysAAAAJ:nPTYJWkExTIC",
@@ -256,16 +268,22 @@
       "matchesPublishedTitle": true
     },
     {
+      "id": "fhWJEysAAAAJ:oTdOBqtIf_kC",
+      "title": "Complex networks accessibility and symmetry",
+      "normalizedTitle": "complex networks accessibility and symmetry",
+      "matchesPublishedTitle": false
+    },
+    {
+      "id": "fhWJEysAAAAJ:W2uZP3ddy8sC",
+      "title": "History of Chemistry of Materials According to Topic Evolution Based on Network Analysis and Natural Language Processing",
+      "normalizedTitle": "history of chemistry of materials according to topic evolution based on network analysis and natural language processing",
+      "matchesPublishedTitle": true
+    },
+    {
       "id": "fhWJEysAAAAJ:N4u4nq0IxgcC",
       "title": "Accessibility and Trajectory-Based Text Characterization",
       "normalizedTitle": "accessibility and trajectory based text characterization",
       "matchesPublishedTitle": false
-    },
-    {
-      "id": "fhWJEysAAAAJ:dAp6zn-oMfAC",
-      "title": "Contrarian effects and echo chamber formation in opinion dynamics",
-      "normalizedTitle": "contrarian effects and echo chamber formation in opinion dynamics",
-      "matchesPublishedTitle": true
     },
     {
       "id": "fhWJEysAAAAJ:c1e4I3QdEKYC",
@@ -277,18 +295,6 @@
       "id": "fhWJEysAAAAJ:0EnyYjriUFMC",
       "title": "A framework for evaluating complex networks measurements",
       "normalizedTitle": "a framework for evaluating complex networks measurements",
-      "matchesPublishedTitle": true
-    },
-    {
-      "id": "fhWJEysAAAAJ:aEW5N-EHWIMC",
-      "title": "Leveraging GANs for citation intent classification and its impact on citation network analysis",
-      "normalizedTitle": "leveraging gans for citation intent classification and its impact on citation network analysis",
-      "matchesPublishedTitle": true
-    },
-    {
-      "id": "fhWJEysAAAAJ:W2uZP3ddy8sC",
-      "title": "History of Chemistry of Materials According to Topic Evolution Based on Network Analysis and Natural Language Processing",
-      "normalizedTitle": "history of chemistry of materials according to topic evolution based on network analysis and natural language processing",
       "matchesPublishedTitle": true
     },
     {
@@ -316,10 +322,10 @@
       "matchesPublishedTitle": true
     },
     {
-      "id": "fhWJEysAAAAJ:natZJ_-F0IUC",
-      "title": "The Rise of Bluesky",
-      "normalizedTitle": "the rise of bluesky",
-      "matchesPublishedTitle": false
+      "id": "fhWJEysAAAAJ:9NZAP19TdFAC",
+      "title": "Using full-text content to characterize and identify best seller books: A study of early 20th-century literature",
+      "normalizedTitle": "using full text content to characterize and identify best seller books a study of early 20th century literature",
+      "matchesPublishedTitle": true
     },
     {
       "id": "fhWJEysAAAAJ:1r-w4gtu6w8C",
@@ -328,15 +334,15 @@
       "matchesPublishedTitle": true
     },
     {
-      "id": "fhWJEysAAAAJ:xGWFX6Gbr9MC",
-      "title": "Science of Science: a complex network perspective",
-      "normalizedTitle": "science of science a complex network perspective",
-      "matchesPublishedTitle": true
+      "id": "fhWJEysAAAAJ:X4-KO54GjGYC",
+      "title": "Israel-Hamas War on X: A Case Study of Coordinated Campaigns and Information Integrity",
+      "normalizedTitle": "israel hamas war on x a case study of coordinated campaigns and information integrity",
+      "matchesPublishedTitle": false
     },
     {
-      "id": "fhWJEysAAAAJ:9NZAP19TdFAC",
-      "title": "Using full-text content to characterize and identify best seller books: A study of early 20th-century literature",
-      "normalizedTitle": "using full text content to characterize and identify best seller books a study of early 20th century literature",
+      "id": "fhWJEysAAAAJ:xGWFX6Gbr9MC",
+      "title": "Science of science: a complex network perspective",
+      "normalizedTitle": "science of science a complex network perspective",
       "matchesPublishedTitle": true
     },
     {
@@ -364,6 +370,12 @@
       "matchesPublishedTitle": true
     },
     {
+      "id": "fhWJEysAAAAJ:DQNrXyjhriIC",
+      "title": "Aplicação de Metodologia “Reliability Centered Maintenance 3”(RCM3) ao sistema de refrigeração do sistema de armas Pandur II 8x8",
+      "normalizedTitle": "aplicacao de metodologia reliability centered maintenance 3 rcm3 ao sistema de refrigeracao do sistema de armas pandur ii 8x8",
+      "matchesPublishedTitle": false
+    },
+    {
       "id": "fhWJEysAAAAJ:L_l9e5I586QC",
       "title": "A diffusion-based approach to obtaining the borders of urban areas",
       "normalizedTitle": "a diffusion based approach to obtaining the borders of urban areas",
@@ -373,12 +385,6 @@
       "id": "fhWJEysAAAAJ:roLk4NBRz8UC",
       "title": "Correction: Complex Network Analysis of CA3 Transcriptome Reveals Pathogenic and Compensatory Pathways in Refractory Temporal Lobe Epilepsy",
       "normalizedTitle": "correction complex network analysis of ca3 transcriptome reveals pathogenic and compensatory pathways in refractory temporal lobe epilepsy",
-      "matchesPublishedTitle": false
-    },
-    {
-      "id": "fhWJEysAAAAJ:X4-KO54GjGYC",
-      "title": "Israel-Hamas War on X: A Case Study of Coordinated Campaigns and Information Integrity",
-      "normalizedTitle": "israel hamas war on x a case study of coordinated campaigns and information integrity",
       "matchesPublishedTitle": false
     },
     {
@@ -406,15 +412,39 @@
       "matchesPublishedTitle": false
     },
     {
+      "id": "fhWJEysAAAAJ:j5aT6aphRxQC",
+      "title": "An Architecture for flexible GIS Integration of Distribution Planning and Analysis System",
+      "normalizedTitle": "an architecture for flexible gis integration of distribution planning and analysis system",
+      "matchesPublishedTitle": false
+    },
+    {
       "id": "fhWJEysAAAAJ:Y0pCki6q_DkC",
       "title": "REDES COMPLEXAS: METODOLOGIAS E MODELAGEM DE AQUISIÇÃO DE CONHECIMENTO",
       "normalizedTitle": "redes complexas metodologias e modelagem de aquisicao de conhecimento",
       "matchesPublishedTitle": false
     },
     {
+      "id": "fhWJEysAAAAJ:RfUwGJFMQ-0C",
+      "title": "From Node2Vec to GPT-based GraphRAG: scientific impact prediction across graph and language models",
+      "normalizedTitle": "from node2vec to gpt based graphrag scientific impact prediction across graph and language models",
+      "matchesPublishedTitle": false
+    },
+    {
+      "id": "fhWJEysAAAAJ:rbGdIwl2e6cC",
+      "title": "Linking Global Science Funding to Research Publications",
+      "normalizedTitle": "linking global science funding to research publications",
+      "matchesPublishedTitle": false
+    },
+    {
       "id": "fhWJEysAAAAJ:TGkaJS32XoUC",
       "title": "Scale invariance and statistical significance in complex weighted networks",
       "normalizedTitle": "scale invariance and statistical significance in complex weighted networks",
+      "matchesPublishedTitle": true
+    },
+    {
+      "id": "fhWJEysAAAAJ:0sTkTiv_uMkC",
+      "title": "Detectability threshold in weighted modular networks",
+      "normalizedTitle": "detectability threshold in weighted modular networks",
       "matchesPublishedTitle": true
     },
     {
@@ -478,16 +508,16 @@
       "matchesPublishedTitle": true
     },
     {
-      "id": "fhWJEysAAAAJ:D_tqNUsBuKoC",
-      "title": "Dimensão e simetria em redes complexas: uma abordagem multiescala",
-      "normalizedTitle": "dimensao e simetria em redes complexas uma abordagem multiescala",
-      "matchesPublishedTitle": false
-    },
-    {
       "id": "fhWJEysAAAAJ:MXK_kJrjxJIC",
       "title": "Thymus gene coexpression networks: a comparative study in children with and without Down Syndrome",
       "normalizedTitle": "thymus gene coexpression networks a comparative study in children with and without down syndrome",
       "matchesPublishedTitle": true
+    },
+    {
+      "id": "fhWJEysAAAAJ:hefNtdE4IMkC",
+      "title": "Probabilistic assessment of the safety, security and efficiency of large-scale LV networks",
+      "normalizedTitle": "probabilistic assessment of the safety security and efficiency of large scale lv networks",
+      "matchesPublishedTitle": false
     },
     {
       "id": "fhWJEysAAAAJ:ukw-9cB-YDkC",
@@ -496,9 +526,9 @@
       "matchesPublishedTitle": true
     },
     {
-      "id": "fhWJEysAAAAJ:SrKkpNFED5gC",
-      "title": "The Tone of Awareness: Topic, Sentiment, and Toxicity Maps During Mental Health Month on TikTok",
-      "normalizedTitle": "the tone of awareness topic sentiment and toxicity maps during mental health month on tiktok",
+      "id": "fhWJEysAAAAJ:c1AJUTjuCtUC",
+      "title": "A null model to detect coordinated online behavior integrating evidence from multiple indicators",
+      "normalizedTitle": "a null model to detect coordinated online behavior integrating evidence from multiple indicators",
       "matchesPublishedTitle": false
     },
     {
@@ -508,9 +538,15 @@
       "matchesPublishedTitle": false
     },
     {
-      "id": "fhWJEysAAAAJ:RfUwGJFMQ-0C",
-      "title": "From Node2Vec to GPT-based GraphRAG: scientific impact prediction across graph and language models",
-      "normalizedTitle": "from node2vec to gpt based graphrag scientific impact prediction across graph and language models",
+      "id": "fhWJEysAAAAJ:w2UhwfzvF0QC",
+      "title": "Constructing the Field of Philanthropic and Nonprofit Studies: Evidence from Citation Networks",
+      "normalizedTitle": "constructing the field of philanthropic and nonprofit studies evidence from citation networks",
+      "matchesPublishedTitle": false
+    },
+    {
+      "id": "fhWJEysAAAAJ:SrKkpNFED5gC",
+      "title": "The Tone of Awareness: Topic, Sentiment, and Toxicity Maps During Mental Health Month on TikTok",
+      "normalizedTitle": "the tone of awareness topic sentiment and toxicity maps during mental health month on tiktok",
       "matchesPublishedTitle": false
     },
     {
@@ -520,15 +556,9 @@
       "matchesPublishedTitle": true
     },
     {
-      "id": "fhWJEysAAAAJ:rbGdIwl2e6cC",
-      "title": "Linking Global Science Funding to Research Publications",
-      "normalizedTitle": "linking global science funding to research publications",
-      "matchesPublishedTitle": false
-    },
-    {
-      "id": "fhWJEysAAAAJ:0sTkTiv_uMkC",
-      "title": "Detectability threshold in weighted modular networks",
-      "normalizedTitle": "detectability threshold in weighted modular networks",
+      "id": "fhWJEysAAAAJ:yTLRzDEmwhEC",
+      "title": "Measuring research interest similarity with transition probabilities",
+      "normalizedTitle": "measuring research interest similarity with transition probabilities",
       "matchesPublishedTitle": true
     },
     {
@@ -538,21 +568,9 @@
       "matchesPublishedTitle": false
     },
     {
-      "id": "fhWJEysAAAAJ:yTLRzDEmwhEC",
-      "title": "Measuring research interest similarity with transition probabilities",
-      "normalizedTitle": "measuring research interest similarity with transition probabilities",
-      "matchesPublishedTitle": true
-    },
-    {
-      "id": "fhWJEysAAAAJ:EBV337fEn3EC",
+      "id": "fhWJEysAAAAJ:Vztgr1qGG8IC",
       "title": "brainlife. io: a decentralized and open-source cloud platform to support neuroscience research (Apr, 10.1038/s41592-024-02237-2, 2024)",
       "normalizedTitle": "brainlife io a decentralized and open source cloud platform to support neuroscience research apr 10 1038 s41592 024 02237 2 2024",
-      "matchesPublishedTitle": false
-    },
-    {
-      "id": "fhWJEysAAAAJ:oursBaop5wYC",
-      "title": "Electrical stimulation of grape berries as new alternative for post-harvest infection management",
-      "normalizedTitle": "electrical stimulation of grape berries as new alternative for post harvest infection management",
       "matchesPublishedTitle": false
     },
     {
@@ -599,8 +617,8 @@
     },
     {
       "id": "fhWJEysAAAAJ:lK9BDNCuzFgC",
-      "title": "PERCUSSÕES DA METROPOLITANA: A CHEGADA DO HOMEM À LUA (Almada)",
-      "normalizedTitle": "percussoes da metropolitana a chegada do homem a lua almada",
+      "title": "PERCUSSÕES DA METROPOLITANA: A CHEGADA DO HOMEM À LUA",
+      "normalizedTitle": "percussoes da metropolitana a chegada do homem a lua",
       "matchesPublishedTitle": false
     },
     {
@@ -631,6 +649,12 @@
       "id": "fhWJEysAAAAJ:eI34FqJmdUoC",
       "title": "Obtaining the borders of urban areas",
       "normalizedTitle": "obtaining the borders of urban areas",
+      "matchesPublishedTitle": false
+    },
+    {
+      "id": "fhWJEysAAAAJ:D_tqNUsBuKoC",
+      "title": "Dimensão e simetria em redes complexas: uma abordagem multiescala",
+      "normalizedTitle": "dimensao e simetria em redes complexas uma abordagem multiescala",
       "matchesPublishedTitle": false
     },
     {

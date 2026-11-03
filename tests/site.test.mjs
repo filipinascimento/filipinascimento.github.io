@@ -8,6 +8,12 @@ async function json(relativePath) {
   return JSON.parse(await readFile(new URL(relativePath, root), "utf8"));
 }
 
+test("retains every explicitly selected GitHub repository after a refresh", async () => {
+  const config = await json("config/profile-sources.json");
+  const github = await json("data/github/repos.json");
+  assert.deepEqual(github.featured.map((repo) => repo.name), config.github.featuredRepositories);
+});
+
 test("keeps the editorial content in Markdown collections", async () => {
   const content = await json("data/content.json");
   assert.equal(content.site.length, 1);
@@ -174,7 +180,7 @@ test("caches scholarly metrics and course identifiers", async () => {
   const scholarEntries = await json("data/scholar/entries.json");
   const content = await json("data/content.json");
   assert.ok(scholar.citations >= 2500);
-  assert.equal(scholar.citationsDisplay, "2,600+");
+  assert.equal(scholar.citationsDisplay, `${(Math.floor(scholar.citations / 100) * 100).toLocaleString("en-US")}+`);
   assert.equal(scholar.publications, 64);
   assert.equal(scholar.publicationsDisplay, "60+");
   assert.equal(scholarEntries.count, scholar.profileEntries);
@@ -210,7 +216,7 @@ test("keeps public citation metrics approximate and pins recent publications in 
   assert.match(publicationsPage, /scholarProfile\.citationsDisplay/);
   assert.match(cvPage, /scholarProfile\.citationsDisplay/);
   assert.doesNotMatch(publicationsPage, /Google Scholar citations|Google Scholar h-index/);
-  assert.match(content.cv[0].markdown, /2,600\+ citations/);
+  assert.ok(content.cv[0].markdown.includes(`${scholar.citationsDisplay} citations`));
   assert.doesNotMatch(content.cv[0].markdown, new RegExp(`${scholar.citations.toLocaleString("en-US")} citations`));
 });
 

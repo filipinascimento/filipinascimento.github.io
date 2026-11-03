@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-08-24T09:07:49.286Z",
+  "fetchedAt": "2026-11-03T19:40:11.490Z",
   "profile": {
     "login": "filipinascimento",
     "name": "Filipi Nascimento Silva",
     "bio": "Research Assistant Professor at CSSI - Kellogg - Northwestern University",
     "company": "Northwestern University",
     "publicRepos": 115,
-    "followers": 72,
+    "followers": 73,
     "url": "https://github.com/filipinascimento"
   },
   "featured": [
@@ -16,8 +16,8 @@
       "url": "https://github.com/filipinascimento/helios-web",
       "homepage": null,
       "language": "JavaScript",
-      "stars": 92,
-      "forks": 15,
+      "stars": 94,
+      "forks": 16,
       "pushedAt": "2026-06-29T08:30:16Z",
       "topics": [
         "3d",
@@ -50,9 +50,9 @@
     },
     {
       "name": "coordinationz",
-      "description": "",
-      "url": "https://github.com/filipinascimento/coordinationz",
-      "homepage": null,
+      "description": "Replication code for paper \"A null model to detect coordinated online behavior integrating evidence from multiple indicator\"",
+      "url": "https://github.com/osome-iu/coordinationz",
+      "homepage": "https://doi.org/10.48550/arXiv.2610.17533",
       "language": "Jupyter Notebook",
       "stars": 0,
       "forks": 1,

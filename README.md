@@ -44,6 +44,39 @@ This command:
 
 The GitHub Pages workflow repeats the refresh weekly and commits changed public data before deploying it.
 
+### Manual refresh and review
+
+Use an isolated checkout based on the latest `origin/master` when the main
+checkout has unfinished edits. `npm run data:refresh` only writes local data
+and figures; it does not commit, push, or deploy. Then run `npm run verify`.
+
+The OpenAlex refresh records each configured author ID's current resolution in
+`data/openalex/profile.json`. A 404 for a secondary ID is reported and skipped;
+missing primary identity, other request failures, and missing audited publications
+still stop the refresh. Redirected IDs are queried only once. Scholarly reviews
+are included. Verified title changes belong in `openAlexTitleAliases`, and works
+missing from the author index can be linked by exact DOI.
+
+`data/openalex/review-candidates.json` contains works outside the editorial
+audit. These do not appear on the website. The Scholar comparison keeps the
+historical exclusion counts separate from today's profile count and lists rows
+outside the accepted publication list for review. An increase in profile rows
+does not automatically increase the public publication count. Do not add a work
+until authorship, publication status, duplicates, and its figure have been checked.
+
+Before publishing, compare the refreshed bibliography and all referenced figure
+files with the previous version. Read any cached-source warnings in the run log.
+`npm run figures:projects` can regenerate the four selected project thumbnails
+after their source figures change; it is not part of the regular data refresh.
+
+A future weekly local Codex task can perform this procedure and report its diff
+for review. It requires the Darkseid computer and desktop app to be running,
+the checkout and Node dependencies to be available, and permission for the
+public network requests. Keep unfinished work isolated and define publication
+authority explicitly. No local task is installed by this repository change.
+The existing GitHub workflow combines scheduling with GitHub Pages deployment:
+moving the refresh locally does not by itself remove the need to deploy the site.
+
 ## Helios Web
 
 The homepage uses `helios-web` 0.10 and `helios-network` 0.10. The package currently ships browser-only WebAssembly and worker assets that server-oriented static compilers try to analyze. `npm run vendor:helios` copies the installed official browser bundles into `public/vendor/`, rewrites only their local import/worker URLs, and leaves the npm packages as the declared version source.

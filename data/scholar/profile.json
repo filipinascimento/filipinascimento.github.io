@@ -2,14 +2,14 @@
   "profileUrl": "https://scholar.google.com/citations?user=fhWJEysAAAAJ&hl=en",
   "publications": 64,
   "publicationsDisplay": "60+",
-  "profileEntries": 118,
-  "citations": 2605,
-  "citationsDisplay": "2,600+",
-  "citationsSince2021": 1929,
+  "profileEntries": 122,
+  "citations": 2791,
+  "citationsDisplay": "2,700+",
+  "citationsSince2021": 2114,
   "hIndex": 23,
   "hIndexSince2021": 18,
-  "i10Index": 42,
-  "i10IndexSince2021": 35,
+  "i10Index": 45,
+  "i10IndexSince2021": 38,
   "sinceYear": 2021,
   "publicationAudit": {
     "auditedAt": "2026-08-02",
@@ -17,5 +17,5 @@
     "publishedProfileRows": 63,
     "additionalPublishedRecords": 1
   },
-  "fetchedAt": "2026-08-02T05:37:51.786Z"
+  "fetchedAt": "2026-11-03T19:38:52.024Z"
 }

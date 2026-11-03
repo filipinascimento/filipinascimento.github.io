@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T05:43:51.954Z",
+  "generatedAt": "2026-11-03T19:40:50.178Z",
   "count": 75,
   "missingCount": 0,
   "figures": [
@@ -532,18 +532,6 @@
       "position": "center"
     },
     {
-      "normalizedTitle": "can spatiality promote diversity",
-      "title": "Can Spatiality Promote Diversity?",
-      "src": "/figures/publications/can-spatiality-promote-diversity.png",
-      "alt": "Opinion diversity as a function of spatial-network rewiring probability.",
-      "caption": null,
-      "sourceUrl": "https://arxiv.org/abs/1809.00729",
-      "sourceLabel": "Preprint figure",
-      "method": "curated",
-      "fit": "contain",
-      "position": "center"
-    },
-    {
       "normalizedTitle": "the dynamics of knowledge acquisition via self learning in complex networks",
       "title": "The dynamics of knowledge acquisition via self-learning in complex networks",
       "src": "/figures/publications/the-dynamics-of-knowledge-acquisition-via-self-learning-in-complex-networks.png",
@@ -587,6 +575,18 @@
       "caption": "Principal component analysis of transistor-array measurements with marginal density estimates.",
       "sourceUrl": "https://doi.org/10.1016/j.physa.2018.02.011",
       "sourceLabel": "Paper figure",
+      "method": "curated",
+      "fit": "contain",
+      "position": "center"
+    },
+    {
+      "normalizedTitle": "can spatiality promote diversity",
+      "title": "Can Spatiality Promote Diversity?",
+      "src": "/figures/publications/can-spatiality-promote-diversity.png",
+      "alt": "Opinion diversity as a function of spatial-network rewiring probability.",
+      "caption": null,
+      "sourceUrl": "https://arxiv.org/abs/1809.00729",
+      "sourceLabel": "Preprint figure",
       "method": "curated",
       "fit": "contain",
       "position": "center"

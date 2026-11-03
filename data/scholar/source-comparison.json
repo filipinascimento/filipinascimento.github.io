@@ -1,30 +1,386 @@
 {
-  "generatedAt": "2026-08-24T09:07:49.144Z",
+  "generatedAt": "2026-11-03T19:40:30.608Z",
   "googleScholar": {
-    "profileEntries": 118,
+    "profileEntries": 122,
+    "profileEntriesAtAudit": 118,
+    "reviewRequired": true,
+    "currentRowsOutsidePublishedList": [
+      {
+        "id": "fhWJEysAAAAJ:8k81kl-MbHgC",
+        "title": "Modular dynamics of financial market networks",
+        "normalizedTitle": "modular dynamics of financial market networks",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:IjCSPb-OGe4C",
+        "title": "Local dimension of complex networks",
+        "normalizedTitle": "local dimension of complex networks",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:Kqc1aDSOPooC",
+        "title": "Bateria de Avaliação Frontal",
+        "normalizedTitle": "bateria de avaliacao frontal",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:natZJ_-F0IUC",
+        "title": "The rise of Bluesky",
+        "normalizedTitle": "the rise of bluesky",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:oTdOBqtIf_kC",
+        "title": "Complex networks accessibility and symmetry",
+        "normalizedTitle": "complex networks accessibility and symmetry",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:N4u4nq0IxgcC",
+        "title": "Accessibility and Trajectory-Based Text Characterization",
+        "normalizedTitle": "accessibility and trajectory based text characterization",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:X4-KO54GjGYC",
+        "title": "Israel-Hamas War on X: A Case Study of Coordinated Campaigns and Information Integrity",
+        "normalizedTitle": "israel hamas war on x a case study of coordinated campaigns and information integrity",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:I8rxH6phXEkC",
+        "title": "Cell type differentiation using network clustering algorithms",
+        "normalizedTitle": "cell type differentiation using network clustering algorithms",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:DQNrXyjhriIC",
+        "title": "Aplicação de Metodologia “Reliability Centered Maintenance 3”(RCM3) ao sistema de refrigeração do sistema de armas Pandur II 8x8",
+        "normalizedTitle": "aplicacao de metodologia reliability centered maintenance 3 rcm3 ao sistema de refrigeracao do sistema de armas pandur ii 8x8",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:roLk4NBRz8UC",
+        "title": "Correction: Complex Network Analysis of CA3 Transcriptome Reveals Pathogenic and Compensatory Pathways in Refractory Temporal Lobe Epilepsy",
+        "normalizedTitle": "correction complex network analysis of ca3 transcriptome reveals pathogenic and compensatory pathways in refractory temporal lobe epilepsy",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:_tF6a-HnqWAC",
+        "title": "Classification of network topology and dynamics via sequence characterization",
+        "normalizedTitle": "classification of network topology and dynamics via sequence characterization",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:NtCmTCuxid4C",
+        "title": "A neuropsychological group rehabilitation program with institutionalized elderly",
+        "normalizedTitle": "a neuropsychological group rehabilitation program with institutionalized elderly",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:j5aT6aphRxQC",
+        "title": "An Architecture for flexible GIS Integration of Distribution Planning and Analysis System",
+        "normalizedTitle": "an architecture for flexible gis integration of distribution planning and analysis system",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:Y0pCki6q_DkC",
+        "title": "REDES COMPLEXAS: METODOLOGIAS E MODELAGEM DE AQUISIÇÃO DE CONHECIMENTO",
+        "normalizedTitle": "redes complexas metodologias e modelagem de aquisicao de conhecimento",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:RfUwGJFMQ-0C",
+        "title": "From Node2Vec to GPT-based GraphRAG: scientific impact prediction across graph and language models",
+        "normalizedTitle": "from node2vec to gpt based graphrag scientific impact prediction across graph and language models",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:rbGdIwl2e6cC",
+        "title": "Linking Global Science Funding to Research Publications",
+        "normalizedTitle": "linking global science funding to research publications",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:6ZzL7HXColQC",
+        "title": "Recovering link-weight structure in complex networks with weight-aware random walks",
+        "normalizedTitle": "recovering link weight structure in complex networks with weight aware random walks",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:rCNdntzdTkkC",
+        "title": "Comparing biased random walks in graph embedding and link prediction",
+        "normalizedTitle": "comparing biased random walks in graph embedding and link prediction",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:L24QuVWYgZ0C",
+        "title": "Recovering network topology and dynamics via sequence characterization",
+        "normalizedTitle": "recovering network topology and dynamics via sequence characterization",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:cBPnxVikjH8C",
+        "title": "Self-correspondence along multipartite complex networks",
+        "normalizedTitle": "self correspondence along multipartite complex networks",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:60iIaj97TE0C",
+        "title": "Visualizing big science projects-Science maps",
+        "normalizedTitle": "visualizing big science projects science maps",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:yIeBiWEAh44C",
+        "title": "Automated in situ consolidation process for pre-impregnated carbon fibers: a cyber phisycal approach",
+        "normalizedTitle": "automated in situ consolidation process for pre impregnated carbon fibers a cyber phisycal approach",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:hQUaER0FWQ4C",
+        "title": "Visualizing Complex Networks (CDT-5)",
+        "normalizedTitle": "visualizing complex networks cdt 5",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:LGlY6t8CeOMC",
+        "title": "Can spatiality promote diversity?",
+        "normalizedTitle": "can spatiality promote diversity",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:hefNtdE4IMkC",
+        "title": "Probabilistic assessment of the safety, security and efficiency of large-scale LV networks",
+        "normalizedTitle": "probabilistic assessment of the safety security and efficiency of large scale lv networks",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:c1AJUTjuCtUC",
+        "title": "A null model to detect coordinated online behavior integrating evidence from multiple indicators",
+        "normalizedTitle": "a null model to detect coordinated online behavior integrating evidence from multiple indicators",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:4n0clTBhZ78C",
+        "title": "Heuristic and exact modularity optimization with size-constrained communities",
+        "normalizedTitle": "heuristic and exact modularity optimization with size constrained communities",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:w2UhwfzvF0QC",
+        "title": "Constructing the Field of Philanthropic and Nonprofit Studies: Evidence from Citation Networks",
+        "normalizedTitle": "constructing the field of philanthropic and nonprofit studies evidence from citation networks",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:SrKkpNFED5gC",
+        "title": "The Tone of Awareness: Topic, Sentiment, and Toxicity Maps During Mental Health Month on TikTok",
+        "normalizedTitle": "the tone of awareness topic sentiment and toxicity maps during mental health month on tiktok",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:Vno172sVVMwC",
+        "title": "Triadic Novelty: A Typology and Measurement Framework for Recognizing Novel Contributions in Science",
+        "normalizedTitle": "triadic novelty a typology and measurement framework for recognizing novel contributions in science",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:Vztgr1qGG8IC",
+        "title": "brainlife. io: a decentralized and open-source cloud platform to support neuroscience research (Apr, 10.1038/s41592-024-02237-2, 2024)",
+        "normalizedTitle": "brainlife io a decentralized and open source cloud platform to support neuroscience research apr 10 1038 s41592 024 02237 2 2024",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:7Frjd3zlGBUC",
+        "title": "Using Full-Text Content to Characterize and Identify Best Seller Books",
+        "normalizedTitle": "using full text content to characterize and identify best seller books",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:KTwcwpFFj4wC",
+        "title": "Accessibility and Trajectory-Based Text Characterization.",
+        "normalizedTitle": "accessibility and trajectory based text characterization",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:lg2tdxc6qMwC",
+        "title": "Robustness of citation networks retrieved from queries",
+        "normalizedTitle": "robustness of citation networks retrieved from queries",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:g8uWPOAv7ggC",
+        "title": "Tratamento da luxação anterior recidivante do ombro pela técnica de Bristow-Latarjet",
+        "normalizedTitle": "tratamento da luxacao anterior recidivante do ombro pela tecnica de bristow latarjet",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:m4fbC6XIj1kC",
+        "title": "Human Networks and Data Science (NSF 19-608): Uncovering the\" dark matter\" of research",
+        "normalizedTitle": "human networks and data science nsf 19 608 uncovering the dark matter of research",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:tz746QTLzJkC",
+        "title": "Filippo Menczer1, 2, Staša Milojevic 2, and Santo Fortunato1, 2",
+        "normalizedTitle": "filippo menczer1 2 stasa milojevic 2 and santo fortunato1 2",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:oqD4_j7ulsYC",
+        "title": "PERCUSSÕES DA METROPOLITANA: XXX FESTIVAL INTERNACIONAL DE BANDAS FILARMÓNICAS DE ARRENTELA",
+        "normalizedTitle": "percussoes da metropolitana xxx festival internacional de bandas filarmonicas de arrentela",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:lK9BDNCuzFgC",
+        "title": "PERCUSSÕES DA METROPOLITANA: A CHEGADA DO HOMEM À LUA",
+        "normalizedTitle": "percussoes da metropolitana a chegada do homem a lua",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:ndLnGcHYRF0C",
+        "title": "Caracterizando cidades do mundo por sua topologia",
+        "normalizedTitle": "caracterizando cidades do mundo por sua topologia",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:WwIwg2wKZ0QC",
+        "title": "Apresentação de conteúdos didáticos: auxílio ao planejamento utilizando redes complexas",
+        "normalizedTitle": "apresentacao de conteudos didaticos auxilio ao planejamento utilizando redes complexas",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:zwpXiJ37cpgC",
+        "title": "Uso de Ferramentas de Visualização de Dados Científicos em Ensino Interdisciplinar",
+        "normalizedTitle": "uso de ferramentas de visualizacao de dados cientificos em ensino interdisciplinar",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:T_ojBgVMvoEC",
+        "title": "Trisomy 21-driven gene expression dysregulation in human thymus: converging genomic and epigenomic mechanisms",
+        "normalizedTitle": "trisomy 21 driven gene expression dysregulation in human thymus converging genomic and epigenomic mechanisms",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:eI34FqJmdUoC",
+        "title": "Obtaining the borders of urban areas",
+        "normalizedTitle": "obtaining the borders of urban areas",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:D_tqNUsBuKoC",
+        "title": "Dimensão e simetria em redes complexas: uma abordagem multiescala",
+        "normalizedTitle": "dimensao e simetria em redes complexas uma abordagem multiescala",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:ULOm3_A8WrAC",
+        "title": "Modular transcriptional repertoire and microRNA-target analyses in thymic tissue of Down syndrome infants",
+        "normalizedTitle": "modular transcriptional repertoire and microrna target analyses in thymic tissue of down syndrome infants",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:nqdriD65xNoC",
+        "title": "Concentric Symmetry",
+        "normalizedTitle": "concentric symmetry",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:DXE8ND7PrJAC",
+        "title": "Estrutura multiescala de redes complexas",
+        "normalizedTitle": "estrutura multiescala de redes complexas",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:KlAtU1dfN6UC",
+        "title": "Modular Transcriptional Repertoire Analysis in Down Syndrome Thymus",
+        "normalizedTitle": "modular transcriptional repertoire analysis in down syndrome thymus",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:Se3iqnhoufwC",
+        "title": "Complete Transcriptional Network Driven-View of Thymic Hypofunction in Down Syndrome",
+        "normalizedTitle": "complete transcriptional network driven view of thymic hypofunction in down syndrome",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:Og1tA8FjbJAC",
+        "title": "Concentric Characterization and Classification of Complex Network Nodes: Theory and Application to Institutional Collaboration",
+        "normalizedTitle": "concentric characterization and classification of complex network nodes theory and application to institutional collaboration",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:KS-xo-ZNxMsC",
+        "title": "Redes complexas multidimensionais",
+        "normalizedTitle": "redes complexas multidimensionais",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:Vr2j17o0sqMC",
+        "title": "Redes complexas geográficas multidimensionais",
+        "normalizedTitle": "redes complexas geograficas multidimensionais",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:xm0LlTxljI0C",
+        "title": "Redes complexas geográficas n-dimensionais",
+        "normalizedTitle": "redes complexas geograficas n dimensionais",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:Tyk-4Ss8FVUC",
+        "title": "Identifying Complex Networks by Random Walks",
+        "normalizedTitle": "identifying complex networks by random walks",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:bXQfdp6S9ecC",
+        "title": "Métodos de Monte Carlo em Computação Paralela e Distribuída",
+        "normalizedTitle": "metodos de monte carlo em computacao paralela e distribuida",
+        "matchesPublishedTitle": false
+      },
+      {
+        "id": "fhWJEysAAAAJ:vVJNg6_NJEsC",
+        "title": "Visualizing big science projects-Institution collaboration maps",
+        "normalizedTitle": "visualizing big science projects institution collaboration maps",
+        "matchesPublishedTitle": false
+      }
+    ],
     "acceptedPublishedRows": 63,
-    "excludedRows": 55,
-    "excludedBreakdown": {
+    "excludedRowsAtAudit": 55,
+    "excludedBreakdownAtAudit": {
       "duplicateOrVersionRows": 15,
       "unpublishedPreprintOrManuscriptRows": 14,
       "otherScholarlyOutputRows": 18,
       "unrelatedOrMalformedAuthorRows": 8
     },
-    "citations": 2605,
+    "citations": 2791,
     "hIndex": 23
   },
   "openAlex": {
     "linkedAuthorRecords": 10,
-    "rawUniqueWorksAcrossLinkedAuthors": 128,
-    "manuallyLinkedWorks": 18,
+    "resolvedAuthorRecords": 2,
+    "unavailableAuthorIds": [
+      "A5133555595",
+      "A5120752287",
+      "A5133327538",
+      "A5122442661",
+      "A5135553381",
+      "A5102054363",
+      "A5136191170"
+    ],
+    "rawUniqueWorksAcrossLinkedAuthors": 117,
+    "manuallyLinkedWorks": 19,
     "candidateWorksBeforePublicationAudit": 96,
     "curatedPublishedWorks": 64,
     "curatedStandalonePreprints": 11,
     "duplicateNormalizedTitles": 0,
     "missingCanonicalPublications": [],
     "missingCanonicalPreprints": [],
-    "primaryAuthorCitations": 1793,
-    "primaryAuthorHIndex": 19
+    "primaryAuthorCitations": 2158,
+    "primaryAuthorHIndex": 22
   },
   "crosswalk": {
     "canonicalPublishedWorks": 64,

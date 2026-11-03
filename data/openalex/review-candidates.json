@@ -1,0 +1,549 @@
+{
+  "fetchedAt": "2026-11-03T19:39:27.872Z",
+  "count": 10,
+  "works": [
+    {
+      "id": "https://openalex.org/W7208720724",
+      "title": "Constructing the Field of Philanthropic and Nonprofit Studies: Evidence from Citation Networks",
+      "normalizedTitle": "constructing the field of philanthropic and nonprofit studies evidence from citation networks",
+      "publicationDate": "2026-09-03",
+      "year": 2026,
+      "type": "preprint",
+      "source": "arXiv (Cornell University)",
+      "doi": "https://doi.org/10.48550/arxiv.2609.03291",
+      "url": "https://arxiv.org/abs/2609.03291",
+      "citedByCount": 0,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2609.03291"
+      ],
+      "authors": [
+        {
+          "name": "Jin Ai",
+          "id": "https://openalex.org/A5101400523"
+        },
+        {
+          "name": "Richard Steinberg",
+          "id": "https://openalex.org/A5002034108"
+        },
+        {
+          "name": "Chao Guo",
+          "id": "https://openalex.org/A5150046559"
+        },
+        {
+          "name": "Filipi Nascimento Silva",
+          "id": "https://openalex.org/A5025683130"
+        }
+      ],
+      "topics": [
+        "scientometrics and bibliometrics research",
+        "Nonprofit Sector and Volunteering",
+        "Web visibility and informetrics"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W7208720724"
+      ],
+      "alternateUrls": []
+    },
+    {
+      "id": "https://openalex.org/W4226174374",
+      "title": "Methods for Gene Co-expression Network Visualization and Analysis",
+      "normalizedTitle": "methods for gene co expression network visualization and analysis",
+      "publicationDate": "2022-01-01",
+      "year": 2022,
+      "type": "book-chapter",
+      "source": "Springer eBooks",
+      "doi": "https://doi.org/10.1007/978-3-030-87821-4_6",
+      "url": "https://doi.org/10.1007/978-3-030-87821-4_6",
+      "citedByCount": 6,
+      "openAccess": false,
+      "openAccessStatus": "closed",
+      "preprintUrls": [],
+      "authors": [
+        {
+          "name": "Carlos Alberto Moreira‐Filho",
+          "id": "https://openalex.org/A5033847158"
+        },
+        {
+          "name": "Sílvia Yumi Bando",
+          "id": "https://openalex.org/A5072126664"
+        },
+        {
+          "name": "Fernanda Bernardi Bertonha",
+          "id": "https://openalex.org/A5058064072"
+        },
+        {
+          "name": "Filipi Nascimento Silva",
+          "id": "https://openalex.org/A5025683130"
+        },
+        {
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
+        }
+      ],
+      "topics": [
+        "Bioinformatics and Genomic Networks",
+        "Gene Regulatory Network Analysis",
+        "Complex Network Analysis Techniques"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W4226174374"
+      ],
+      "alternateUrls": []
+    },
+    {
+      "id": "https://openalex.org/W4286899924",
+      "title": "Data for: On the Stability of Communities in Citation Networks",
+      "normalizedTitle": "data for on the stability of communities in citation networks",
+      "publicationDate": "2021-10-19",
+      "year": 2021,
+      "type": "article",
+      "source": "Zenodo (CERN European Organization for Nuclear Research)",
+      "doi": "https://doi.org/10.5281/zenodo.5578566",
+      "url": "https://doi.org/10.5281/zenodo.5578566",
+      "citedByCount": 0,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [],
+      "authors": [
+        {
+          "name": "Alexandre Benatti",
+          "id": "https://openalex.org/A5032530535"
+        },
+        {
+          "name": "Henrique Ferraz de Arruda",
+          "id": "https://openalex.org/A5085599698"
+        },
+        {
+          "name": "Filipi Nascimento Silva",
+          "id": "https://openalex.org/A5025683130"
+        },
+        {
+          "name": "Cesar Henrique Comin",
+          "id": "https://openalex.org/A5076528057"
+        },
+        {
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
+        }
+      ],
+      "topics": [
+        "Complex Network Analysis Techniques",
+        "scientometrics and bibliometrics research",
+        "Web visibility and informetrics"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W4286899924"
+      ],
+      "alternateUrls": []
+    },
+    {
+      "id": "https://openalex.org/W3037757426",
+      "title": "Human Networks and Data Science (NSF 19-608): Uncovering the \"dark matter\" of research",
+      "normalizedTitle": "human networks and data science nsf 19 608 uncovering the dark matter of research",
+      "publicationDate": "2020-02-25",
+      "year": 2020,
+      "type": "preprint",
+      "source": "",
+      "doi": "https://doi.org/10.31222/osf.io/fdv92",
+      "url": "https://doi.org/10.31222/osf.io/fdv92",
+      "citedByCount": 1,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://doi.org/10.31222/osf.io/fdv92",
+        "https://osf.io/fdv92/download",
+        "https://doi.org/10.31222/OSF.IO/FDV92",
+        "https://osf.io/fdv92",
+        "https://osf.io/n9qzv"
+      ],
+      "authors": [
+        {
+          "name": "Brian A. Nosek",
+          "id": "https://openalex.org/A5081641856"
+        },
+        {
+          "name": "Staša Milojević",
+          "id": "https://openalex.org/A5108688680"
+        },
+        {
+          "name": "Valentin Pentchev",
+          "id": "https://openalex.org/A5004298293"
+        },
+        {
+          "name": "Xiaoran Yan",
+          "id": "https://openalex.org/A5026380797"
+        },
+        {
+          "name": "David M Litherland",
+          "id": "https://openalex.org/A5018257517"
+        },
+        {
+          "name": "Nicole Pfeiffer",
+          "id": "https://openalex.org/A5081148645"
+        },
+        {
+          "name": "Tina Krall",
+          "id": "https://openalex.org/A5071255829"
+        },
+        {
+          "name": "Fielding L. Grasty",
+          "id": "https://openalex.org/A5014767639"
+        },
+        {
+          "name": "Timothy M. Errington",
+          "id": "https://openalex.org/A5057891636"
+        },
+        {
+          "name": "Santo Fortunato",
+          "id": "https://openalex.org/A5053938061"
+        },
+        {
+          "name": "Ann McCranie",
+          "id": "https://openalex.org/A5051895116"
+        },
+        {
+          "name": "Filipi Nascimento Silva",
+          "id": "https://openalex.org/A5025683130"
+        },
+        {
+          "name": "Jamie Wittenberg",
+          "id": "https://openalex.org/A5070130464"
+        },
+        {
+          "name": "Ronald E Brooks",
+          "id": "https://openalex.org/A5055119164"
+        }
+      ],
+      "topics": [
+        "scientometrics and bibliometrics research",
+        "Research Data Management Practices",
+        "Academic Publishing and Open Access"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W3037757426"
+      ],
+      "alternateUrls": []
+    },
+    {
+      "id": "https://openalex.org/W2595235785",
+      "title": "TRISOMY 21-DRIVEN GENE EXPRESSION DYSREGULATION IN HUMAN THYMUS: CONVERGING GENOMIC AND EPIGENOMIC MECHANISMS",
+      "normalizedTitle": "trisomy 21 driven gene expression dysregulation in human thymus converging genomic and epigenomic mechanisms",
+      "publicationDate": "2016-04-16",
+      "year": 2016,
+      "type": "article",
+      "source": "Journal of Clinical Immunology",
+      "doi": null,
+      "url": "https://openalex.org/W2595235785",
+      "citedByCount": 0,
+      "openAccess": false,
+      "openAccessStatus": "closed",
+      "preprintUrls": [],
+      "authors": [
+        {
+          "name": "Carlos Alberto Moreira‐Filho",
+          "id": "https://openalex.org/A5033847158"
+        },
+        {
+          "name": "Sílvia Yumi Bando",
+          "id": "https://openalex.org/A5072126664"
+        },
+        {
+          "name": "Fernanda Bernardi Bertonha",
+          "id": "https://openalex.org/A5058064072"
+        },
+        {
+          "name": "Filipi Nascimento Silva",
+          "id": "https://openalex.org/A5025683130"
+        },
+        {
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
+        },
+        {
+          "name": "Leandro Rodrigues Fereira",
+          "id": "https://openalex.org/A5080204402"
+        },
+        {
+          "name": "Magda Maria Sales Carneiro-Sampaio",
+          "id": "https://openalex.org/A5085211757"
+        }
+      ],
+      "topics": [
+        "Down syndrome and intellectual disability research",
+        "Genomics and Chromatin Dynamics",
+        "T-cell and B-cell Immunology"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W2595235785"
+      ],
+      "alternateUrls": []
+    },
+    {
+      "id": "https://openalex.org/W2611980366",
+      "title": "Modular transcriptional repertoire and microRNA-target analyses in thymic tissue of Down syndrome infants",
+      "normalizedTitle": "modular transcriptional repertoire and microrna target analyses in thymic tissue of down syndrome infants",
+      "publicationDate": "2015-04-10",
+      "year": 2015,
+      "type": "article",
+      "source": "Journal of Clinical Immunology",
+      "doi": null,
+      "url": "https://openalex.org/W2611980366",
+      "citedByCount": 0,
+      "openAccess": false,
+      "openAccessStatus": "closed",
+      "preprintUrls": [],
+      "authors": [
+        {
+          "name": "Carlos Alberto Moreira‐Filho",
+          "id": "https://openalex.org/A5033847158"
+        },
+        {
+          "name": "Sílvia Yumi Bando",
+          "id": "https://openalex.org/A5072126664"
+        },
+        {
+          "name": "Fernanda Bernardi Bertonha",
+          "id": "https://openalex.org/A5058064072"
+        },
+        {
+          "name": "Filipi N. Silva",
+          "id": "https://openalex.org/A5025683130"
+        },
+        {
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
+        },
+        {
+          "name": "Leandro Ferreira",
+          "id": "https://openalex.org/A5036895120"
+        },
+        {
+          "name": "Magda Maria Sales Carneiro-Sampaio",
+          "id": "https://openalex.org/A5085211757"
+        }
+      ],
+      "topics": [
+        "Down syndrome and intellectual disability research",
+        "MicroRNA in disease regulation",
+        "Genetics and Neurodevelopmental Disorders"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W2611980366"
+      ],
+      "alternateUrls": []
+    },
+    {
+      "id": "https://openalex.org/W3180084264",
+      "title": "Concentric Symmetry",
+      "normalizedTitle": "concentric symmetry",
+      "publicationDate": "2014-07-01",
+      "year": 2014,
+      "type": "preprint",
+      "source": "White Rose Research Online (University of Leeds, The University of Sheffield, University of York)",
+      "doi": null,
+      "url": "https://eprints.whiterose.ac.uk/id/eprint/200156/1/1407.0224.pdf",
+      "citedByCount": 0,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://eprints.whiterose.ac.uk/id/eprint/200156/1/1407.0224.pdf",
+        "https://eprints.whiterose.ac.uk/79880/1/1407.0224.pdf",
+        "https://arxiv.org/abs/1407.0224"
+      ],
+      "authors": [
+        {
+          "name": "Filipi N. Silva",
+          "id": "https://openalex.org/A5025683130"
+        },
+        {
+          "name": "Cesar Henrique Comin",
+          "id": "https://openalex.org/A5076528057"
+        },
+        {
+          "name": "Thomas Peron",
+          "id": "https://openalex.org/A5002933889"
+        },
+        {
+          "name": "Francisco A. Rodrigues",
+          "id": "https://openalex.org/A5061851539"
+        },
+        {
+          "name": "Cheng Ye",
+          "id": "https://openalex.org/A5100741781"
+        },
+        {
+          "name": "Richard C. Wilson",
+          "id": "https://openalex.org/A5032741413"
+        },
+        {
+          "name": "Edwin R. Hancock",
+          "id": "https://openalex.org/A5074364400"
+        },
+        {
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
+        }
+      ],
+      "topics": [
+        "Complex Network Analysis Techniques",
+        "Graph theory and applications",
+        "Graph Theory and Algorithms"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W3180084264"
+      ],
+      "alternateUrls": []
+    },
+    {
+      "id": "https://openalex.org/W3035900724",
+      "title": "Complete transcriptional network driven-view of thymic hypofunction in down syndrome",
+      "normalizedTitle": "complete transcriptional network driven view of thymic hypofunction in down syndrome",
+      "publicationDate": "2014-01-01",
+      "year": 2014,
+      "type": "article",
+      "source": "Journal of Clinical Immunology",
+      "doi": null,
+      "url": "https://openalex.org/W3035900724",
+      "citedByCount": 0,
+      "openAccess": false,
+      "openAccessStatus": "closed",
+      "preprintUrls": [],
+      "authors": [
+        {
+          "name": "Carlos Alberto Moreira‐Filho",
+          "id": "https://openalex.org/A5033847158"
+        },
+        {
+          "name": "Sílvia Yumi Bando",
+          "id": "https://openalex.org/A5072126664"
+        },
+        {
+          "name": "Fernanda Bernardi Bertonha",
+          "id": "https://openalex.org/A5058064072"
+        },
+        {
+          "name": "Leandro Rodrigues Fereira",
+          "id": "https://openalex.org/A5080204402"
+        },
+        {
+          "name": "Filipi N. Silva",
+          "id": "https://openalex.org/A5025683130"
+        },
+        {
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
+        },
+        {
+          "name": "Marcília Sierro Grassi",
+          "id": "https://openalex.org/A5102947394"
+        },
+        {
+          "name": "Magda Maria Sales Carneiro-Sampaio",
+          "id": "https://openalex.org/A5085211757"
+        }
+      ],
+      "topics": [
+        "Down syndrome and intellectual disability research",
+        "Immunodeficiency and Autoimmune Disorders",
+        "T-cell and B-cell Immunology"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W3035900724"
+      ],
+      "alternateUrls": []
+    },
+    {
+      "id": "https://openalex.org/W3031825608",
+      "title": "Modular transcriptional repertoire analysis in Down Syndrome Thymus",
+      "normalizedTitle": "modular transcriptional repertoire analysis in down syndrome thymus",
+      "publicationDate": "2014-01-01",
+      "year": 2014,
+      "type": "article",
+      "source": "Journal of Clinical Immunology",
+      "doi": null,
+      "url": "https://openalex.org/W3031825608",
+      "citedByCount": 0,
+      "openAccess": false,
+      "openAccessStatus": "closed",
+      "preprintUrls": [],
+      "authors": [
+        {
+          "name": "C. M. Prata Filho",
+          "id": null
+        },
+        {
+          "name": "Sílvia Yumi Bando",
+          "id": "https://openalex.org/A5072126664"
+        },
+        {
+          "name": "Fernanda Bernardi Bertonha",
+          "id": "https://openalex.org/A5058064072"
+        },
+        {
+          "name": "Filipi N. Silva",
+          "id": "https://openalex.org/A5025683130"
+        },
+        {
+          "name": "Lorenza Dalla Costa",
+          "id": "https://openalex.org/A5067727030"
+        },
+        {
+          "name": "Magda Maria Sales Carneiro-Sampaio",
+          "id": "https://openalex.org/A5085211757"
+        }
+      ],
+      "topics": [
+        "Down syndrome and intellectual disability research",
+        "T-cell and B-cell Immunology",
+        "Genomics and Chromatin Dynamics"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W3031825608"
+      ],
+      "alternateUrls": []
+    },
+    {
+      "id": "https://openalex.org/W3105686395",
+      "title": "SZNAJD COMPLEX NETWORKS",
+      "normalizedTitle": "sznajd complex networks",
+      "publicationDate": "2013-07-26",
+      "year": 2013,
+      "type": "preprint",
+      "source": "",
+      "doi": null,
+      "url": "https://openalex.org/W3105686395",
+      "citedByCount": 11,
+      "openAccess": false,
+      "openAccessStatus": "closed",
+      "preprintUrls": [
+        "https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.305.3272",
+        "https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.311.2345",
+        "https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.311.6206",
+        "https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.311.8828",
+        "https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.312.491",
+        "https://www.worldscinet.com/cgi-bin/details.cgi?type=html&amp;id=pii:S0129183105007674"
+      ],
+      "authors": [
+        {
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
+        },
+        {
+          "name": "Filipi Nascimento Silva",
+          "id": "https://openalex.org/A5025683130"
+        }
+      ],
+      "topics": [
+        "Opinion Dynamics and Social Influence",
+        "Complex Network Analysis Techniques",
+        "Cellular Automata and Applications"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W3105686395"
+      ],
+      "alternateUrls": []
+    }
+  ]
+}
