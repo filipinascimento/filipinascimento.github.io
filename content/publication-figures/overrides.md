@@ -1,6 +1,20 @@
 ---
 title: Publication figure overrides
 figures:
+  - title: "Constructing the Field of Philanthropic and Nonprofit Studies: Evidence from Citation Networks"
+    localPath: content/publication-figures/assets/philanthropy-network.png
+    alt: "Citation-network map of philanthropic and nonprofit studies, from Figure 6 of the preprint."
+    caption: "Figure 6. Intellectual Map of Philanthropic and Nonprofit Studies. Extracted intact from page 14 of arXiv:2609.03291v1."
+    sourceUrl: https://arxiv.org/abs/2609.03291
+    sourceLabel: Preprint figure
+  - title: "Methods for Gene Co-expression Network Visualization and Analysis"
+    localPath: content/publication-figures/assets/transcriptomics-2022-cover.webp
+    alt: "Cover of Transcriptomics in Health and Disease, second edition (2022)."
+    caption: "Book cover for the second edition (2022), containing Chapter 6."
+    sourceUrl: https://link.springer.com/book/10.1007/978-3-030-87821-4
+    sourceLabel: Book cover
+  - title: "Data for: On the Stability of Communities in Citation Networks"
+    omitReason: "The Zenodo deposit contains keyword lists and a citation network, with no standalone figure."
   - title: "Network clustering algorithms and preprocessing pipelines for robust cell type identification in single-cell RNA sequencing data"
     localPath: content/publication-figures/assets/cell-clustering.png
     alt: "Comparison of clustering algorithms for single-cell RNA sequencing networks."

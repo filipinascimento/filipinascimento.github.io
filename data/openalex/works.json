@@ -1,6 +1,51 @@
 {
-  "fetchedAt": "2026-11-03T19:39:27.872Z",
+  "fetchedAt": "2026-11-03T19:59:51.996Z",
   "works": [
+    {
+      "id": "https://openalex.org/W7208720724",
+      "title": "Constructing the Field of Philanthropic and Nonprofit Studies: Evidence from Citation Networks",
+      "normalizedTitle": "constructing the field of philanthropic and nonprofit studies evidence from citation networks",
+      "publicationDate": "2026-09-03",
+      "year": 2026,
+      "type": "preprint",
+      "source": "arXiv (Cornell University)",
+      "doi": "https://doi.org/10.48550/arxiv.2609.03291",
+      "url": "https://arxiv.org/abs/2609.03291",
+      "citedByCount": 0,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2609.03291"
+      ],
+      "authors": [
+        {
+          "name": "Jin Ai",
+          "id": "https://openalex.org/A5101400523"
+        },
+        {
+          "name": "Richard Steinberg",
+          "id": "https://openalex.org/A5002034108"
+        },
+        {
+          "name": "Chao Guo",
+          "id": "https://openalex.org/A5150046559"
+        },
+        {
+          "name": "Filipi Nascimento Silva",
+          "id": "https://openalex.org/A5025683130"
+        }
+      ],
+      "topics": [
+        "scientometrics and bibliometrics research",
+        "Nonprofit Sector and Volunteering",
+        "Web visibility and informetrics"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W7208720724"
+      ],
+      "alternateUrls": [],
+      "publicationStatus": "preprint"
+    },
     {
       "id": "https://openalex.org/W7164499166",
       "title": "The Tone of Awareness: Topic, Sentiment, and Toxicity Maps During Mental Health Month on TikTok",
@@ -1619,6 +1664,110 @@
         "https://openalex.org/W7111669703"
       ],
       "publicationStatus": "published"
+    },
+    {
+      "id": "https://openalex.org/W4226174374",
+      "title": "Methods for Gene Co-expression Network Visualization and Analysis",
+      "normalizedTitle": "methods for gene co expression network visualization and analysis",
+      "publicationDate": "2022-03-08",
+      "year": 2022,
+      "type": "book-chapter",
+      "source": "Transcriptomics in Health and Disease, 2nd edition",
+      "doi": "https://doi.org/10.1007/978-3-030-87821-4_6",
+      "url": "https://doi.org/10.1007/978-3-030-87821-4_6",
+      "citedByCount": 6,
+      "openAccess": false,
+      "openAccessStatus": "closed",
+      "preprintUrls": [],
+      "authors": [
+        {
+          "name": "Carlos Alberto Moreira‐Filho",
+          "id": "https://openalex.org/A5033847158"
+        },
+        {
+          "name": "Sílvia Yumi Bando",
+          "id": "https://openalex.org/A5072126664"
+        },
+        {
+          "name": "Fernanda Bernardi Bertonha",
+          "id": "https://openalex.org/A5058064072"
+        },
+        {
+          "name": "Filipi Nascimento Silva",
+          "id": "https://openalex.org/A5025683130"
+        },
+        {
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
+        }
+      ],
+      "topics": [
+        "Bioinformatics and Genomic Networks",
+        "Gene Regulatory Network Analysis",
+        "Complex Network Analysis Techniques"
+      ],
+      "note": "Chapter 6, pp. 143–163. Second edition (2022).",
+      "relatedWork": {
+        "label": "Earlier edition (2014)",
+        "url": "https://doi.org/10.1007/978-3-319-11985-4_4"
+      },
+      "openAlexIds": [
+        "https://openalex.org/W4226174374"
+      ],
+      "alternateUrls": [],
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://openalex.org/W4286899924",
+      "title": "Data for: On the Stability of Communities in Citation Networks",
+      "normalizedTitle": "data for on the stability of communities in citation networks",
+      "publicationDate": "2021-10-19",
+      "year": 2021,
+      "type": "dataset",
+      "source": "Zenodo",
+      "doi": "https://doi.org/10.5281/zenodo.5578566",
+      "url": "https://doi.org/10.5281/zenodo.5578566",
+      "citedByCount": 0,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [],
+      "authors": [
+        {
+          "name": "Alexandre Benatti",
+          "id": "https://openalex.org/A5032530535"
+        },
+        {
+          "name": "Henrique Ferraz de Arruda",
+          "id": "https://openalex.org/A5085599698"
+        },
+        {
+          "name": "Filipi Nascimento Silva",
+          "id": "https://openalex.org/A5025683130"
+        },
+        {
+          "name": "Cesar Henrique Comin",
+          "id": "https://openalex.org/A5076528057"
+        },
+        {
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
+        }
+      ],
+      "topics": [
+        "Complex Network Analysis Techniques",
+        "scientometrics and bibliometrics research",
+        "Web visibility and informetrics"
+      ],
+      "note": "Supplementary data: keyword lists and a citation network with metadata.",
+      "relatedWork": {
+        "label": "Related article",
+        "url": "https://doi.org/10.1016/j.physa.2022.128399"
+      },
+      "openAlexIds": [
+        "https://openalex.org/W4286899924"
+      ],
+      "alternateUrls": [],
+      "publicationStatus": "dataset"
     },
     {
       "id": "https://openalex.org/W3204957649",

@@ -1401,6 +1401,12 @@ a {
   font-size: 0.95rem;
 }
 
+.publication-list__note {
+  margin: 7px 0 0;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
 .publication-list__meta a {
   display: inline-flex;
   align-items: center;

@@ -62,6 +62,11 @@ test("new Scholar rows require review while a missing audited publication remain
     assert.ok(report.googleScholar.currentRowsOutsidePublishedList.some((row) => row.id === "new-review-candidate"));
     const worksPath = path.join(dir, "data/openalex/works.json");
     const works = JSON.parse(await readFile(worksPath));
+    const dataset = works.works.find((work) => work.publicationStatus === "dataset");
+    dataset.type = "article";
+    await writeFile(worksPath, JSON.stringify(works));
+    assert.throws(() => execFileSync(process.execPath, [compare], { cwd: dir, stdio: "pipe" }), /datasets are missing or incorrectly classified/);
+    dataset.type = "dataset";
     works.works = works.works.filter((work) => work.title !== "Visualizing big science projects");
     await writeFile(worksPath, JSON.stringify(works));
     assert.throws(() => execFileSync(process.execPath, [compare], { cwd: dir, stdio: "pipe" }), /Curated publications are missing/);

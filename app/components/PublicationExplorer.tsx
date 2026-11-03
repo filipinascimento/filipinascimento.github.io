@@ -11,6 +11,7 @@ const filters = [
   ["book-chapter", "Chapters"],
   ["editorial", "Editorials"],
   ["preprint", "Preprints"],
+  ["dataset", "Datasets"],
 ] as const;
 
 function authorLine(authors: Publication["authors"]) {
@@ -96,15 +97,21 @@ export function PublicationExplorer({ works, assetRoot = "" }: { works: Publicat
             <div className="publication-list__content">
               <h3><a href={work.url} target="_blank" rel="noreferrer">{work.title}</a></h3>
               <p className="publication-list__authors">{authorLine(work.authors)}</p>
+              {work.note && <p className="publication-list__note">{work.note}</p>}
               <div className="publication-list__meta">
                 <span>{work.publicationStatus === "preprint" ? "Preprint" : (work.source || work.type.replace("-", " "))}</span>
-                {work.publicationStatus === "published" && (
+                {work.publicationStatus !== "preprint" && (
                   <span className="publication-type">{work.type.replace("-", " ")}</span>
                 )}
                 {work.openAccess && <span className="open-access">Open access</span>}
                 <a href={work.url} target="_blank" rel="noreferrer" aria-label={`Open ${work.title}`}>
-                  {work.publicationStatus === "preprint" ? "View preprint" : "Published version"}<ArrowUpRight size={12} aria-hidden="true" />
+                  {work.publicationStatus === "preprint" ? "View preprint" : work.publicationStatus === "dataset" ? "View dataset" : "Published version"}<ArrowUpRight size={12} aria-hidden="true" />
                 </a>
+                {work.relatedWork && (
+                  <a href={work.relatedWork.url} target="_blank" rel="noreferrer">
+                    {work.relatedWork.label}<ArrowUpRight size={12} aria-hidden="true" />
+                  </a>
+                )}
                 {work.publicationStatus === "published" && work.preprintUrls?.[0] && (
                   <a href={work.preprintUrls[0]} target="_blank" rel="noreferrer" aria-label={`Open preprint for ${work.title}`}>
                     Preprint<ArrowUpRight size={12} aria-hidden="true" />

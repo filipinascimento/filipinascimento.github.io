@@ -1,6 +1,16 @@
 ---
-generatedAt: "2026-11-03T19:40:50.178Z"
+generatedAt: "2026-11-03T19:59:57.770Z"
 figures:
+  - title: "Constructing the Field of Philanthropic and Nonprofit Studies: Evidence from Citation Networks"
+    normalizedTitle: "constructing the field of philanthropic and nonprofit studies evidence from citation networks"
+    src: "/figures/publications/constructing-the-field-of-philanthropic-and-nonprofit-studies-evidence-from-.png"
+    alt: "Citation-network map of philanthropic and nonprofit studies, from Figure 6 of the preprint."
+    caption: "Figure 6. Intellectual Map of Philanthropic and Nonprofit Studies. Extracted intact from page 14 of arXiv:2609.03291v1."
+    sourceUrl: "https://arxiv.org/abs/2609.03291"
+    sourceLabel: "Preprint figure"
+    method: "curated"
+    fit: "contain"
+    position: "center"
   - title: "The Tone of Awareness: Topic, Sentiment, and Toxicity Maps During Mental Health Month on TikTok"
     normalizedTitle: "the tone of awareness topic sentiment and toxicity maps during mental health month on tiktok"
     src: "/figures/publications/the-tone-of-awareness-topic-sentiment-and-toxicity-maps-during-mental-health.png"
@@ -279,6 +289,16 @@ figures:
     sourceUrl: "https://arxiv.org/abs/2107.08512"
     sourceLabel: "Preprint figure"
     method: "ar5iv"
+    fit: "contain"
+    position: "center"
+  - title: "Methods for Gene Co-expression Network Visualization and Analysis"
+    normalizedTitle: "methods for gene co expression network visualization and analysis"
+    src: "/figures/publications/methods-for-gene-co-expression-network-visualization-and-analysis.webp"
+    alt: "Cover of Transcriptomics in Health and Disease, second edition (2022)."
+    caption: "Book cover for the second edition (2022), containing Chapter 6."
+    sourceUrl: "https://link.springer.com/book/10.1007/978-3-030-87821-4"
+    sourceLabel: "Book cover"
+    method: "curated"
     fit: "contain"
     position: "center"
   - title: "Visualizing big science projects"
@@ -752,6 +772,9 @@ figures:
     fit: "contain"
     position: "center"
 missing:
+withoutFigure:
+  - title: "Data for: On the Stability of Communities in Citation Networks"
+    reason: "The Zenodo deposit contains keyword lists and a citation network, with no standalone figure."
 ---
 
 Publication figures are generated from open preprints and curated author assets.

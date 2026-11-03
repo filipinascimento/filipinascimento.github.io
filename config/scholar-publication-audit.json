@@ -68,9 +68,11 @@
     "Measuring research interest similarity with transition probabilities"
   ],
   "additionalPublishedTitles": [
-    "Text characterization based on recurrence networks"
+    "Text characterization based on recurrence networks",
+    "Methods for Gene Co-expression Network Visualization and Analysis"
   ],
   "standalonePreprintTitles": [
+    "Constructing the Field of Philanthropic and Nonprofit Studies: Evidence from Citation Networks",
     "The Tone of Awareness: Topic, Sentiment, and Toxicity Maps During Mental Health Month on TikTok",
     "Heuristic and exact modularity optimization with size-constrained communities",
     "From Node2Vec to GPT-based GraphRAG: scientific impact prediction across graph and language models",
@@ -125,5 +127,44 @@
     "publisher and DOI landing pages",
     "OpenAlex linked author records",
     "arXiv"
+  ],
+  "datasetTitles": [
+    "Data for: On the Stability of Communities in Citation Networks"
+  ],
+  "workOverrides": {
+    "https://doi.org/10.1007/978-3-030-87821-4_6": {
+      "publicationDate": "2022-03-08",
+      "source": "Transcriptomics in Health and Disease, 2nd edition",
+      "note": "Chapter 6, pp. 143–163. Second edition (2022).",
+      "relatedWork": {
+        "label": "Earlier edition (2014)",
+        "url": "https://doi.org/10.1007/978-3-319-11985-4_4"
+      }
+    },
+    "https://doi.org/10.5281/zenodo.5578566": {
+      "type": "dataset",
+      "source": "Zenodo",
+      "note": "Supplementary data: keyword lists and a citation network with metadata.",
+      "relatedWork": {
+        "label": "Related article",
+        "url": "https://doi.org/10.1016/j.physa.2022.128399"
+      }
+    }
+  },
+  "editorialAdditions": [
+    {
+      "approvedAt": "2026-11-03",
+      "titles": [
+        "Constructing the Field of Philanthropic and Nonprofit Studies: Evidence from Citation Networks",
+        "Methods for Gene Co-expression Network Visualization and Analysis",
+        "Data for: On the Stability of Communities in Citation Networks"
+      ],
+      "verificationSources": [
+        "https://arxiv.org/abs/2609.03291",
+        "https://link.springer.com/chapter/10.1007/978-3-030-87821-4_6",
+        "https://zenodo.org/records/5578567"
+      ],
+      "note": "User approved these three additions. The Zenodo deposit contains data files despite the upstream journal-article label; exclude it from the published-work count."
+    }
   ]
 }

@@ -27,12 +27,14 @@ test("keeps the editorial content in Markdown collections", async () => {
   await access(new URL("content/posts/README.md", root));
 });
 
-test("provides a figure for every audited publication and project", async () => {
+test("accounts for every scholarly record's figure or explicit editorial omission", async () => {
   const figures = await json("data/publication-figures.json");
   const works = await json("data/openalex/works.json");
   const content = await json("data/content.json");
   const figureScript = await readFile(new URL("scripts/fetch-publication-figures.mjs", root), "utf8");
-  assert.equal(figures.count, works.works.length);
+  assert.equal(figures.count + figures.withoutFigure.length, works.works.length);
+  assert.ok(figures.withoutFigure.every((entry) => entry.reason && works.works.some((work) => work.normalizedTitle === entry.normalizedTitle)));
+  assert.equal(new Set([...figures.figures, ...figures.withoutFigure].map((entry) => entry.normalizedTitle)).size, works.works.length);
   assert.equal(figures.missingCount, 0);
   assert.match(figureScript, /previousFigureByTitle/);
   assert.match(figureScript, /Cached: \$\{work\.title\}/);
@@ -136,7 +138,7 @@ test("merges split OpenAlex identities without duplicate titles", async () => {
   assert.equal(profile.authorIds.length, 10);
   assert.equal(publishedWorks.length, scholar.publications);
   assert.equal(standalonePreprints.length, audit.standalonePreprintTitles.length);
-  assert.equal(works.works.length, scholar.publications + audit.standalonePreprintTitles.length);
+  assert.equal(works.works.length, scholar.publications + audit.standalonePreprintTitles.length + audit.datasetTitles.length);
   assert.equal(profile.mergedScholarlyWorksCount, works.works.length);
   assert.equal(profile.publishedWorksCount, scholar.publications);
   assert.equal(profile.standalonePreprintsCount, audit.standalonePreprintTitles.length);
@@ -175,13 +177,38 @@ test("merges split OpenAlex identities without duplicate titles", async () => {
   }
 });
 
+test("keeps the approved dataset separate from articles and the two chapter editions distinct", async () => {
+  const { works } = await json("data/openalex/works.json");
+  const profile = await json("data/openalex/profile.json");
+  const dataset = works.find((work) => work.doi === "https://doi.org/10.5281/zenodo.5578566");
+  assert.equal(dataset.type, "dataset");
+  assert.equal(dataset.publicationStatus, "dataset");
+  assert.equal(dataset.source, "Zenodo");
+  assert.equal(dataset.relatedWork.url, "https://doi.org/10.1016/j.physa.2022.128399");
+  assert.equal(profile.datasetsCount, 1);
+  assert.equal(profile.publishedWorksCount, works.filter((work) => work.publicationStatus === "published").length);
+  const chapter = works.find((work) => work.doi === "https://doi.org/10.1007/978-3-030-87821-4_6");
+  assert.equal(chapter.type, "book-chapter");
+  assert.equal(chapter.publicationDate, "2022-03-08");
+  assert.match(chapter.source, /2nd edition/);
+  assert.ok(works.some((work) => work.doi === chapter.relatedWork.url && work.year === 2014));
+  const preprint = works.find((work) => work.doi === "https://doi.org/10.48550/arxiv.2609.03291");
+  assert.equal(preprint.publicationStatus, "preprint");
+  assert.equal(preprint.url, "https://arxiv.org/abs/2609.03291");
+  assert.equal(preprint.authors.length, 4);
+  const candidates = await json("data/openalex/review-candidates.json");
+  for (const work of [dataset, chapter, preprint]) {
+    assert.ok(!candidates.works.some((candidate) => candidate.id === work.id));
+  }
+});
+
 test("caches scholarly metrics and course identifiers", async () => {
   const scholar = await json("data/scholar/profile.json");
   const scholarEntries = await json("data/scholar/entries.json");
   const content = await json("data/content.json");
   assert.ok(scholar.citations >= 2500);
   assert.equal(scholar.citationsDisplay, `${(Math.floor(scholar.citations / 100) * 100).toLocaleString("en-US")}+`);
-  assert.equal(scholar.publications, 64);
+  assert.equal(scholar.publications, 65);
   assert.equal(scholar.publicationsDisplay, "60+");
   assert.equal(scholarEntries.count, scholar.profileEntries);
   assert.equal(

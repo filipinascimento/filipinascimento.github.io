@@ -8,7 +8,7 @@ import type { Publication, PublicationFigure } from "../lib/types";
 
 export const metadata: Metadata = {
   title: "Publications",
-  description: "Journal articles, conference papers, book chapters, and preprints by Filipi Nascimento Silva.",
+  description: "Journal articles, conference papers, book chapters, preprints, and research datasets by Filipi Nascimento Silva.",
 };
 
 export default function PublicationsPage() {
@@ -27,7 +27,7 @@ export default function PublicationsPage() {
         <div>
           <div className="eyebrow">Scholarly record</div>
           <h1>Publications</h1>
-          <p>Journal articles, conference papers, book chapters, and preprints. Citation and h-index metrics are from Google Scholar.</p>
+          <p>Journal articles, conference papers, book chapters, preprints, and research datasets. Datasets are listed separately from the publication count. Citation and h-index metrics are from Google Scholar.</p>
         </div>
         <div className="metric-card-grid">
           <div><strong>{scholarProfile.publicationsDisplay}</strong><span>Publications</span></div>

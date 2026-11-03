@@ -67,7 +67,9 @@ export type Publication = {
   openAccessStatus: string | null;
   authors: PublicationAuthor[];
   topics: string[];
-  publicationStatus: "published" | "preprint";
+  publicationStatus: "published" | "preprint" | "dataset";
+  note?: string;
+  relatedWork?: LinkItem;
   openAlexIds: string[];
   preprintUrls: string[];
   alternateUrls: string[];

@@ -4,11 +4,12 @@
   "orcid": "https://orcid.org/0000-0002-9151-6517",
   "worksCount": 153,
   "rawUniqueWorksAcrossLinkedAuthors": 117,
-  "manuallyLinkedWorks": 19,
-  "candidateWorksBeforePublicationAudit": 96,
-  "publishedWorksCount": 64,
-  "standalonePreprintsCount": 11,
-  "mergedScholarlyWorksCount": 75,
+  "manuallyLinkedWorks": 22,
+  "candidateWorksBeforePublicationAudit": 99,
+  "publishedWorksCount": 65,
+  "standalonePreprintsCount": 12,
+  "datasetsCount": 1,
+  "mergedScholarlyWorksCount": 78,
   "citedByCount": 2158,
   "hIndex": 22,
   "i10Index": 39,
@@ -80,5 +81,5 @@
       "httpStatus": 404
     }
   ],
-  "fetchedAt": "2026-11-03T19:39:27.872Z"
+  "fetchedAt": "2026-11-03T19:59:51.996Z"
 }

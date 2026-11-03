@@ -170,7 +170,7 @@ async function previousFigure(work) {
   }
 }
 
-function generatedMarkdown(figures, missing, generatedAt) {
+function generatedMarkdown(figures, missing, withoutFigure, generatedAt) {
   const lines = [
     "---",
     `generatedAt: ${markdownValue(generatedAt)}`,
@@ -197,6 +197,13 @@ function generatedMarkdown(figures, missing, generatedAt) {
       `    normalizedTitle: ${markdownValue(work.normalizedTitle)}`,
     );
   }
+  lines.push("withoutFigure:");
+  for (const work of withoutFigure) {
+    lines.push(
+      `  - title: ${markdownValue(work.title)}`,
+      `    reason: ${markdownValue(work.reason)}`,
+    );
+  }
   lines.push("---", "", "Publication figures are generated from open preprints and curated author assets.", "");
   return lines.join("\n");
 }
@@ -207,9 +214,15 @@ await mkdir(path.dirname(generatedMarkdownPath), { recursive: true });
 
 const figures = [];
 const missing = [];
+const withoutFigure = [];
 for (const work of works) {
   const override = overrideByTitle.get(work.normalizedTitle);
   try {
+    if (override?.omitReason) {
+      withoutFigure.push({ title: work.title, normalizedTitle: work.normalizedTitle, reason: override.omitReason });
+      console.log(`No figure by design: ${work.title} (${override.omitReason})`);
+      continue;
+    }
     if (override) {
       figures.push(await saveOverride(work, override));
       console.log(`Curated: ${work.title}`);
@@ -244,7 +257,7 @@ for (const work of works) {
 const generatedAt = new Date().toISOString();
 await writeFile(
   outputPath,
-  `${JSON.stringify({ generatedAt, count: figures.length, missingCount: missing.length, figures }, null, 2)}\n`,
+  `${JSON.stringify({ generatedAt, count: figures.length, missingCount: missing.length, withoutFigure, figures }, null, 2)}\n`,
 );
-await writeFile(generatedMarkdownPath, generatedMarkdown(figures, missing, generatedAt));
-console.log(`Publication figures: ${figures.length}/${works.length}; missing ${missing.length}.`);
+await writeFile(generatedMarkdownPath, generatedMarkdown(figures, missing, withoutFigure, generatedAt));
+console.log(`Publication figures: ${figures.length}/${works.length}; intentionally without figure ${withoutFigure.length}; missing ${missing.length}.`);
