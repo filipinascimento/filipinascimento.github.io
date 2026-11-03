@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T19:59:52.235Z",
+  "generatedAt": "2026-11-03T22:51:28.221Z",
   "googleScholar": {
     "profileEntries": 122,
     "profileEntriesAtAudit": 118,
@@ -372,11 +372,11 @@
       "A5136191170"
     ],
     "rawUniqueWorksAcrossLinkedAuthors": 117,
-    "manuallyLinkedWorks": 22,
-    "candidateWorksBeforePublicationAudit": 99,
-    "curatedPublishedWorks": 65,
+    "manuallyLinkedWorks": 23,
+    "candidateWorksBeforePublicationAudit": 100,
+    "curatedPublishedWorks": 66,
     "curatedStandalonePreprints": 12,
-    "curatedDatasets": 1,
+    "curatedDatasets": 0,
     "duplicateNormalizedTitles": 0,
     "missingCanonicalPublications": [],
     "missingCanonicalPreprints": [],
@@ -385,9 +385,9 @@
     "primaryAuthorHIndex": 22
   },
   "crosswalk": {
-    "canonicalPublishedWorks": 65,
+    "canonicalPublishedWorks": 66,
     "publishedScholarRowsFound": 63,
-    "additionalPublishedWorks": 2,
-    "publicationsFoundInOpenAlex": 65
+    "additionalPublishedWorks": 3,
+    "publicationsFoundInOpenAlex": 66
   }
 }

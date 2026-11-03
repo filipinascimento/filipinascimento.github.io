@@ -1,6 +1,116 @@
 {
-  "fetchedAt": "2026-11-03T19:59:51.996Z",
+  "fetchedAt": "2026-11-03T22:51:27.984Z",
   "works": [
+    {
+      "id": "https://openalex.org/W7221768919",
+      "title": "A null model to detect coordinated online behavior integrating evidence from multiple indicators",
+      "normalizedTitle": "a null model to detect coordinated online behavior integrating evidence from multiple indicators",
+      "publicationDate": "2026-10-13",
+      "year": 2026,
+      "type": "preprint",
+      "source": "arXiv (Cornell University)",
+      "doi": "https://doi.org/10.48550/arxiv.2610.17533",
+      "url": "https://arxiv.org/abs/2610.17533",
+      "citedByCount": 0,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2610.17533"
+      ],
+      "authors": [
+        {
+          "name": "Filipi Nascimento Silva",
+          "id": "https://openalex.org/A5158768885"
+        },
+        {
+          "name": "Manita Pote",
+          "id": "https://openalex.org/A5015734898"
+        },
+        {
+          "name": "Lake Yin",
+          "id": "https://openalex.org/A5039269180"
+        },
+        {
+          "name": "David Axelrod",
+          "id": "https://openalex.org/A5052566566"
+        },
+        {
+          "name": "Ashwin Balasubramanian",
+          "id": "https://openalex.org/A5127795618"
+        },
+        {
+          "name": "Luca Luceri",
+          "id": "https://openalex.org/A5088304530"
+        },
+        {
+          "name": "Filippo Menczer",
+          "id": "https://openalex.org/A5021346979"
+        },
+        {
+          "name": "Alessandro Flammini",
+          "id": "https://openalex.org/A5011228873"
+        }
+      ],
+      "topics": [
+        "Misinformation and Its Impacts",
+        "Spam and Phishing Detection",
+        "Complex Network Analysis Techniques"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W7221768919"
+      ],
+      "alternateUrls": [],
+      "publicationStatus": "preprint"
+    },
+    {
+      "id": "https://openalex.org/W7212291040",
+      "title": "Heuristic and exact modularity optimization with size-constrained communities",
+      "normalizedTitle": "heuristic and exact modularity optimization with size constrained communities",
+      "publicationDate": "2026-10-13",
+      "year": 2026,
+      "type": "article",
+      "source": "Physical Review E",
+      "doi": "https://doi.org/10.1103/y6ss-j5qv",
+      "url": "https://doi.org/10.1103/y6ss-j5qv",
+      "citedByCount": 0,
+      "openAccess": false,
+      "openAccessStatus": "closed",
+      "preprintUrls": [
+        "https://arxiv.org/abs/2605.25248"
+      ],
+      "authors": [
+        {
+          "name": "Filipi N. Silva",
+          "id": "https://openalex.org/A5151345640"
+        },
+        {
+          "name": "Samin Aref",
+          "id": "https://openalex.org/A5067809445"
+        },
+        {
+          "name": "Vincent Traag",
+          "id": "https://openalex.org/A5070433540"
+        },
+        {
+          "name": "Santo Fortunato",
+          "id": "https://openalex.org/A5053938061"
+        }
+      ],
+      "topics": [
+        "Complex Network Analysis Techniques",
+        "Advanced Clustering Algorithms Research",
+        "Opinion Dynamics and Social Influence"
+      ],
+      "note": "Volume 114, article 044314 (2026).",
+      "openAlexIds": [
+        "https://openalex.org/W7212291040",
+        "https://openalex.org/W7162444449"
+      ],
+      "alternateUrls": [
+        "https://arxiv.org/abs/2605.25248"
+      ],
+      "publicationStatus": "published"
+    },
     {
       "id": "https://openalex.org/W7208720724",
       "title": "Constructing the Field of Philanthropic and Nonprofit Studies: Evidence from Citation Networks",
@@ -142,51 +252,6 @@
         "https://arxiv.org/abs/2508.07489"
       ],
       "publicationStatus": "published"
-    },
-    {
-      "id": "https://openalex.org/W7162444449",
-      "title": "Heuristic and exact modularity optimization with size-constrained communities",
-      "normalizedTitle": "heuristic and exact modularity optimization with size constrained communities",
-      "publicationDate": "2026-05-24",
-      "year": 2026,
-      "type": "preprint",
-      "source": "arXiv (Cornell University)",
-      "doi": "https://doi.org/10.48550/arxiv.2605.25248",
-      "url": "https://arxiv.org/abs/2605.25248",
-      "citedByCount": 0,
-      "openAccess": true,
-      "openAccessStatus": "green",
-      "preprintUrls": [
-        "https://arxiv.org/abs/2605.25248"
-      ],
-      "authors": [
-        {
-          "name": "Filipi N. Silva",
-          "id": "https://openalex.org/A5025683130"
-        },
-        {
-          "name": "Samin Aref",
-          "id": "https://openalex.org/A5067809445"
-        },
-        {
-          "name": "Vincent Traag",
-          "id": "https://openalex.org/A5070433540"
-        },
-        {
-          "name": "Santo Fortunato",
-          "id": "https://openalex.org/A5053938061"
-        }
-      ],
-      "topics": [
-        "Complex Network Analysis Techniques",
-        "Advanced Clustering Algorithms Research",
-        "Bioinformatics and Genomic Networks"
-      ],
-      "openAlexIds": [
-        "https://openalex.org/W7162444449"
-      ],
-      "alternateUrls": [],
-      "publicationStatus": "preprint"
     },
     {
       "id": "https://openalex.org/W7161680433",
@@ -1716,58 +1781,6 @@
       ],
       "alternateUrls": [],
       "publicationStatus": "published"
-    },
-    {
-      "id": "https://openalex.org/W4286899924",
-      "title": "Data for: On the Stability of Communities in Citation Networks",
-      "normalizedTitle": "data for on the stability of communities in citation networks",
-      "publicationDate": "2021-10-19",
-      "year": 2021,
-      "type": "dataset",
-      "source": "Zenodo",
-      "doi": "https://doi.org/10.5281/zenodo.5578566",
-      "url": "https://doi.org/10.5281/zenodo.5578566",
-      "citedByCount": 0,
-      "openAccess": true,
-      "openAccessStatus": "green",
-      "preprintUrls": [],
-      "authors": [
-        {
-          "name": "Alexandre Benatti",
-          "id": "https://openalex.org/A5032530535"
-        },
-        {
-          "name": "Henrique Ferraz de Arruda",
-          "id": "https://openalex.org/A5085599698"
-        },
-        {
-          "name": "Filipi Nascimento Silva",
-          "id": "https://openalex.org/A5025683130"
-        },
-        {
-          "name": "Cesar Henrique Comin",
-          "id": "https://openalex.org/A5076528057"
-        },
-        {
-          "name": "Luciano da Fontoura Costa",
-          "id": "https://openalex.org/A5005669749"
-        }
-      ],
-      "topics": [
-        "Complex Network Analysis Techniques",
-        "scientometrics and bibliometrics research",
-        "Web visibility and informetrics"
-      ],
-      "note": "Supplementary data: keyword lists and a citation network with metadata.",
-      "relatedWork": {
-        "label": "Related article",
-        "url": "https://doi.org/10.1016/j.physa.2022.128399"
-      },
-      "openAlexIds": [
-        "https://openalex.org/W4286899924"
-      ],
-      "alternateUrls": [],
-      "publicationStatus": "dataset"
     },
     {
       "id": "https://openalex.org/W3204957649",

@@ -64,15 +64,16 @@ outside the accepted publication list for review. An increase in profile rows
 does not automatically increase the public publication count. Do not add a work
 until authorship, publication status, duplicates, and its figure have been checked.
 
-Approved datasets use `datasetTitles` and a separate `dataset` status. They are
-searchable under the Datasets filter and excluded from the publication metric.
 DOI-keyed `workOverrides` record verified metadata corrections, edition notes,
-and related-work links without merging distinct editions. The 2021 Zenodo
-deposit is classified as data from its actual contents despite its upstream
-article label; the 2022 chapter keeps its own DOI alongside the 2014 edition.
+and related-work links without merging distinct editions. The 2022 chapter
+keeps its own DOI alongside the 2014 edition and uses its book's cover.
+The 2021 Zenodo dataset is excluded at the owner's request.
+The null-model preprint and published modularity article are linked by exact
+DOI because OpenAlex currently assigns them to newly split author identities.
+The modularity record uses the publisher's publication date and author names,
+and retains its preprint link without a duplicate bibliography entry.
 Figure overrides can document an intentional omission with `omitReason`.
-The 2022 chapter uses its book's cover, and the dataset is intentionally shown
-without a figure. These cases are tracked separately from failed image retrievals.
+These cases are tracked separately from failed image retrievals.
 
 Before publishing, compare the refreshed bibliography and all referenced figure
 files with the previous version. Read any cached-source warnings in the run log.

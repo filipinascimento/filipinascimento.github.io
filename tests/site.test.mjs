@@ -177,15 +177,11 @@ test("merges split OpenAlex identities without duplicate titles", async () => {
   }
 });
 
-test("keeps the approved dataset separate from articles and the two chapter editions distinct", async () => {
+test("excludes the withdrawn dataset while preserving the approved chapter and philanthropy preprint", async () => {
   const { works } = await json("data/openalex/works.json");
   const profile = await json("data/openalex/profile.json");
-  const dataset = works.find((work) => work.doi === "https://doi.org/10.5281/zenodo.5578566");
-  assert.equal(dataset.type, "dataset");
-  assert.equal(dataset.publicationStatus, "dataset");
-  assert.equal(dataset.source, "Zenodo");
-  assert.equal(dataset.relatedWork.url, "https://doi.org/10.1016/j.physa.2022.128399");
-  assert.equal(profile.datasetsCount, 1);
+  assert.ok(!works.some((work) => work.doi?.includes("zenodo.557856") || work.title === "Data for: On the Stability of Communities in Citation Networks"));
+  assert.equal(profile.datasetsCount, 0);
   assert.equal(profile.publishedWorksCount, works.filter((work) => work.publicationStatus === "published").length);
   const chapter = works.find((work) => work.doi === "https://doi.org/10.1007/978-3-030-87821-4_6");
   assert.equal(chapter.type, "book-chapter");
@@ -197,9 +193,27 @@ test("keeps the approved dataset separate from articles and the two chapter edit
   assert.equal(preprint.url, "https://arxiv.org/abs/2609.03291");
   assert.equal(preprint.authors.length, 4);
   const candidates = await json("data/openalex/review-candidates.json");
-  for (const work of [dataset, chapter, preprint]) {
+  for (const work of [chapter, preprint]) {
     assert.ok(!candidates.works.some((candidate) => candidate.id === work.id));
   }
+});
+
+test("includes the null-model preprint and links modularity's published and preprint versions once", async () => {
+  const { works } = await json("data/openalex/works.json");
+  const modularity = works.filter((work) => work.title === "Heuristic and exact modularity optimization with size-constrained communities");
+  assert.equal(modularity.length, 1);
+  assert.equal(modularity[0].publicationStatus, "published");
+  assert.equal(modularity[0].type, "article");
+  assert.equal(modularity[0].url, "https://doi.org/10.1103/y6ss-j5qv");
+  assert.equal(modularity[0].publicationDate, "2026-10-13");
+  assert.deepEqual(modularity[0].authors.map((author) => author.name), ["Filipi N. Silva", "Samin Aref", "Vincent Traag", "Santo Fortunato"]);
+  assert.ok(modularity[0].preprintUrls.includes("https://arxiv.org/abs/2605.25248"));
+  const nullModel = works.find((work) => work.doi === "https://doi.org/10.48550/arxiv.2610.17533");
+  assert.equal(nullModel.publicationStatus, "preprint");
+  assert.equal(nullModel.type, "preprint");
+  assert.equal(nullModel.url, "https://arxiv.org/abs/2610.17533");
+  assert.equal(nullModel.authors.length, 8);
+  assert.equal(nullModel.authors[0].name, "Filipi Nascimento Silva");
 });
 
 test("caches scholarly metrics and course identifiers", async () => {
@@ -208,7 +222,7 @@ test("caches scholarly metrics and course identifiers", async () => {
   const content = await json("data/content.json");
   assert.ok(scholar.citations >= 2500);
   assert.equal(scholar.citationsDisplay, `${(Math.floor(scholar.citations / 100) * 100).toLocaleString("en-US")}+`);
-  assert.equal(scholar.publications, 65);
+  assert.equal(scholar.publications, 66);
   assert.equal(scholar.publicationsDisplay, "60+");
   assert.equal(scholarEntries.count, scholar.profileEntries);
   assert.equal(

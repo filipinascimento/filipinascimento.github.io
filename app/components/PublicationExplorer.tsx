@@ -11,7 +11,6 @@ const filters = [
   ["book-chapter", "Chapters"],
   ["editorial", "Editorials"],
   ["preprint", "Preprints"],
-  ["dataset", "Datasets"],
 ] as const;
 
 function authorLine(authors: Publication["authors"]) {

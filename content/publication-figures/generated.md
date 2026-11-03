@@ -1,6 +1,26 @@
 ---
-generatedAt: "2026-11-03T19:59:57.770Z"
+generatedAt: "2026-11-03T22:51:36.606Z"
 figures:
+  - title: "A null model to detect coordinated online behavior integrating evidence from multiple indicators"
+    normalizedTitle: "a null model to detect coordinated online behavior integrating evidence from multiple indicators"
+    src: "/figures/publications/a-null-model-to-detect-coordinated-online-behavior-integrating-evidence-from.png"
+    alt: "Six-step method for detecting coordinated online behavior from multiple indicators, from Figure 1 of the preprint."
+    caption: "Figure 1. The proposed method pipeline in six steps. Original image from arXiv:2610.17533v2."
+    sourceUrl: "https://arxiv.org/html/2610.17533v2#S1.F1"
+    sourceLabel: "Preprint figure"
+    method: "curated"
+    fit: "contain"
+    position: "center"
+  - title: "Heuristic and exact modularity optimization with size-constrained communities"
+    normalizedTitle: "heuristic and exact modularity optimization with size constrained communities"
+    src: "/figures/publications/heuristic-and-exact-modularity-optimization-with-size-constrained-communitie.png"
+    alt: "Figure from Heuristic and exact modularity optimization with size-constrained communities."
+    caption: "Figure 4: Visualization of the communities obtained for the male 20k network from the Budapest dataset using (a) UL, (b) CL with the range [43,187], (c) CL with the arbitrary range [50,100]."
+    sourceUrl: "https://arxiv.org/abs/2605.25248"
+    sourceLabel: "Preprint figure"
+    method: "ar5iv"
+    fit: "contain"
+    position: "center"
   - title: "Constructing the Field of Philanthropic and Nonprofit Studies: Evidence from Citation Networks"
     normalizedTitle: "constructing the field of philanthropic and nonprofit studies evidence from citation networks"
     src: "/figures/publications/constructing-the-field-of-philanthropic-and-nonprofit-studies-evidence-from-.png"
@@ -27,16 +47,6 @@ figures:
     alt: "Figure from Recovering link-weight structure in complex networks with weight-aware walks."
     caption: "Figure 2: Visualization of the four different graph models with weighted edges, each containing 128 nodes and an average degree of 16. The Erdős–Rényi (ER) model assigns edge weights following an exponential distribution, while the Stochastic Block Model (SBM) determines weights based on the probability of connections within and between node communities. The Waxman (WAX) model incorporates spatial constraints, with edge weights influenced by the geometric distances between nodes. Finally, the Barabási–Albert (BA) model represents a weighted scale-free network, where edge weights are proportional to the degrees of the connected nodes."
     sourceUrl: "https://arxiv.org/abs/2508.07489"
-    sourceLabel: "Preprint figure"
-    method: "ar5iv"
-    fit: "contain"
-    position: "center"
-  - title: "Heuristic and exact modularity optimization with size-constrained communities"
-    normalizedTitle: "heuristic and exact modularity optimization with size constrained communities"
-    src: "/figures/publications/heuristic-and-exact-modularity-optimization-with-size-constrained-communitie.png"
-    alt: "Figure from Heuristic and exact modularity optimization with size-constrained communities."
-    caption: "Figure 4: Visualization of the communities obtained for the male 20k network from the Budapest dataset using (a) UL, (b) CL with the range [43,187], (c) CL with the arbitrary range [50,100]."
-    sourceUrl: "https://arxiv.org/abs/2605.25248"
     sourceLabel: "Preprint figure"
     method: "ar5iv"
     fit: "contain"
@@ -773,8 +783,6 @@ figures:
     position: "center"
 missing:
 withoutFigure:
-  - title: "Data for: On the Stability of Communities in Citation Networks"
-    reason: "The Zenodo deposit contains keyword lists and a citation network, with no standalone figure."
 ---
 
 Publication figures are generated from open preprints and curated author assets.

@@ -1,6 +1,6 @@
 {
   "profileUrl": "https://scholar.google.com/citations?user=fhWJEysAAAAJ&hl=en",
-  "publications": 65,
+  "publications": 66,
   "publicationsDisplay": "60+",
   "profileEntries": 122,
   "citations": 2791,
@@ -15,7 +15,7 @@
     "auditedAt": "2026-08-02",
     "definition": "Distinct published journal articles, conference papers, book chapters, editorials, and software papers. Unpublished preprints, duplicate versions, corrections, abstracts, datasets, theses, teaching materials, malformed records, and records belonging to other authors are excluded.",
     "publishedProfileRows": 63,
-    "additionalPublishedRecords": 2
+    "additionalPublishedRecords": 3
   },
-  "fetchedAt": "2026-11-03T19:59:46.057Z"
+  "fetchedAt": "2026-11-03T22:49:29.393Z"
 }

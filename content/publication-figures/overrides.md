@@ -1,6 +1,12 @@
 ---
 title: Publication figure overrides
 figures:
+  - title: "A null model to detect coordinated online behavior integrating evidence from multiple indicators"
+    localPath: content/publication-figures/assets/null-model-overview.png
+    alt: "Six-step method for detecting coordinated online behavior from multiple indicators, from Figure 1 of the preprint."
+    caption: "Figure 1. The proposed method pipeline in six steps. Original image from arXiv:2610.17533v2."
+    sourceUrl: https://arxiv.org/html/2610.17533v2#S1.F1
+    sourceLabel: Preprint figure
   - title: "Constructing the Field of Philanthropic and Nonprofit Studies: Evidence from Citation Networks"
     localPath: content/publication-figures/assets/philanthropy-network.png
     alt: "Citation-network map of philanthropic and nonprofit studies, from Figure 6 of the preprint."
@@ -13,8 +19,6 @@ figures:
     caption: "Book cover for the second edition (2022), containing Chapter 6."
     sourceUrl: https://link.springer.com/book/10.1007/978-3-030-87821-4
     sourceLabel: Book cover
-  - title: "Data for: On the Stability of Communities in Citation Networks"
-    omitReason: "The Zenodo deposit contains keyword lists and a citation network, with no standalone figure."
   - title: "Network clustering algorithms and preprocessing pipelines for robust cell type identification in single-cell RNA sequencing data"
     localPath: content/publication-figures/assets/cell-clustering.png
     alt: "Comparison of clustering algorithms for single-cell RNA sequencing networks."

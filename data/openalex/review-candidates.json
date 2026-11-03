@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-11-03T19:59:51.996Z",
-  "count": 10,
+  "fetchedAt": "2026-11-03T22:51:27.984Z",
+  "count": 11,
   "works": [
     {
       "id": "https://openalex.org/W7164298878",
@@ -49,6 +49,52 @@
       ],
       "openAlexIds": [
         "https://openalex.org/W7164298878"
+      ],
+      "alternateUrls": []
+    },
+    {
+      "id": "https://openalex.org/W4286899924",
+      "title": "Data for: On the Stability of Communities in Citation Networks",
+      "normalizedTitle": "data for on the stability of communities in citation networks",
+      "publicationDate": "2021-10-19",
+      "year": 2021,
+      "type": "article",
+      "source": "Zenodo (CERN European Organization for Nuclear Research)",
+      "doi": "https://doi.org/10.5281/zenodo.5578566",
+      "url": "https://doi.org/10.5281/zenodo.5578566",
+      "citedByCount": 0,
+      "openAccess": true,
+      "openAccessStatus": "green",
+      "preprintUrls": [],
+      "authors": [
+        {
+          "name": "Alexandre Benatti",
+          "id": "https://openalex.org/A5032530535"
+        },
+        {
+          "name": "Henrique Ferraz de Arruda",
+          "id": "https://openalex.org/A5085599698"
+        },
+        {
+          "name": "Filipi Nascimento Silva",
+          "id": "https://openalex.org/A5025683130"
+        },
+        {
+          "name": "Cesar Henrique Comin",
+          "id": "https://openalex.org/A5076528057"
+        },
+        {
+          "name": "Luciano da Fontoura Costa",
+          "id": "https://openalex.org/A5005669749"
+        }
+      ],
+      "topics": [
+        "Complex Network Analysis Techniques",
+        "scientometrics and bibliometrics research",
+        "Web visibility and informetrics"
+      ],
+      "openAlexIds": [
+        "https://openalex.org/W4286899924"
       ],
       "alternateUrls": []
     },
