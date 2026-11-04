@@ -82,6 +82,7 @@ async function fetchResource(url) {
   const response = await fetch(url, {
     headers: { "User-Agent": "filipinascimento-website/1.0" },
     redirect: "follow",
+    signal: AbortSignal.timeout(30_000),
   });
   if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
   return response;

@@ -42,7 +42,13 @@ This command:
 5. refreshes metadata only for the selected GitHub repositories; and
 6. rebuilds the Markdown collections.
 
-The GitHub Pages workflow repeats the refresh weekly and commits changed public data before deploying it.
+The GitHub Pages workflow only validates, builds, and deploys prepared data.
+It runs on pushes to `master` or a manual dispatch. It has no schedule, performs
+no Scholar/OpenAlex collection, and cannot commit data back to the repository.
+Data collection runs locally on Darkseid using the review procedure below.
+Requests have timeouts and the deployment job has a 20-minute limit; missing
+approved works, unexpected records, missing images, test failures, or build
+failures stop the workflow before deployment.
 
 ### Manual refresh and review
 
@@ -80,13 +86,15 @@ files with the previous version. Read any cached-source warnings in the run log.
 `npm run figures:projects` can regenerate the four selected project thumbnails
 after their source figures change; it is not part of the regular data refresh.
 
-A future weekly local Codex task can perform this procedure and report its diff
-for review. It requires the Darkseid computer and desktop app to be running,
-the checkout and Node dependencies to be available, and permission for the
-public network requests. Keep unfinished work isolated and define publication
-authority explicitly. No local task is installed by this repository change.
-The existing GitHub workflow combines scheduling with GitHub Pages deployment:
-moving the refresh locally does not by itself remove the need to deploy the site.
+A weekly local Codex task can perform this procedure and report its diff for
+review. It requires Darkseid and the desktop app to be running, the checkout
+and Node dependencies to be available, and permission for public network requests.
+Use a fresh isolated checkout and compare all current Scholar entries and their
+published versions against the site: OpenAlex's configured author IDs alone
+can miss newly split identities. Verify authorship, DOI, status, date, images,
+and source coverage. Report missing or changed works for editorial review.
+Future runs may prepare local changes and test them, but must not push or deploy
+without separate approval. The GitHub workflow only deploys approved commits.
 
 ## Helios Web
 

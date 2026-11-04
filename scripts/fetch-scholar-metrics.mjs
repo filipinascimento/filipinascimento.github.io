@@ -87,6 +87,7 @@ async function fetchPage(cstart = 0) {
   url.searchParams.set("pagesize", String(pageSize));
   url.searchParams.set("cstart", String(cstart));
   const response = await fetch(url, {
+    signal: AbortSignal.timeout(30_000),
     headers: {
       "Accept-Language": "en-US,en;q=0.9",
       "User-Agent":

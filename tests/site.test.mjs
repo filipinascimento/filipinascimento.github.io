@@ -85,14 +85,15 @@ test("keeps root-domain GitHub Pages assets free of a repository base path", asy
   assert.match(homePage, /basePath.*work\.figure\.src/);
 });
 
-test("deploys the preserved personal-site repository from master", async () => {
+test("validates and deploys prepared data without remote collection or a GitHub schedule", async () => {
   const workflow = await readFile(new URL(".github/workflows/pages.yml", root), "utf8");
   assert.match(workflow, /branches:\s*\[master\]/);
-  assert.match(workflow, /git push origin HEAD:master/);
-  assert.match(workflow, /data\/publication-figures\.json/);
-  assert.match(workflow, /content\/publication-figures\/generated\.md/);
-  assert.match(workflow, /public\/figures\/publications/);
-  assert.doesNotMatch(workflow, /HEAD:main/);
+  assert.doesNotMatch(workflow, /schedule:|cron:|data:refresh|data:scholar|data:openalex|git push|contents: write/);
+  assert.match(workflow, /contents: read/);
+  assert.match(workflow, /workflow_dispatch:/);
+  assert.match(workflow, /run: npm run lint && npm test/);
+  assert.ok(workflow.indexOf("Validate bibliography and image coverage") < workflow.indexOf("Build static site"));
+  assert.ok(workflow.indexOf("Build static site") < workflow.indexOf("Deploy GitHub Pages"));
 });
 
 test("shows the corresponding project and publication figures on the homepage", async () => {
