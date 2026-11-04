@@ -23,6 +23,15 @@ Every entry is a plain `.md` file with YAML front matter. `npm run content:build
 
 The complete CV files containing private contact details live outside this repository in `../CV/generated/`. They must not be copied into `content/`, `public/`, or any Git commit.
 
+The CV page and downloadable PDF are maintained separately. `content/cv/public.md`
+provides the web summary, with Scholar metric placeholders filled at build time.
+Its selected publications are editorial content, not an automatic copy of the
+publication database. The PDF at `public/cv/Filipi_Nascimento_Silva_CV.pdf` is a
+static export of the locally maintained CV. To update it, use the latest local
+Markdown master and `../CV/build_cv.py --public`, render and review the document,
+then copy only the reviewed public PDF into this repository. Updating publication
+data or building the website does not regenerate that PDF.
+
 ## Publication and software data
 
 `config/profile-sources.json` contains the verified public identity sources, including the primary OpenAlex author ID, nine confirmed split IDs, manual DOI fallbacks, and the curated GitHub repository list.

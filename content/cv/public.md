@@ -1,6 +1,6 @@
 ---
 title: Curriculum vitae
-updated: 2026-09-03
+updated: 2026-11-04
 ---
 
 ## Profile
@@ -24,6 +24,15 @@ Research Assistant Professor at Northwestern University’s Kellogg School of Ma
 > University of São Paulo is ranked [#1 in Latin America in the Times Higher Education Latin America University Rankings 2026](https://www.timeshighereducation.com/world-university-rankings/2026/latin-america-university-rankings).
 >
 > Dissertation received a university-level Honorable Mention, ranking among the top three theses in the exact sciences.
+
+## Selected publications and preprints
+
+- **[A null model to detect coordinated online behavior integrating evidence from multiple indicators](https://arxiv.org/abs/2610.17533)**. Silva, F. N.; Pote, M.; Yin, L.; Axelrod, D.; Balasubramanian, A.; Luceri, L.; Menczer, F.; Flammini, A. Preprint, 2026.
+- **[Heuristic and exact modularity optimization with size-constrained communities](https://doi.org/10.1103/y6ss-j5qv)**. Silva, F. N.; Aref, S.; Traag, V.; Fortunato, S. *Physical Review E* 114, 044314, 2026. [Preprint](https://arxiv.org/abs/2605.25248).
+- **[Constructing the Field of Philanthropic and Nonprofit Studies: Evidence from Citation Networks](https://arxiv.org/abs/2609.03291)**. Ai, J.; Steinberg, R.; Guo, C.; Silva, F. N. Preprint, 2026.
+- **[Methods for Gene Co-expression Network Visualization and Analysis](https://doi.org/10.1007/978-3-030-87821-4_6)**. Moreira-Filho, C. A.; Bando, S. Y.; Bertonha, F. B.; Silva, F. N.; Costa, L. da F. *Transcriptomics in Health and Disease*, 2nd edition, chapter 6, pp. 143–163, 2022.
+
+[Complete publication list](https://filipinascimento.github.io/publications/).
 
 ## Current research
 
